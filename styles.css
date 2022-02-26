@@ -1,0 +1,43 @@
+body {
+  background: url('classic_bg_left.png') center/100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.timer-box {
+  background-color: #868490;
+  margin: 10px 0 0;
+  padding: 5px;
+}
+
+.box-info {
+  display: flex;
+}
+
+.box-header {
+  width: 80%;
+}
+
+h4, h5 {
+  margin: 0;
+}
+
+.countdown {
+  border: 2px solid red;
+  color: white;
+  font-size: 22px;
+  height: 25px;
+  margin-left: auto;
+  width: 25px;
+}
+
+.progress-box {
+  background: white;
+  height: 20px;
+  width: 100%;
+}
+
+.progress-bar {
+  background-color: red;
+  height: 20px;
+  width: 100%;
+}

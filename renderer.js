@@ -45,11 +45,20 @@ function startNewTimer(guid, time) {
   const incrementAmount = 100/time;
 
   let timer = setInterval(() => {
+    time--;
     if(time === 0) {
       clearInterval(timer);
       removeTimerElement(guid);
     } else {
-      time--;
+      if(time <= 12 && time > 5) {
+        progressBar.classList.add('warning');
+        countDown.classList.add('warning');
+      }
+      if(time <= 5) {
+        progressBar.classList.add('panic');
+        countDown.classList.add('panic');
+      }
+
       progressBar.style.width = `${time * incrementAmount}%`;
       countDown.innerHTML = time;
     }

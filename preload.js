@@ -8,4 +8,5 @@ contextBridge.exposeInMainWorld('fileStream', {
   },
   startTimer: (callback) => ipcRenderer.on('startTimer', callback),
   stopTimer: (callback) => ipcRenderer.on('stopTimer', callback),
+  changeZone: (callback) => ipcRenderer.on('changeZone', callback),
 })

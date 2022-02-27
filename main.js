@@ -8,7 +8,7 @@ let mainWindow;
 
 function createWindow () {
   mainWindow = new BrowserWindow({
-    width: 200,
+    width: 250,
     height: 600,
     x: 0,
     y: 100,
@@ -54,22 +54,23 @@ ipcMain.on("openFile", (event, args) => {
 function watchFile(filename) {
 // effects[0].callback.call(this, "An gorilla has been mesmerized.", mainWindow);
   const mytail = new Tail(filename, line => {
-    parseLine(line);
+    const parsedLine = parseLine(line);
+    checkForEffect(parsedLine);
   });
 }
 
+// Extract timestamp and effect from a line
 function parseLine(line) {
   const lineTokens = line.replace('[','').replace(']','').replace('\r', '').split(' ');
   const timestamp = lineTokens[3];
   const effectLine = lineTokens.slice(5).join(' ');
-  checkForEffect(timestamp, effectLine);
+  return { timestamp, effectLine };
 }
 
-function checkForEffect(timestamp, effectLine) {
+
+function checkForEffect({ timestamp, effectLine }) {
   effects.forEach(effect => {
-    // console.log(effectLine, effect.trigger)
     if (effectLine.includes(effect.trigger)) {
-      console.log("FOUND", effect.name);
       effect.callback.call(this, effectLine, mainWindow);
     }
   });

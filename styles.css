@@ -5,7 +5,7 @@ body {
 
 .timer-box {
   background-color: #868490;
-  margin: 10px 0 0;
+  margin: 10px 5px 0;
   padding: 5px;
 }
 
@@ -14,7 +14,8 @@ body {
 }
 
 .box-header {
-  width: 80%;
+  margin-left: 10px;
+  width: 60%;
 }
 
 h4, h5 {
@@ -42,6 +43,7 @@ h4, h5 {
 .progress-box {
   background: white;
   height: 20px;
+  margin-top: 8px;
   width: 100%;
 }
 
@@ -55,4 +57,27 @@ h4, h5 {
 }
 .progress-bar.panic {
   background-color: red;
+}
+
+.spell {
+  background-image: url('spell_icons.png');
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+}
+
+.spell.boot {
+  background-position: -40px 0;
+}
+.spell.eye {
+  background-position: -80px 0;
+}
+.spell.hand {
+  background-position: -120px 0;
+}
+.spell.mind {
+  background-position: -160px 0;
+}
+.spell.shield {
+  background-position: -200px -40px;
 }

@@ -5,7 +5,8 @@ exports.effects = [
     callback: ((effectLine, window) => {
       const target = effectLine.split(' ').slice(0, -3).join(' ');
       const time = 24;
-      window.webContents.send('startTimer', { type: 'mesmerize', target, time });
+      const icon = 'mind';
+      window.webContents.send('startTimer', { type: 'mesmerize', target, time, icon });
     })
   },
   {
@@ -28,9 +29,18 @@ exports.effects = [
     name: 'Quickness start',
     trigger: 'feels much faster.',
     callback: ((effectLine, window) => {
-      const target = effectLinesplit(' ').slice(0, -2).join(' ');
-      const time = 30;
-      window.webContents.send('startTimer', { type: 'quickness', target, time });
+      const target = effectLine.split(' ').slice(0, -3).join(' ');
+      const time = 260;
+      const icon = 'boot'
+      window.webContents.send('startTimer', { type: 'quickness', target, time, icon });
+    })
+  },
+  {
+    name: 'Zone Transition',
+    trigger: 'You have entered',
+    callback: ((effectLine, window) => {
+      const zoneName = effectLine.split(' ').slice(0, 3).join(' ');
+      window.webContents.send('changeZone', { zone: zoneName });
     })
   }
 ];
@@ -39,3 +49,6 @@ exports.effects = [
 //The light breeze fades.
 //You come into focus.
 //Your strength fades.
+
+//feels much faster
+// Your location is

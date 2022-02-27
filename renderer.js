@@ -12,9 +12,9 @@ selectLogBtn.addEventListener('click', () => {
 });
 
 window.fileStream.startTimer((_, data) => {
-  const { type, target, time } = data;
+  const { type, target, time, icon } = data;
   const guid = Math.random().toString().slice(2,10);
-  addTimerElement(guid, type, target, time);
+  addTimerElement(guid, type, target, time, icon);
   startNewTimer(guid, time);
 });
 
@@ -22,11 +22,12 @@ window.fileStream.stopTimer((_, data) => {
   console.log('effect end:', data.type);
 });
 
-function addTimerElement(guid, type, target, time) {
+function addTimerElement(guid, type, target, time, icon) {
   const timerElement = document.createElement("div");
   timerElement.classList.add('timer-box');
   timerElement.id = `timer-box-${guid}`;
   timerElement.innerHTML = `<div class="box-info">
+                              <div class="spell ${icon}"></div>
                               <div class="box-header">
                                 <h5>${type}</h5>
                                 <h4>${target}</h4>
@@ -50,7 +51,7 @@ function startNewTimer(guid, time) {
       clearInterval(timer);
       removeTimerElement(guid);
     } else {
-      if(time <= 12 && time > 5) {
+      if(time > 5 && (time * incrementAmount <= 55)) {
         progressBar.classList.add('warning');
         countDown.classList.add('warning');
       }

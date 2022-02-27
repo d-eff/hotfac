@@ -1,8 +1,3 @@
-body {
-  background: url('classic_bg_left.png') center/100% repeat-y;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .timer-box {
   background-color: #868490;
   margin: 10px 5px 0;
@@ -57,27 +52,4 @@ h4, h5 {
 }
 .progress-bar.panic {
   background-color: red;
-}
-
-.spell {
-  background-image: url('spell_icons.png');
-  background-repeat: no-repeat;
-  height: 40px;
-  width: 40px;
-}
-
-.spell.boot {
-  background-position: -40px 0;
-}
-.spell.eye {
-  background-position: -80px 0;
-}
-.spell.hand {
-  background-position: -120px 0;
-}
-.spell.mind {
-  background-position: -160px 0;
-}
-.spell.shield {
-  background-position: -200px -40px;
 }

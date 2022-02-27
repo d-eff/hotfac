@@ -1,7 +1,7 @@
-exports.effects = [
+exports.spellEffects = [
   { 
     name: 'Mesmerize start',
-    trigger: 'has been mesmerized.',
+    trigger: 'has been mesmerized',
     callback: ((effectLine, window) => {
       const target = effectLine.split(' ').slice(0, -3).join(' ');
       const time = 24;
@@ -18,7 +18,7 @@ exports.effects = [
   },
   {
     name: 'Languid Pace Start',
-    trigger: 'slows down.',
+    trigger: 'slows down',
     callback: ((effectLine, window) => {
       const target = effectLine.split(' ').slice(0, -2).join(' ');
       const time = 30;
@@ -27,7 +27,7 @@ exports.effects = [
   },
   {
     name: 'Quickness start',
-    trigger: 'feels much faster.',
+    trigger: 'feels much faster',
     callback: ((effectLine, window) => {
       const target = effectLine.split(' ').slice(0, -3).join(' ');
       const time = 260;
@@ -35,12 +35,25 @@ exports.effects = [
       window.webContents.send('startTimer', { type: 'quickness', target, time, icon });
     })
   },
+];
+
+exports.mapEffects = [
   {
     name: 'Zone Transition',
     trigger: 'You have entered',
     callback: ((effectLine, window) => {
-      const zoneName = effectLine.split(' ').slice(0, 3).join(' ');
-      window.webContents.send('changeZone', { zone: zoneName });
+      const zoneName = effectLine.split(' ').slice(3).join(' ');
+      
+      console.log("EFFECT", zoneName);
+      window.webContents.send('changeZone', { zoneName: zoneName });
+    })
+  },
+  {
+    name: 'Loc ping',
+    trigger: 'Your location is',
+    callback: ((effectLine, window) => {
+      const loc = effectLine.split(' ').slice(0, 3);
+      window.webContents.send('updateLoc', { loc: loc });
     })
   }
 ];

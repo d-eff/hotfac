@@ -4,7 +4,7 @@
   "description": "hard out there for a 'chanter. another juice bois production.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron src/main.js"
   },
   "keywords": [],
   "author": "GitHub",

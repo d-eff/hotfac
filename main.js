@@ -52,7 +52,7 @@ ipcMain.on("openFile", (event, args) => {
 });
 
 function watchFile(filename) {
-//effects[0].callback.call(this, "An gorilla has been mesmerized.", mainWindow);
+effects[0].callback.call(this, "An gorilla has been mesmerized.", mainWindow);
   const mytail = new Tail(filename, line => {
     parseLine(line);
   });

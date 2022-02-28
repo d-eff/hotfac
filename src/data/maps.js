@@ -18,5 +18,18 @@ exports.maps = [
     fileName: "westcommons.jpg",
     width: 649,
     height: 284
+  },
+  {
+    name: "Upper Guk",
+    name: "Upper Guk",
+    fileName: "upperguk.jpg",
+    width: 450,
+    height: 644,
+    offsetLeft: 30,
+    offsetTop: 25,
+    longMin: -2000,
+    longMax: 5000,
+    latMin: -900,
+    latMax: 1200
   }
 ];

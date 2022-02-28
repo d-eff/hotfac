@@ -61,7 +61,7 @@ ipcMain.on("openFile", () => {
 
 function watchFile(filename) {
 //spellEffects[0].callback.call(this, "An gorilla has been mesmerized.", timerWindow);
-// mapEffects[0].callback.call(this, "You have entered West Commonlands", mapWindow);
+mapEffects[0].callback.call(this, "You have entered West Commonlands", mapWindow);
   const mytail = new Tail(filename, line => {
     const parsedLine = parseLine(line);
     const foundEffect = checkForEffect(parsedLine, spellEffects, timerWindow);

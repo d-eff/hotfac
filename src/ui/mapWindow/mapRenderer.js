@@ -1,12 +1,16 @@
 const mapSelect = document.getElementById('map-select');
 const mapCanvas = document.getElementById('map-canvas');
 const mapName = document.getElementById('zone-name');
+
+import { drawMap, processMapData, commonlands } from './mapVis.js';
 // const mapImg = document.getElementById('map-image');
 let currentZone;
 
 window.fileStream.changeZone((_, data) => {
   const { zoneName } = data;
-  updateMap(zoneName);
+  // updateMap(zoneName);
+  const mapData = processMapData(commonlands);
+  drawMap(mapCanvas, mapData);
 });
 
 mapSelect.addEventListener('change', (event) => {

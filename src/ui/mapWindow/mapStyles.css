@@ -1,0 +1,12 @@
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
+.map-header {
+  display: flex;
+}
+
+h4 {
+  margin: 0;
+}

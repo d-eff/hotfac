@@ -43,16 +43,14 @@ exports.mapEffects = [
     trigger: 'You have entered',
     callback: ((effectLine, window) => {
       const zoneName = effectLine.split(' ').slice(3).join(' ');
-      
-      console.log("EFFECT", zoneName);
       window.webContents.send('changeZone', { zoneName: zoneName });
     })
   },
   {
     name: 'Loc ping',
-    trigger: 'Your location is',
+    trigger: 'Your Location is',
     callback: ((effectLine, window) => {
-      const loc = effectLine.split(' ').slice(0, 3);
+      const loc = effectLine.split(' ').slice(3);
       window.webContents.send('updateLoc', { loc: loc });
     })
   }

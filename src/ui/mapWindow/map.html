@@ -9,12 +9,15 @@
     <title>MAPS</title>
   </head>
   <body>
-    <select>
-      <option disabled selected>Choose Map</option>
-      <option value="ec">East Commons</option>
-      <option value="wc">East Commons</option>
-    </select>
-    <div id="map"></div>
+    <div class="map-header">
+      <select id="map-select">
+        <option disabled selected>Choose Map</option>
+        <option value="East Commonlands">East Commons</option>
+        <option value="West Commonlands">West Commons</option>
+      </select>
+      <h4 id="zone-name"></h4>
+    </div>
+    <canvas id="map-canvas"></canvas>
     <script src="./mapRenderer.js"></script>
   </body>
 </html>

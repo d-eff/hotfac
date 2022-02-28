@@ -4,7 +4,7 @@ const { contextBridge, ipcRenderer } = require('electron');
 
 contextBridge.exposeInMainWorld('fileStream', {
   openFile: () => ipcRenderer.send('openFile'),
-  getZoneInfo: (zoneName) => ipcRenderer.send('getZoneInfo', zoneName),
+  getZoneInfo: (zoneName) => ipcRenderer.sendSync('getZoneInfo', zoneName),
   startTimer: (callback) => ipcRenderer.on('startTimer', callback),
   stopTimer: (callback) => ipcRenderer.on('stopTimer', callback),
   changeZone: (callback) => ipcRenderer.on('changeZone', callback),

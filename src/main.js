@@ -39,6 +39,8 @@ app.whenReady().then(() => {
     y: 100,
   }, './ui/mapWindow/map.html');
 
+  mapWindow.webContents.openDevTools();
+
   app.on('activate', function () {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   });
@@ -59,7 +61,7 @@ ipcMain.on("openFile", () => {
 
 function watchFile(filename) {
 //spellEffects[0].callback.call(this, "An gorilla has been mesmerized.", timerWindow);
-mapEffects[0].callback.call(this, "You have entered West Commonlands", mapWindow);
+// mapEffects[0].callback.call(this, "You have entered West Commonlands", mapWindow);
   const mytail = new Tail(filename, line => {
     const parsedLine = parseLine(line);
     const foundEffect = checkForEffect(parsedLine, spellEffects, timerWindow);
@@ -71,7 +73,16 @@ mapEffects[0].callback.call(this, "You have entered West Commonlands", mapWindow
 
 // Extract timestamp and effect from a line
 function parseLine(line) {
-  const lineTokens = line.replace('[','').replace(']','').replace('\r', '').replace('.', '').split(' ');
+  // remove trailing \r
+  line = line.replace('\r', '');
+
+  // remove potential trailing period
+  if (line.charAt(line.length - 1) === '.') { 
+    line = line.slice(0, -1);
+  }
+
+  // remove [] from timestamp, split
+  const lineTokens = line.replace('[','').replace(']','').split(' ');
   const timestamp = lineTokens[3];
   const effectLine = lineTokens.slice(5).join(' ');
   return { timestamp, effectLine };
@@ -88,7 +99,6 @@ function checkForEffect({ timestamp, effectLine }, effectList, window) {
 }
 
 ipcMain.on("getZoneInfo", (event, zoneName) => {
-  console.log("looking for", zoneName);
-  console.log(maps[0]);
-  // event.reply(maps[0]);
+  const zoneInfo = maps.find((map) => zoneName === map.trigger)
+  event.returnValue = zoneInfo;
 });

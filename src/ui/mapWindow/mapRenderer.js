@@ -1,53 +1,67 @@
 const mapSelect = document.getElementById('map-select');
 const mapCanvas = document.getElementById('map-canvas');
 const mapName = document.getElementById('zone-name');
-
-import { drawMap, processMapData, guk } from './mapVis.js';
-// const mapImg = document.getElementById('map-image');
+const legendCanvas = document.getElementById('legend-canvas');
+const gridCanvas = document.getElementById('grid-canvas');
+const locCanvas = document.getElementById('loc-canvas');
 let currentZone;
 
 window.fileStream.changeZone((_, data) => {
-  const { zoneName } = data;
-  updateMap(zoneName);
+  window.fileStream.getZoneInfo(data.zoneName);
 });
 
 mapSelect.addEventListener('change', (event) => {
-  updateMap(event.target.value);
+  window.fileStream.getZoneInfo(event.target.value);
 });
 
-window.fileStream.updateLoc((_, data) => {
+window.fileStream.updateLoc(updateLoc);
+
+window.fileStream.loadZoneData((_, zoneData) => {
+  const zone = zoneData.zone
+  mapName.innerHTML = zone.name;
+  
+  // draw MAP layer
+  drawLayer(mapCanvas, zone, 'map');
+  drawLayer(legendCanvas, zone, 'legend');
+  resizeCanvas(locCanvas, zone);
+});
+
+function updateLoc(_, data) {
   const [ lat, long ] = data.loc;
-  updateLoc(parseInt(lat), parseInt(long))
-});
-
-function updateMap(zoneName) {
-  const zoneInfo = window.fileStream.getZoneInfo(zoneName);
-  mapName.innerHTML = zoneName;
-
-  const mapData = processMapData(guk);
-  currentZone = mapData;
-  drawMap(mapCanvas, mapData);
-}
-
-function updateLoc(lat, long) {
-
-  const context = mapCanvas.getContext('2d');
-
-  const offsetX = (Math.abs(currentZone.minX) - long);
-  const offsetY = (Math.abs(currentZone.minY) - lat);
+  const context = locCanvas.getContext('2d');
+  const offsetX = (Math.abs(currentZone.offsetTop) - long);
+  const offsetY = (Math.abs(currentZone.offsetLeft) - lat);
 
   context.fillStyle = "#FF0000";
   context.fillRect(offsetX, offsetY, 10, 10);
 }
 
-function getCursorPosition(mapCanvas, event) {
-  console.log("w", mapCanvas.width, mapCanvas.height);
-  const rect = mapCanvas.getBoundingClientRect()
-  const x = event.clientX - rect.left
-  const y = event.clientY - rect.top
-  console.log("x: " + x + " y: " + y)
+function resizeCanvas(canvas, mapData) {
+  canvas.width = mapData.width * mapData.scaleFactor;
+  canvas.height = mapData.height * mapData.scaleFactor;
+  const context = canvas.getContext('2d');
+  context.scale(mapData.scaleFactor, mapData.scaleFactor)
 }
 
-mapCanvas.addEventListener('mousedown', function(e) {
-  getCursorPosition(mapCanvas, e)
-})
+function drawLayer(canvas, mapData, layerName) {
+  const layerData = mapData[layerName];
+  const context = canvas.getContext('2d');
+  canvas.width = mapData.width * mapData.scaleFactor;
+  canvas.height = mapData.height * mapData.scaleFactor;
+
+  // context.fillStyle = "white";
+  // context.fillRect(0, 0, canvas.width, canvas.height);
+  context.scale(mapData.scaleFactor, mapData.scaleFactor)
+  layerData.forEach(line => {
+    if(line.type === 'L') {
+      context.beginPath();
+      context.strokeStyle = `rgb(${line.color.r}, ${line.color.g}, ${line.color.b})`;
+      context.moveTo(line.p1.x + mapData.offsetLeft, line.p1.y + mapData.offsetTop);
+      context.lineTo(line.p2.x + mapData.offsetLeft, line.p2.y + mapData.offsetTop);
+      context.stroke();
+    } else if (line.type === 'P') {
+      context.font = "30px Arial";
+      context.fillText(line.caption, line.point.x, line.point.y);
+    }
+  })
+}

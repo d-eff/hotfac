@@ -61,7 +61,7 @@ ipcMain.on("openFile", () => {
 
 function watchFile(filename) {
 //spellEffects[0].callback.call(this, "An gorilla has been mesmerized.", timerWindow);
-mapEffects[0].callback.call(this, "You have entered West Commonlands", mapWindow);
+mapEffects[0].callback.call(this, "You have entered Greater Faydark", mapWindow);
   const mytail = new Tail(filename, line => {
     const parsedLine = parseLine(line);
     const foundEffect = checkForEffect(parsedLine, spellEffects, timerWindow);
@@ -98,7 +98,8 @@ function checkForEffect({ timestamp, effectLine }, effectList, window) {
   return false;
 }
 
-ipcMain.on("getZoneInfo", (event, zoneName) => {
-  const zoneInfo = maps.find((map) => zoneName === map.trigger)
-  event.returnValue = zoneInfo;
+ipcMain.on('getZoneInfo', (event, zoneName) => {
+  const zoneInfo = maps.find((map) => zoneName === map.name)
+  const mapData = require(`./data/maps/${zoneInfo.file}.js`);
+  event.sender.send('loadZoneData', mapData);
 });

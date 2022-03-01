@@ -1,6 +1,9 @@
 body {
-  background: url('imgs/classic_bg_left.png') center/100% repeat-y;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.classic-ui {
+  background: url('imgs/classic_bg_left.png') center/100% repeat-y;
 }
 
 .spell {

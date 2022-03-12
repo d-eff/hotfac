@@ -21,13 +21,12 @@ function doTheThing(filebase, name) {
   } catch (err) {
     console.log("error with layer 0", err);
   }
-
   // READ LEGEND (points)
   try {
     const legendData = fs.readFileSync(`data/maps/${filebase}_1.txt`, 'utf8');
     const legend = processMapData(legendData.split('\n'));
     output.legend = legend.lines;
-  } catch (err) {
+  } catch (err) { 
     console.log("error with layer 1", err);
   }
 
@@ -73,6 +72,15 @@ function processMapData (rawMapData) {
       minY = p2.y < minY ? p2.y : minY;
   
       mapData.lines.push({type, p1, p2, color});
+      mapData.lines.sort((a, b) => {
+        if(a.p1.x > b.p1.x) {
+          return 1;
+        } else if(a.p1.x > b.p1.x) {
+          return -1;
+        } else {
+          return 0;
+        }
+      });  
     } else if(type === 'P') {
       // "P 30.8579, 723.1355, -29.264, 255, 0, 0, 3, to_The_Plane_of_Knowledge_(Click_Book)",
       let splitLine = line.slice(2).split(' ');
@@ -90,5 +98,7 @@ function processMapData (rawMapData) {
   mapData.offsetLeft = Math.abs(minX);
   mapData.width = Math.abs(maxX) + Math.abs(minX);
   mapData.height = Math.abs(maxY) + Math.abs(minY);
+
+ 
   return mapData;
 }

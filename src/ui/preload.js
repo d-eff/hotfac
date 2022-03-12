@@ -10,4 +10,5 @@ contextBridge.exposeInMainWorld('fileStream', {
   changeZone: (callback) => ipcRenderer.on('changeZone', callback),
   loadZoneData: (callback) => ipcRenderer.on('loadZoneData', callback),
   updateLoc: (callback) => ipcRenderer.on('updateLoc', callback),
+  loadZoneList: (callback) => ipcRenderer.on('loadZoneList', callback),
 })

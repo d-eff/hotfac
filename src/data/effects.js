@@ -50,7 +50,7 @@ exports.mapEffects = [
     name: 'Loc ping',
     trigger: 'Your Location is',
     callback: ((effectLine, window) => {
-      const loc = effectLine.split(' ').slice(3);
+      const loc = effectLine.split(' ').slice(3).map(coord => parseInt(coord));
       window.webContents.send('updateLoc', { loc: loc });
     })
   }

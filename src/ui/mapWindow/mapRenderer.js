@@ -43,8 +43,17 @@ function updateLoc(_, data) {
   const context = locCanvas.getContext('2d');
   const offsetX = (Math.abs(currentZone.offsetLeft) - parseInt(long));
   const offsetY = (Math.abs(currentZone.offsetTop) - parseInt(lat));
+  clearLocMap();
   context.fillStyle = "#FF0000";
-  context.fillRect(offsetX, offsetY, 10, 10);
+  context.fillRect(offsetX, offsetY, 20, 20);
+}
+
+function clearLocMap() {
+  const context = locCanvas.getContext('2d');
+  context.save();
+  context.setTransform(1, 0, 0, 1, 0, 0);
+  context.clearRect(0, 0, locCanvas.width, locCanvas.height);
+  context.restore();
 }
 
 function resizeCanvas(canvas, mapData) {

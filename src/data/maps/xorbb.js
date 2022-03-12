@@ -1,0 +1,1 @@
+exports.zone = {"name":"Gorge of Xorbb","scaleFactor":0.3}

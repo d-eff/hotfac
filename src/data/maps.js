@@ -12,7 +12,7 @@ exports.maps = [
   'gukc',
   'gukd',
   'highkeep',
-  'highpass',
   'highpasshold',
-  'innothule'
+  'innothule',
+  'xorbb'
 ];

@@ -7,6 +7,7 @@
 const selectLogBtn = document.getElementById('select-log-button');
 const timerListEle = document.getElementById('timer-list');
 
+
 selectLogBtn.addEventListener('click', () => {
   window.fileStream.openFile();
 });
@@ -16,17 +17,30 @@ window.fileStream.startTimer((_, data) => {
   const guid = Math.random().toString().slice(2,10);
   addTimerElement(guid, type, target, time, icon);
   startNewTimer(guid, time);
+  addCloseListener(guid);
 });
 
 window.fileStream.stopTimer((_, data) => {
   console.log('effect end:', data.type);
 });
 
+
+function addCloseListener(guid) {
+  const closeButton = document.getElementById(`close-${guid}`);
+  closeButton.addEventListener('click', (e) => {
+    const timer = document.getElementById(`timer-box-${guid}`);
+    timer.remove();
+    //remove timer??
+  });
+}
+
 function addTimerElement(guid, type, target, time, icon) {
   const timerElement = document.createElement("div");
   timerElement.classList.add('timer-box');
+  timerElement.classList.add('list-group-item');
   timerElement.id = `timer-box-${guid}`;
-  timerElement.innerHTML = `<div class="box-info">
+  timerElement.innerHTML = `<div class="box-info">  
+                              <div id="close-${guid}">X</div>
                               <div class="spell ${icon}"></div>
                               <div class="box-header">
                                 <h5>${type}</h5>
@@ -38,6 +52,7 @@ function addTimerElement(guid, type, target, time, icon) {
                               <div id="progress-bar-${guid}" class="progress-bar"></div>
                             </div>`;              
   timerListEle.appendChild(timerElement);
+  // Sortable.create(timerListEle);
 }
 
 function startNewTimer(guid, time) {

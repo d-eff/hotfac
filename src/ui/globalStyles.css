@@ -28,3 +28,6 @@ body {
 .spell.shield {
   background-position: -200px -40px;
 }
+.spell.leftArm {
+  background-position: 0 -120px;
+}

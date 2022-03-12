@@ -25,14 +25,24 @@ exports.spellEffects = [
       window.webContents.send('startTimer', { type: 'languid-pace', target, time });
     })
   },
-  {
+  {//~289 @ 19
     name: 'Quickness start',
     trigger: 'feels much faster',
     callback: ((effectLine, window) => {
       const target = effectLine.split(' ').slice(0, -3).join(' ');
-      const time = 260;
+      const time = 285;
       const icon = 'boot'
       window.webContents.send('startTimer', { type: 'quickness', target, time, icon });
+    })
+  },
+  {
+    name: 'Strength start',
+    trigger: 'looks stronger',
+    callback: ((effectLine, window) => {
+      const target = effectLine.split(' ').slice(0, -2).join(' ');
+      const time = 1620; //27 min
+      const icon = 'leftArm'
+      window.webContents.send('startTimer', { type: 'strength', target, time, icon });
     })
   },
 ];

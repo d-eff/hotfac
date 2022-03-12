@@ -4,7 +4,7 @@ const args = process.argv.slice(2);
 if(args.length === 2) {
   doTheThing(args[0], args[1]);
 } else {
-  console.log("what the hell damn guy");
+  console.error("what the hell damn guy");
 }
 
 function doTheThing(filebase, name) {
@@ -19,7 +19,7 @@ function doTheThing(filebase, name) {
     output.offsetTop = map.offsetTop;
     output.offsetLeft = map.offsetLeft;
   } catch (err) {
-    console.log("error with layer 0", err);
+    console.error("error with layer 0", err);
   }
   // READ LEGEND (points)
   try {
@@ -27,7 +27,7 @@ function doTheThing(filebase, name) {
     const legend = processMapData(legendData.split('\n'));
     output.legend = legend.lines;
   } catch (err) { 
-    console.log("error with layer 1", err);
+    console.error("error with layer 1", err);
   }
 
   // WRITE
@@ -80,7 +80,7 @@ function processMapData (rawMapData) {
         } else {
           return 0;
         }
-      });  
+      });
     } else if(type === 'P') {
       // "P 30.8579, 723.1355, -29.264, 255, 0, 0, 3, to_The_Plane_of_Knowledge_(Click_Book)",
       let splitLine = line.slice(2).split(' ');
@@ -91,14 +91,11 @@ function processMapData (rawMapData) {
       const color = { r: ints[3], g: ints[4], b: ints[5]};
       const p = {type, point, color, caption, fontSize};
       mapData.lines.push(p);
-      console.log(p)
     }
   });
   mapData.offsetTop = Math.abs(minY);
   mapData.offsetLeft = Math.abs(minX);
   mapData.width = Math.abs(maxX) + Math.abs(minX);
   mapData.height = Math.abs(maxY) + Math.abs(minY);
-
- 
   return mapData;
 }

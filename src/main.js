@@ -45,7 +45,8 @@ app.whenReady().then(() => {
   }, './ui/mapWindow/map.html');
 
   mapWindow.webContents.once('dom-ready', loadZoneList);
-  mapWindow.webContents.openDevTools();
+
+  timerWindow.webContents.openDevTools();
 
   app.on('activate', function () {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
@@ -66,7 +67,9 @@ ipcMain.on("openFile", () => {
 });
 
 function watchFile(filename) {
-//spellEffects[0].callback.call(this, "An gorilla has been mesmerized.", timerWindow);
+spellEffects[0].callback.call(this, "An gorilla has been mesmerized.", timerWindow);
+spellEffects[0].callback.call(this, "Yr ma has been mesmerized.", timerWindow);
+spellEffects[0].callback.call(this, "GOD, WHO IS CALLED YISUN has been mesmerized.", timerWindow);
 // mapEffects[0].callback.call(this, "You have entered Greater Faydark", mapWindow);
   const mytail = new Tail(filename, line => {
     const parsedLine = parseLine(line);
@@ -105,10 +108,7 @@ function checkForEffect({ timestamp, effectLine }, effectList, window) {
 }
 
 ipcMain.on('getZoneInfo', (event, zoneName) => {
-  console.log(maps);
-  console.log(zoneName)
   const zoneInfo = maps.find((map) => zoneName === map)
-  console.log(zoneInfo);
   if(zoneInfo) {
     const mapData = require(`./data/maps/${zoneInfo}.js`);
     event.sender.send('loadZoneData', mapData);

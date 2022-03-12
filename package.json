@@ -1,13 +1,29 @@
 {
   "name": "hotfac",
   "version": "0.1.0",
-  "description": "hard out there for a 'chanter. another juice bois production.",
-  "main": "main.js",
+  "description": "timers and maps for everyone's favorite mmo",
+  "main": "src/main.js",
   "scripts": {
-    "start": "electron src/main.js"
+    "start": "electron src/main.js",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.fictionalCorp.hotfac",
+    "productName": "HOTFAC",
+    "directories": {
+      "buildResources": "buildResources"
+    },
+    "files":[
+      "package.json",
+      "src/**/**/*",
+      "node_modules"
+    ],
+    "win": {
+      "target": "nsis"
+    }
   },
   "keywords": [],
-  "author": "GitHub",
+  "author": "davidf <dfernandez06@gmail.com>",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^16.0.8",

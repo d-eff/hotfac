@@ -30,19 +30,20 @@ function loadZoneList() {
 app.whenReady().then(() => {
   const display = screen.getPrimaryDisplay();
   const width = display.bounds.width;
+
   timerWindow = createWindow({
     width: 250,
     height: 600,
     x: 0,
     y: 100,
-  }, './ui/timerWindow/timer.html');
+  }, `${__dirname}/ui/timerWindow/timer.html`);
 
   mapWindow = createWindow({
     width: 600,
     height: 600,
     x: width - 600,
     y: 100,
-  }, './ui/mapWindow/map.html');
+  }, `${__dirname}/ui/mapWindow/map.html`);
 
   mapWindow.webContents.once('dom-ready', loadZoneList);
 
@@ -66,11 +67,14 @@ ipcMain.on("openFile", () => {
   });
 });
 
+function debug() {
+  spellEffects[0].callback.call(this, "An gorilla has been mesmerized.", timerWindow);
+  spellEffects[0].callback.call(this, "Yr ma has been mesmerized.", timerWindow);
+  spellEffects[0].callback.call(this, "GOD, WHO IS CALLED YISUN has been mesmerized.", timerWindow);
+  // mapEffects[0].callback.call(this, "You have entered Greater Faydark", mapWindow);
+}
+
 function watchFile(filename) {
-spellEffects[0].callback.call(this, "An gorilla has been mesmerized.", timerWindow);
-spellEffects[0].callback.call(this, "Yr ma has been mesmerized.", timerWindow);
-spellEffects[0].callback.call(this, "GOD, WHO IS CALLED YISUN has been mesmerized.", timerWindow);
-// mapEffects[0].callback.call(this, "You have entered Greater Faydark", mapWindow);
   const mytail = new Tail(filename, line => {
     const parsedLine = parseLine(line);
     const foundEffect = checkForEffect(parsedLine, spellEffects, timerWindow);

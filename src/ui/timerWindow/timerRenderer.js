@@ -7,7 +7,6 @@
 const selectLogBtn = document.getElementById('select-log-button');
 const timerListEle = document.getElementById('timer-list');
 
-
 selectLogBtn.addEventListener('click', () => {
   window.fileStream.openFile();
 });
@@ -52,7 +51,6 @@ function addTimerElement(guid, type, target, time, icon) {
                               <div id="progress-bar-${guid}" class="progress-bar"></div>
                             </div>`;              
   timerListEle.appendChild(timerElement);
-  // Sortable.create(timerListEle);
 }
 
 function startNewTimer(guid, time) {

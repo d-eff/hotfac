@@ -1,4 +1,7 @@
 exports.maps = [
+  'befallen',
+  'commonlands',
+  'commons',
   'eastkarana',
   'ecommons',
   'fieldofbone',
@@ -11,8 +14,15 @@ exports.maps = [
   'gukbottom',
   'gukc',
   'gukd',
+  'guktop',
   'highkeep',
   'highpasshold',
-  'innothule',
-  'xorbb'
+  'kithforest',
+  'mistythicket',
+  'nektulos',
+  'nro',
+  'rivervale',
+  'runnyeye',
+  'warrens',
+  'xorbb',
 ];

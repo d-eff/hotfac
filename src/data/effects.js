@@ -16,6 +16,16 @@ exports.spellEffects = [
       window.webContents.send('stopTimer', { type: 'mesmerize' });
     })
   },
+  { 
+    name: 'Enthrall start',
+    trigger: 'has been enthralled',
+    callback: ((effectLine, window) => {
+      const target = effectLine.split(' ').slice(0, -3).join(' ');
+      const time = 48;
+      const icon = 'mind';
+      window.webContents.send('startTimer', { type: 'enthrall', target, time, icon });
+    })
+  },
   {
     name: 'Languid Pace Start',
     trigger: 'slows down',
@@ -26,13 +36,14 @@ exports.spellEffects = [
     })
   },
   {//~289 @ 19
+    //~300 @ 20
     name: 'Quickness start',
     trigger: 'feels much faster',
     callback: ((effectLine, window) => {
       const target = effectLine.split(' ').slice(0, -3).join(' ');
-      const time = 285;
+      const time = 370;
       const icon = 'boot'
-      window.webContents.send('startTimer', { type: 'quickness', target, time, icon });
+      window.webContents.send('startTimer', { type: 'alacrity', target, time, icon });
     })
   },
   {
@@ -43,6 +54,26 @@ exports.spellEffects = [
       const time = 1620; //27 min
       const icon = 'leftArm'
       window.webContents.send('startTimer', { type: 'strength', target, time, icon });
+    })
+  },
+  {
+    name: 'Spirit Armor',
+    trigger: 'coated in translucent armor',
+    callback: ((effectLine, window) => {
+      const target = effectLine.split(' ').slice(0, -5).join(' ');
+      const time = 1620; //27 min
+      const icon = '2160'
+      window.webContents.send('startTimer', { type: 'spirit armor', target, time, icon });
+    })
+  },
+  {
+    name: 'Bravery',
+    trigger: 'looks brave',
+    callback: ((effectLine, window) => {
+      const target = effectLine.split(' ').slice(0, -2).join(' ');
+      const time = 2700; //27 min
+      const icon = 'leftArm'
+      window.webContents.send('startTimer', { type: 'bravery', target, time, icon });
     })
   },
 ];

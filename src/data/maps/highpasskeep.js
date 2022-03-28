@@ -1,1 +1,0 @@
-exports.zone = {"name":"Highpass Keep","scaleFactor":0.3}

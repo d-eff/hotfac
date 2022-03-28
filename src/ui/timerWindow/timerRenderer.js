@@ -81,5 +81,5 @@ function startNewTimer(guid, time) {
 
 function removeTimerElement(guid) {
   const timer = document.getElementById(`timer-box-${guid}`);
-  timer.remove();
+  timer?.remove();
 }

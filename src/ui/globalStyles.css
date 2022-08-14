@@ -31,3 +31,6 @@ body {
 .spell.leftArm {
   background-position: 0 -120px;
 }
+.spell.mountain {
+  background-position: -200px -80px;
+}

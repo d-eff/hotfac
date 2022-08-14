@@ -1,6 +1,15 @@
 exports.spellEffects = [
+  {
+    name: 'Spell Cast',
+    trigger: 'You begin casting',
+    callback: ((effectLine, window) => {
+      const spell = effectLine.split(' ').slice(3).join(' ');
+      console.log(spell);
+      window.webContents.send('castSpell', { spell });
+    })
+  },
   { 
-    name: 'Mesmerize start',
+    name: 'Mesmerize',
     trigger: 'has been mesmerized',
     callback: ((effectLine, window) => {
       const target = effectLine.split(' ').slice(0, -3).join(' ');
@@ -9,15 +18,8 @@ exports.spellEffects = [
       window.webContents.send('startTimer', { type: 'mesmerize', target, time, icon });
     })
   },
-  {
-    name: 'Mesmerize end',
-    trigger: 'Your Mesmerize spell has worn off',
-    callback: ((_, window) => {
-      window.webContents.send('stopTimer', { type: 'mesmerize' });
-    })
-  },
   { 
-    name: 'Enthrall start',
+    name: 'Enthrall',
     trigger: 'has been enthralled',
     callback: ((effectLine, window) => {
       const target = effectLine.split(' ').slice(0, -3).join(' ');
@@ -26,8 +28,18 @@ exports.spellEffects = [
       window.webContents.send('startTimer', { type: 'enthrall', target, time, icon });
     })
   },
+  { 
+    name: 'Entrance',
+    trigger: 'has been entranced',
+    callback: ((effectLine, window) => {
+      const target = effectLine.split(' ').slice(0, -3).join(' ');
+      const time = 72;
+      const icon = 'mind';
+      window.webContents.send('startTimer', { type: 'entrance', target, time, icon });
+    })
+  },
   {
-    name: 'Languid Pace Start',
+    name: 'Languid Pace',
     trigger: 'slows down',
     callback: ((effectLine, window) => {
       const target = effectLine.split(' ').slice(0, -2).join(' ');
@@ -35,25 +47,24 @@ exports.spellEffects = [
       window.webContents.send('startTimer', { type: 'languid-pace', target, time });
     })
   },
-  {//~289 @ 19
-    //~300 @ 20
-    name: 'Quickness start',
+  {
+    name: 'Quickness',
     trigger: 'feels much faster',
     callback: ((effectLine, window) => {
       const target = effectLine.split(' ').slice(0, -3).join(' ');
-      const time = 370;
+      const time = 960;
       const icon = 'boot'
       window.webContents.send('startTimer', { type: 'alacrity', target, time, icon });
     })
   },
   {
-    name: 'Strength start',
+    name: 'Strengthen',
     trigger: 'looks stronger',
     callback: ((effectLine, window) => {
       const target = effectLine.split(' ').slice(0, -2).join(' ');
       const time = 1620; //27 min
       const icon = 'leftArm'
-      window.webContents.send('startTimer', { type: 'strength', target, time, icon });
+      window.webContents.send('startTimer', { type: 'strengthen', target, time, icon });
     })
   },
   {
@@ -71,9 +82,19 @@ exports.spellEffects = [
     trigger: 'looks brave',
     callback: ((effectLine, window) => {
       const target = effectLine.split(' ').slice(0, -2).join(' ');
-      const time = 2700; //27 min
+      const time = 2700; 
       const icon = 'leftArm'
       window.webContents.send('startTimer', { type: 'bravery', target, time, icon });
+    })
+  },
+  {
+    name: 'Root',
+    trigger: 'feet adhere to the ground',
+    callback: ((effectLine, window) => {
+      const target = effectLine.split(' ').slice(0, -5).join(' ');
+      const time = 48; //27 min
+      const icon = 'mountain'
+      window.webContents.send('startTimer', { type: 'root', target, time, icon });
     })
   },
 ];
@@ -84,7 +105,8 @@ exports.mapEffects = [
     trigger: 'You have entered',
     callback: ((effectLine, window) => {
       const zoneName = effectLine.split(' ').slice(3).join(' ');
-      window.webContents.send('changeZone', { zoneName: zoneName });
+
+      // window.webContents.send('changeZone', { zoneName: zoneName });
     })
   },
   {

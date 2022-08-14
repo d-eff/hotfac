@@ -7,6 +7,7 @@ contextBridge.exposeInMainWorld('fileStream', {
   getZoneInfo: (zoneName) => ipcRenderer.send('getZoneInfo', zoneName),
   startTimer: (callback) => ipcRenderer.on('startTimer', callback),
   stopTimer: (callback) => ipcRenderer.on('stopTimer', callback),
+  castSpell: (callback) => ipcRenderer.on('castSpell', callback),
   changeZone: (callback) => ipcRenderer.on('changeZone', callback),
   loadZoneData: (callback) => ipcRenderer.on('loadZoneData', callback),
   updateLoc: (callback) => ipcRenderer.on('updateLoc', callback),

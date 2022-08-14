@@ -6,6 +6,7 @@
 // process.
 const selectLogBtn = document.getElementById('select-log-button');
 const timerListEle = document.getElementById('timer-list');
+let lastStartedSpell = null;
 
 selectLogBtn.addEventListener('click', () => {
   window.fileStream.openFile();
@@ -23,13 +24,17 @@ window.fileStream.stopTimer((_, data) => {
   console.log('effect end:', data.type);
 });
 
+window.fileStream.castSpell((_, data) => {
+  console.log("CASTING", data.spell);
+  lastStartedSpell = data.spell;
+});
+
 
 function addCloseListener(guid) {
   const closeButton = document.getElementById(`close-${guid}`);
   closeButton.addEventListener('click', (e) => {
     const timer = document.getElementById(`timer-box-${guid}`);
     timer.remove();
-    //remove timer??
   });
 }
 

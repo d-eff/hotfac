@@ -8,6 +8,10 @@ const { maps } = require('./data/maps.js')
 let timerWindow;
 let mapWindow;
 
+const charClass = "Enchanter";
+const spellList = require(`./data/spells/${charClass}`);
+let currentSpell = '';
+
 function createWindow (windowConfig, filename) {
   const webPreferences = {
     nodeIntegration: false,   
@@ -38,16 +42,16 @@ app.whenReady().then(() => {
     y: 100,
   }, `${__dirname}/ui/timerWindow/timer.html`);
 
-  mapWindow = createWindow({
-    width: 600,
-    height: 600,
-    x: width - 600,
-    y: 100,
-  }, `${__dirname}/ui/mapWindow/map.html`);
+  // mapWindow = createWindow({
+  //   width: 600,
+  //   height: 600,
+  //   x: width - 600,
+  //   y: 100,
+  // }, `${__dirname}/ui/mapWindow/map.html`);
 
-  mapWindow.webContents.once('dom-ready', loadZoneList);
+  // mapWindow.webContents.once('dom-ready', loadZoneList);
 
-  timerWindow.webContents.openDevTools();
+  // timerWindow.webContents.openDevTools();
 
   app.on('activate', function () {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
@@ -75,11 +79,24 @@ function debug() {
 }
 
 function watchFile(filename) {
-  const mytail = new Tail(filename, line => {
-    const parsedLine = parseLine(line);
-    const foundEffect = checkForEffect(parsedLine, spellEffects, timerWindow);
-    if (!foundEffect) {
-      checkForEffect(parsedLine, mapEffects, mapWindow);
+  const _ = new Tail(filename, line => {
+    const { timestamp, effect } = parseLine(line);
+
+    if (effect.includes('You begin casting')) {
+      const spellName = effect.split(' ').slice(3).join(' ').slice(0, -1);
+      currentSpell = spellList[spellName];
+    } else if (effect.includes('You have entered')) {
+      console.log("hit for map load");
+      // will need to remove period
+      // clear currentSpell
+    } else if (currentSpell && currentSpell !== '') {
+      const self = currentSpell.castOnYou;
+      const other = currentSpell.castOnOther;
+      if(effect === self || effect.includes(other)) {
+        console.log(`hit for ${currentSpell.name} ${effect}`);
+        // calc duration, set timer as appropriate  
+        currentSpell = '';
+      }
     }
   });
 }
@@ -90,25 +107,16 @@ function parseLine(line) {
   line = line.replace('\r', '');
 
   // remove potential trailing period
-  if (line.charAt(line.length - 1) === '.') { 
-    line = line.slice(0, -1);
-  }
+  // if (line.charAt(line.length - 1) === '.') { 
+  //   line = line.slice(0, -1);
+  // }
 
   // remove [] from timestamp, split
   const lineTokens = line.replace('[','').replace(']','').split(' ');
   const timestamp = lineTokens[3];
-  const effectLine = lineTokens.slice(5).join(' ');
-  return { timestamp, effectLine };
-}
-
-function checkForEffect({ timestamp, effectLine }, effectList, window) {
-  effectList.forEach(effect => {
-    if (effectLine.includes(effect.trigger)) {
-      effect.callback.call(this, effectLine, window);
-      return true;  
-    }
-  });
-  return false;
+  const effect = lineTokens.slice(5).join(' ');
+  
+  return { timestamp, effect };
 }
 
 ipcMain.on('getZoneInfo', (event, zoneName) => {

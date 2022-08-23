@@ -9,6 +9,7 @@ let timerWindow;
 let mapWindow;
 
 const charClass = "Enchanter";
+const charLevel = 46;
 const spellList = require(`./data/spells/${charClass}`);
 let currentSpell = '';
 
@@ -93,8 +94,25 @@ function watchFile(filename) {
       const self = currentSpell.castOnYou;
       const other = currentSpell.castOnOther;
       if(effect === self || effect.includes(other)) {
-        console.log(`hit for ${currentSpell.name} ${effect}`);
-        // calc duration, set timer as appropriate  
+        // calc duration, set timer as appropriate 
+        if(currentSpell.duration) {
+          let duration = 0;
+          if(currentSpell.duration.maxDuration) {
+            //todo - we'll need toon level
+            if(charLevel >= currentSpell.duration.maxDuration.level) {
+              duration = currentSpell.duration.maxDuration.duration;
+            } else {
+              const { duration: minT, level: minL } = currentSpell.duration.minDuration;
+              const { duration: maxT, level: maxL } = currentSpell.duration.maxDuration;
+              duration = minT + (charLevel - minL) * ((maxT - minT) / (maxL - minL));
+            }
+          } else {
+            duration = currentSpell.duration.minDuration.duration;
+          }
+          
+          const target = effect.replace(currentSpell.castOnOther, '');
+          timerWindow.webContents.send('startTimer', { type: currentSpell.name, target: target.trim(), time: duration, icon: currentSpell.icon });
+        }
         currentSpell = '';
       }
     }
@@ -105,11 +123,6 @@ function watchFile(filename) {
 function parseLine(line) {
   // remove trailing \r
   line = line.replace('\r', '');
-
-  // remove potential trailing period
-  // if (line.charAt(line.length - 1) === '.') { 
-  //   line = line.slice(0, -1);
-  // }
 
   // remove [] from timestamp, split
   const lineTokens = line.replace('[','').replace(']','').split(' ');

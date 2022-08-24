@@ -110,7 +110,7 @@ function watchFile(filename) {
             duration = currentSpell.duration.minDuration.duration;
           }
           
-          const target = effect.replace(currentSpell.castOnOther, '');
+          const target = effect === self ? 'Self' : effect.replace(currentSpell.castOnOther, '');
           timerWindow.webContents.send('startTimer', { type: currentSpell.name, target: target.trim(), time: duration, icon: currentSpell.icon });
         }
         currentSpell = '';

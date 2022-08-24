@@ -37,7 +37,7 @@ app.whenReady().then(() => {
   const width = display.bounds.width;
 
   timerWindow = createWindow({
-    width: 250,
+    width: 275,
     height: 600,
     x: 0,
     y: 100,

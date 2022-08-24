@@ -39,7 +39,7 @@ function addTimerElement(guid, type, target, time, icon) {
                                 <h5>${type}</h5>
                                 <h4>${target}</h4>
                               </div>
-                              <div id="countdown-${guid}" class="countdown">${time}</div>
+                              <div id="countdown-${guid}" class="countdown">${getTimeString(time)}</div>
                             </div>
                             <div class="progress-box">
                               <div id="progress-bar-${guid}" class="progress-bar"></div>
@@ -68,9 +68,27 @@ function startNewTimer(guid, time) {
       }
 
       progressBar.style.width = `${time * incrementAmount}%`;
-      countDown.innerHTML = time;
+      
+      countDown.innerHTML = getTimeString(time);
     }
   }, 1000);
+}
+
+function getTimeString(time) {
+  let timeString = '';
+  if(time >= 3600) {
+    timeString += `${Math.floor(time/3600)}:`
+    time -= 3600;
+  }
+  if(time >= 60) {
+    timeString += `${Math.floor(time/60)}:`
+  }
+  const seconds = time % 60;
+  if(seconds < 10) {
+    timeString += '0';
+  }
+  timeString += seconds;
+  return timeString;
 }
 
 function removeTimerElement(guid) {

@@ -10,7 +10,6 @@
 
 .box-header {
   margin-left: 10px;
-  width: 60%;
 }
 
 h4, h5 {
@@ -25,7 +24,6 @@ h4, h5 {
   height: 25px;
   margin-left: auto;
   text-align: center;
-  width: 25px;
 }
 .countdown.warning {
   border: 2px solid yellow;

@@ -114,6 +114,8 @@ function watchFile(filename) {
           timerWindow.webContents.send('startTimer', { type: currentSpell.name, target: target.trim(), time: duration, icon: currentSpell.icon });
         }
         currentSpell = '';
+      } else if (effect.includes('slain')) {
+        console.log('mob death');
       }
     }
   });

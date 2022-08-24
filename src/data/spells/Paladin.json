@@ -17,8 +17,9 @@
       }
     },
     "castOnYou": "You feel a rush of courage.",
-    "castOnOther": "Someone  looks courageous.",
-    "wearsOff": "You feel less courageous."
+    "castOnOther": "looks courageous.",
+    "wearsOff": "You feel less courageous.",
+    "icon": "shield"
   },
   "Cure Poison": {
     "name": "Cure Poison",
@@ -34,7 +35,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Flash of Light": {
     "name": "Flash of Light",
@@ -54,8 +56,9 @@
       }
     },
     "castOnYou": "You are blinded by a flash of light.",
-    "castOnOther": "Someone  is blinded by a flash of light.",
-    "wearsOff": "Your sight returns."
+    "castOnOther": "is blinded by a flash of light.",
+    "wearsOff": "Your sight returns.",
+    "icon": "eye"
   },
   "Minor Healing": {
     "name": "Minor Healing",
@@ -70,8 +73,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel a little better.",
-    "castOnOther": "Someone  feels a little better.",
-    "wearsOff": ""
+    "castOnOther": "feels a little better.",
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Spook the Dead": {
     "name": "Spook the Dead",
@@ -88,16 +92,17 @@
       "durationString": "1 ticks @L1 to 3 ticks @L5",
       "minDuration": {
         "duration": 6,
-        "level": "1"
+        "level": 1
       },
       "maxDuration": {
-        "duration": 24,
-        "level": "5"
+        "duration": 18,
+        "level": 5
       }
     },
     "castOnYou": "Your bones tingle.",
-    "castOnOther": "Someone  has the fear of life put in them.",
-    "wearsOff": ""
+    "castOnOther": "has the fear of life put in them.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "True North": {
     "name": "True North",
@@ -113,7 +118,8 @@
     "duration": 0,
     "castOnYou": "You spin to face north.",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "eye"
   },
   "Yaulp": {
     "name": "Yaulp",
@@ -133,8 +139,9 @@
       }
     },
     "castOnYou": "You feel a surge of strength as you let forth a mighty yaulp.",
-    "castOnOther": "Someone  lets loose a mighty yaulp.",
-    "wearsOff": "Your surge of strength fades."
+    "castOnOther": "lets loose a mighty yaulp.",
+    "wearsOff": "Your surge of strength fades.",
+    "icon": "blueArm"
   },
   "Cure Disease": {
     "name": "Cure Disease",
@@ -150,7 +157,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Hammer of Wrath": {
     "name": "Hammer of Wrath",
@@ -166,7 +174,8 @@
     "duration": 0,
     "castOnYou": "A magical hammer appears in your hand.",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "summon"
   },
   "Holy Armor": {
     "name": "Holy Armor",
@@ -183,16 +192,17 @@
       "durationString": "15 minutes @L5 to 27 minutes @L9",
       "minDuration": {
         "duration": 900,
-        "level": "5"
+        "level": 5
       },
       "maxDuration": {
-        "duration": 2520,
-        "level": "9"
+        "duration": 1620,
+        "level": 9
       }
     },
     "castOnYou": "You feel the favor of the gods upon you.",
-    "castOnOther": "Someone  feels the favor of the gods upon them.",
-    "wearsOff": "You no longer feel blessed."
+    "castOnOther": "feels the favor of the gods upon them.",
+    "wearsOff": "You no longer feel blessed.",
+    "icon": "shield"
   },
   "Light Healing": {
     "name": "Light Healing",
@@ -207,8 +217,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel better.",
-    "castOnOther": "Someone  feels better.",
-    "wearsOff": ""
+    "castOnOther": "feels better.",
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Lull": {
     "name": "Lull",
@@ -225,16 +236,17 @@
       "durationString": "1.2 minutes @L1 to 2 minutes @L5",
       "minDuration": {
         "duration": 72,
-        "level": "1"
+        "level": 1
       },
       "maxDuration": {
-        "duration": 192,
-        "level": "5"
+        "duration": 120,
+        "level": 5
       }
     },
     "castOnYou": "You feel less aggressive.",
-    "castOnOther": "Someone  looks less aggressive.",
-    "wearsOff": ""
+    "castOnOther": "looks less aggressive.",
+    "wearsOff": "",
+    "icon": "redBrain"
   },
   "Sense the Dead": {
     "name": "Sense the Dead",
@@ -250,7 +262,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "eye"
   },
   "Ward Undead": {
     "name": "Ward Undead",
@@ -266,7 +279,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "redHand"
   },
   "Center": {
     "name": "Center",
@@ -286,8 +300,9 @@
       }
     },
     "castOnYou": "You feel magnanimous of spirit.",
-    "castOnOther": "Someone  is surrounded by a divine aura.",
-    "wearsOff": "Your sense of center fades."
+    "castOnOther": "is surrounded by a divine aura.",
+    "wearsOff": "Your sense of center fades.",
+    "icon": "shield"
   },
   "Endure Poison": {
     "name": "Endure Poison",
@@ -307,8 +322,9 @@
       }
     },
     "castOnYou": "You feel protected from poison.",
-    "castOnOther": "Someone  is protected from poison.",
-    "wearsOff": "Your endurance to poison fades."
+    "castOnOther": "is protected from poison.",
+    "wearsOff": "Your endurance to poison fades.",
+    "icon": "shield"
   },
   "Halo of Light": {
     "name": "Halo of Light",
@@ -323,8 +339,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "A Halo of Light solidifies in your hand.",
-    "castOnOther": "Someone 's hands are bathed in light.",
-    "wearsOff": ""
+    "castOnOther": "'s hands are bathed in light.",
+    "wearsOff": "",
+    "icon": "eye"
   },
   "Invigor": {
     "name": "Invigor",
@@ -344,8 +361,9 @@
       }
     },
     "castOnYou": "Your body zings with energy.",
-    "castOnOther": "Someone  looks energized.",
-    "wearsOff": ""
+    "castOnOther": "looks energized.",
+    "wearsOff": "",
+    "icon": "boot"
   },
   "Invisibility versus Undead": {
     "name": "Invisibility versus Undead",
@@ -362,16 +380,17 @@
       "durationString": "3 minutes @L1 to 27 minutes @L9",
       "minDuration": {
         "duration": 180,
-        "level": "1"
+        "level": 1
       },
       "maxDuration": {
-        "duration": 1800,
-        "level": "9"
+        "duration": 1620,
+        "level": 9
       }
     },
     "castOnYou": "You feel your skin tingle.",
-    "castOnOther": "Someone  fades a little.",
-    "wearsOff": "Your skin stops tingling."
+    "castOnOther": "fades a little.",
+    "wearsOff": "Your skin stops tingling.",
+    "icon": "eye"
   },
   "Reckless Strength": {
     "name": "Reckless Strength",
@@ -391,8 +410,9 @@
       }
     },
     "castOnYou": "Your muscles erupt with reckless strength.",
-    "castOnOther": "Someone 's muscles bulge with reckless strength.",
-    "wearsOff": "You feel your strength return."
+    "castOnOther": "'s muscles bulge with reckless strength.",
+    "wearsOff": "You feel your strength return.",
+    "icon": "blueArm"
   },
   "Root": {
     "name": "Root",
@@ -409,16 +429,17 @@
       "durationString": "2 ticks @L4 to 8 ticks @L14",
       "minDuration": {
         "duration": 12,
-        "level": "4"
+        "level": 4
       },
       "maxDuration": {
-        "duration": 60,
-        "level": "14"
+        "duration": 48,
+        "level": 14
       }
     },
     "castOnYou": "Your feet adhere to the ground.",
-    "castOnOther": "Someone 's feet adhere to the ground.",
-    "wearsOff": "Your feet come free."
+    "castOnOther": "'s feet adhere to the ground.",
+    "wearsOff": "Your feet come free.",
+    "icon": "earth"
   },
   "Endure Magic": {
     "name": "Endure Magic",
@@ -438,8 +459,9 @@
       }
     },
     "castOnYou": "You feel protected from magic.",
-    "castOnOther": "Someone  is protected from magic.",
-    "wearsOff": "Your endurance to magic fades."
+    "castOnOther": "is protected from magic.",
+    "wearsOff": "Your endurance to magic fades.",
+    "icon": "shield"
   },
   "Expulse Undead": {
     "name": "Expulse Undead",
@@ -455,7 +477,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "redHand"
   },
   "Hammer of Striking": {
     "name": "Hammer of Striking",
@@ -471,7 +494,8 @@
     "duration": 0,
     "castOnYou": "A magical hammer appears in your hand.",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "summon"
   },
   "Healing": {
     "name": "Healing",
@@ -486,8 +510,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel much better.",
-    "castOnOther": "Someone  feels much better.",
-    "wearsOff": ""
+    "castOnOther": "feels much better.",
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Soothe": {
     "name": "Soothe",
@@ -504,16 +529,17 @@
       "durationString": "1.8 minutes @L8 to 2.5 minutes @L15",
       "minDuration": {
         "duration": 108,
-        "level": "8"
+        "level": 8
       },
       "maxDuration": {
-        "duration": 258,
-        "level": "15"
+        "duration": 150,
+        "level": 15
       }
     },
     "castOnYou": "You feel your aggression subside.",
-    "castOnOther": "Someone  looks less aggressive.",
-    "wearsOff": ""
+    "castOnOther": "looks less aggressive.",
+    "wearsOff": "",
+    "icon": "redBrain"
   },
   "Spirit Armor": {
     "name": "Spirit Armor",
@@ -533,8 +559,9 @@
       }
     },
     "castOnYou": "Translucent armor gathers around you.",
-    "castOnOther": "Someone  is coated in translucent armor.",
-    "wearsOff": "Your spiritual armor fades."
+    "castOnOther": "is coated in translucent armor.",
+    "wearsOff": "Your spiritual armor fades.",
+    "icon": "shield"
   },
   "Stun": {
     "name": "Stun",
@@ -549,8 +576,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You are stunned.",
-    "castOnOther": "Someone  is stunned.",
-    "wearsOff": "You are no longer stunned."
+    "castOnOther": "is stunned.",
+    "wearsOff": "You are no longer stunned.",
+    "icon": "redBrain"
   },
   "Symbol of Transal": {
     "name": "Symbol of Transal",
@@ -570,8 +598,9 @@
       }
     },
     "castOnYou": "A mystic symbol flashes before your eyes.",
-    "castOnOther": "Someone  is cloaked in a shimmer of glowing symbols.",
-    "wearsOff": "The mystic symbol fades."
+    "castOnOther": "is cloaked in a shimmer of glowing symbols.",
+    "wearsOff": "The mystic symbol fades.",
+    "icon": "shield"
   },
   "Cancel Magic": {
     "name": "Cancel Magic",
@@ -586,8 +615,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel a bit dispelled.",
-    "castOnOther": "Someone  feels a bit dispelled.",
-    "wearsOff": ""
+    "castOnOther": "feels a bit dispelled.",
+    "wearsOff": "",
+    "icon": "magic"
   },
   "Counteract Poison": {
     "name": "Counteract Poison",
@@ -603,7 +633,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Daring": {
     "name": "Daring",
@@ -623,8 +654,9 @@
       }
     },
     "castOnYou": "You feel daring.",
-    "castOnOther": "Someone  looks daring.",
-    "wearsOff": "You no longer feel daring."
+    "castOnOther": "looks daring.",
+    "wearsOff": "You no longer feel daring.",
+    "icon": "shield"
   },
   "Divine Purpose": {
     "name": "Divine Purpose",
@@ -644,8 +676,9 @@
       }
     },
     "castOnYou": "A flame of divine purpose compels you.",
-    "castOnOther": "Someone 's eyes are filled by the flame of a divine purpose.",
-    "wearsOff": "The divine flame leaves."
+    "castOnOther": "'s eyes are filled by the flame of a divine purpose.",
+    "wearsOff": "The divine flame leaves.",
+    "icon": "blueHand"
   },
   "Endure Disease": {
     "name": "Endure Disease",
@@ -665,8 +698,9 @@
       }
     },
     "castOnYou": "You feel protected from disease.",
-    "castOnOther": "Someone  is protected from disease.",
-    "wearsOff": "Your endurance to disease fades."
+    "castOnOther": "is protected from disease.",
+    "wearsOff": "Your endurance to disease fades.",
+    "icon": "shield"
   },
   "Greater Healing": {
     "name": "Greater Healing",
@@ -681,8 +715,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel much better.",
-    "castOnOther": "Someone  feels much better.",
-    "wearsOff": ""
+    "castOnOther": "feels much better.",
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Guard": {
     "name": "Guard",
@@ -702,8 +737,9 @@
       }
     },
     "castOnYou": "You feel the favor of the gods upon you.",
-    "castOnOther": "Someone  feels the favor of the gods upon them.",
-    "wearsOff": "You no longer feel blessed."
+    "castOnOther": "feels the favor of the gods upon them.",
+    "wearsOff": "You no longer feel blessed.",
+    "icon": "shield"
   },
   "Symbol of Ryltan": {
     "name": "Symbol of Ryltan",
@@ -723,8 +759,9 @@
       }
     },
     "castOnYou": "The symbol of Ryltan flashes before your eyes.",
-    "castOnOther": "Someone  is cloaked in a shimmer of glowing symbols.",
-    "wearsOff": "The mystic symbol fades."
+    "castOnOther": "is cloaked in a shimmer of glowing symbols.",
+    "wearsOff": "The mystic symbol fades.",
+    "icon": "shield"
   },
   "Yaulp II": {
     "name": "Yaulp II",
@@ -744,8 +781,9 @@
       }
     },
     "castOnYou": "You feel a surge of strength as you let forth a mighty yaulp.",
-    "castOnOther": "Someone  lets loose a mighty yaulp.",
-    "wearsOff": "Your surge of strength fades."
+    "castOnOther": "lets loose a mighty yaulp.",
+    "wearsOff": "Your surge of strength fades.",
+    "icon": "blueArm"
   },
   "Armor of Faith": {
     "name": "Armor of Faith",
@@ -765,8 +803,9 @@
       }
     },
     "castOnYou": "You feel the favor of the gods upon you.",
-    "castOnOther": "Someone  feels the favor of the gods upon them.",
-    "wearsOff": "You no longer feel blessed."
+    "castOnOther": "feels the favor of the gods upon them.",
+    "wearsOff": "You no longer feel blessed.",
+    "icon": "shield"
   },
   "Calm": {
     "name": "Calm",
@@ -783,16 +822,17 @@
       "durationString": "2.9 minutes @L19 to 3.0 minutes @L20",
       "minDuration": {
         "duration": 174,
-        "level": "19"
+        "level": 19
       },
       "maxDuration": {
-        "duration": 354,
-        "level": "20"
+        "duration": 180,
+        "level": 20
       }
     },
     "castOnYou": "You feel your aggression subside.",
-    "castOnOther": "Someone  looks less aggressive.",
-    "wearsOff": ""
+    "castOnOther": "looks less aggressive.",
+    "wearsOff": "",
+    "icon": "redBrain"
   },
   "Dismiss Undead": {
     "name": "Dismiss Undead",
@@ -807,8 +847,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  staggers.",
-    "wearsOff": ""
+    "castOnOther": "staggers.",
+    "wearsOff": "",
+    "icon": "redHand"
   },
   "Divine Might": {
     "name": "Divine Might",
@@ -828,8 +869,9 @@
       }
     },
     "castOnYou": "Your hand begins to glow with divine might.",
-    "castOnOther": "Someone 's hands begin to glow with divine might.",
-    "wearsOff": "Your hands stop glowing."
+    "castOnOther": "'s hands begin to glow with divine might.",
+    "wearsOff": "Your hands stop glowing.",
+    "icon": "redBrain"
   },
   "Holy Might": {
     "name": "Holy Might",
@@ -844,8 +886,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You are struck by a sudden force.",
-    "castOnOther": "Someone  is stunned.",
-    "wearsOff": "You are no longer stunned."
+    "castOnOther": "is stunned.",
+    "wearsOff": "You are no longer stunned.",
+    "icon": "redBrain"
   },
   "Revive": {
     "name": "Revive",
@@ -861,7 +904,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Symbol of Pinzarn": {
     "name": "Symbol of Pinzarn",
@@ -881,8 +925,9 @@
       }
     },
     "castOnYou": "A mystic symbol flashes before your eyes.",
-    "castOnOther": "Someone  is cloaked in a shimmer of glowing symbols.",
-    "wearsOff": "The mystic symbol fades."
+    "castOnOther": "is cloaked in a shimmer of glowing symbols.",
+    "wearsOff": "The mystic symbol fades.",
+    "icon": "shield"
   },
   "Valor": {
     "name": "Valor",
@@ -902,8 +947,9 @@
       }
     },
     "castOnYou": "You feel valorous.",
-    "castOnOther": "Someone  looks valorous.",
-    "wearsOff": "Your valor fades."
+    "castOnOther": "looks valorous.",
+    "wearsOff": "Your valor fades.",
+    "icon": "shield"
   },
   "Flame of Light": {
     "name": "Flame of Light",
@@ -918,8 +964,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "A flame of divine light erupts around you.",
-    "castOnOther": "Someone 's body erupts in a flame of divine light.",
-    "wearsOff": ""
+    "castOnOther": "'s body erupts in a flame of divine light.",
+    "wearsOff": "",
+    "icon": "redHand"
   },
   "Pacify": {
     "name": "Pacify",
@@ -936,16 +983,17 @@
       "durationString": "4.9 minutes @L39 to 6.9 minutes @L59",
       "minDuration": {
         "duration": 294,
-        "level": "39"
+        "level": 39
       },
       "maxDuration": {
-        "duration": 708,
-        "level": "59"
+        "duration": 414,
+        "level": 59
       }
     },
     "castOnYou": "You feel your aggression subside.",
-    "castOnOther": "Someone  looks less aggressive.",
-    "wearsOff": ""
+    "castOnOther": "looks less aggressive.",
+    "wearsOff": "",
+    "icon": "redBrain"
   },
   "Resist Disease": {
     "name": "Resist Disease",
@@ -965,8 +1013,9 @@
       }
     },
     "castOnYou": "You feel resistant from disease.",
-    "castOnOther": "Someone  is resistant to disease.",
-    "wearsOff": "Your disease resistance fades."
+    "castOnOther": "is resistant to disease.",
+    "wearsOff": "Your disease resistance fades.",
+    "icon": "shield"
   },
   "Force": {
     "name": "Force",
@@ -981,8 +1030,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You are struck by a sudden force.",
-    "castOnOther": "Someone  is struck by a sudden force.",
-    "wearsOff": "You are no longer stunned."
+    "castOnOther": "is struck by a sudden force.",
+    "wearsOff": "You are no longer stunned.",
+    "icon": "redBrain"
   },
   "Frenzied Strength": {
     "name": "Frenzied Strength",
@@ -1002,8 +1052,9 @@
       }
     },
     "castOnYou": "Your muscles erupt with frenzied strength.",
-    "castOnOther": "Someone 's muscles bulge with frenzied strength.",
-    "wearsOff": "You feel your strength return."
+    "castOnOther": "'s muscles bulge with frenzied strength.",
+    "wearsOff": "You feel your strength return.",
+    "icon": "blueArm"
   },
   "Divine Glory": {
     "name": "Divine Glory",
@@ -1023,8 +1074,9 @@
       }
     },
     "castOnYou": "You begin to radiate with divine glory.",
-    "castOnOther": "Someone  begins to radiate with divine glory.",
-    "wearsOff": "Your divine glory fades."
+    "castOnOther": "begins to radiate with divine glory.",
+    "wearsOff": "Your divine glory fades.",
+    "icon": "shield"
   },
   "Enstill": {
     "name": "Enstill",
@@ -1041,16 +1093,17 @@
       "durationString": "1.2 minutes @L20 to 1.6 minutes @L27",
       "minDuration": {
         "duration": 72,
-        "level": "20"
+        "level": 20
       },
       "maxDuration": {
-        "duration": 168,
-        "level": "27"
+        "duration": 96,
+        "level": 27
       }
     },
     "castOnYou": "Your feet adhere to the ground.",
-    "castOnOther": "Someone 's feet adhere to the ground.",
-    "wearsOff": "Your feet come free."
+    "castOnOther": "'s feet adhere to the ground.",
+    "wearsOff": "Your feet come free.",
+    "icon": "earth"
   },
   "Expel Undead": {
     "name": "Expel Undead",
@@ -1065,8 +1118,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  staggers.",
-    "wearsOff": ""
+    "castOnOther": "staggers.",
+    "wearsOff": "",
+    "icon": "redHand"
   },
   "Divine Aura": {
     "name": "Divine Aura",
@@ -1087,7 +1141,8 @@
     },
     "castOnYou": "The gods have rendered you invulnerable.",
     "castOnOther": "",
-    "wearsOff": "Your invulnerability fades."
+    "wearsOff": "Your invulnerability fades.",
+    "icon": "shield"
   },
   "Divine Favor": {
     "name": "Divine Favor",
@@ -1107,8 +1162,9 @@
       }
     },
     "castOnYou": "You are surrounded by an aura of Divine Favor.",
-    "castOnOther": "Someone  is surrounded by an aura of Divine Favor.",
-    "wearsOff": "The Divine Favor fades."
+    "castOnOther": "is surrounded by an aura of Divine Favor.",
+    "wearsOff": "The Divine Favor fades.",
+    "icon": "shield"
   },
   "Resist Magic": {
     "name": "Resist Magic",
@@ -1128,8 +1184,9 @@
       }
     },
     "castOnYou": "You feel resistant from magic.",
-    "castOnOther": "Someone  is resistant to magic.",
-    "wearsOff": "Your resist magic fades."
+    "castOnOther": "is resistant to magic.",
+    "wearsOff": "Your resist magic fades.",
+    "icon": "shield"
   },
   "Wave of Healing": {
     "name": "Wave of Healing",
@@ -1144,8 +1201,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "A wave of healing washes over you.",
-    "castOnOther": "Someone  is surrounded by a wave of healing.",
-    "wearsOff": ""
+    "castOnOther": "is surrounded by a wave of healing.",
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Counteract Disease": {
     "name": "Counteract Disease",
@@ -1161,7 +1219,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Yaulp III": {
     "name": "Yaulp III",
@@ -1181,8 +1240,9 @@
       }
     },
     "castOnYou": "You feel a surge of strength as you let forth a mighty yaulp.",
-    "castOnOther": "Someone  lets loose a mighty yaulp.",
-    "wearsOff": "Your surge of strength fades."
+    "castOnOther": "lets loose a mighty yaulp.",
+    "wearsOff": "Your surge of strength fades.",
+    "icon": "blueArm"
   },
   "Superior Healing": {
     "name": "Superior Healing",
@@ -1197,8 +1257,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel much better.",
-    "castOnOther": "Someone  feels much better.",
-    "wearsOff": ""
+    "castOnOther": "feels much better.",
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Nullify Magic": {
     "name": "Nullify Magic",
@@ -1213,8 +1274,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel dispelled.",
-    "castOnOther": "Someone  feels dispelled.",
-    "wearsOff": ""
+    "castOnOther": "feels dispelled.",
+    "wearsOff": "",
+    "icon": "magic"
   },
   "Symbol of Naltron": {
     "name": "Symbol of Naltron",
@@ -1234,8 +1296,9 @@
       }
     },
     "castOnYou": "A mystic symbol flashes before your eyes.",
-    "castOnOther": "Someone  is cloaked in a shimmer of glowing symbols.",
-    "wearsOff": "The mystic symbol fades."
+    "castOnOther": "is cloaked in a shimmer of glowing symbols.",
+    "wearsOff": "The mystic symbol fades.",
+    "icon": "shield"
   },
   "Celestial Cleansing": {
     "name": "Celestial Cleansing",
@@ -1255,8 +1318,9 @@
       }
     },
     "castOnYou": "Celestial light pumps through your body.",
-    "castOnOther": "Someone 's body is covered with a soft glow.",
-    "wearsOff": "The celestial light fades."
+    "castOnOther": "'s body is covered with a soft glow.",
+    "wearsOff": "The celestial light fades.",
+    "icon": "blueHand"
   },
   "Resurrection": {
     "name": "Resurrection",
@@ -1272,7 +1336,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Divine Strength": {
     "name": "Divine Strength",
@@ -1292,8 +1357,9 @@
       }
     },
     "castOnYou": "You begin to radiate with divine strength.",
-    "castOnOther": "Someone  begins to radiate with divine strength.",
-    "wearsOff": "Your divine strength fades."
+    "castOnOther": "begins to radiate with divine strength.",
+    "wearsOff": "Your divine strength fades.",
+    "icon": "shield"
   },
   "Resolution": {
     "name": "Resolution",
@@ -1313,8 +1379,9 @@
       }
     },
     "castOnYou": "You feel resolute.",
-    "castOnOther": "Someone  looks resolute.",
-    "wearsOff": "Your resolution fades."
+    "castOnOther": "looks resolute.",
+    "wearsOff": "Your resolution fades.",
+    "icon": "shield"
   },
   "Shield of Words": {
     "name": "Shield of Words",
@@ -1334,8 +1401,9 @@
       }
     },
     "castOnYou": "You feel the favor of the gods upon you.",
-    "castOnOther": "Someone  feels the favor of the gods upon them.",
-    "wearsOff": "You no longer feel blessed."
+    "castOnOther": "feels the favor of the gods upon them.",
+    "wearsOff": "You no longer feel blessed.",
+    "icon": "shield"
   },
   "Yaulp IV": {
     "name": "Yaulp IV",
@@ -1355,7 +1423,8 @@
       }
     },
     "castOnYou": "You feel a surge of strength as you let forth a mighty yaulp.",
-    "castOnOther": "Someone  lets loose a mighty yaulp.",
-    "wearsOff": "Your surge of strength fades."
+    "castOnOther": "lets loose a mighty yaulp.",
+    "wearsOff": "Your surge of strength fades.",
+    "icon": "blueArm"
   }
 }

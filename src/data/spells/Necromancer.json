@@ -12,8 +12,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  animates an undead servant.",
-    "wearsOff": ""
+    "castOnOther": "animates an undead servant.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Coldlight": {
     "name": "Coldlight",
@@ -28,8 +29,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "A globe of cold light forms in your hand.",
-    "castOnOther": "Someone 's hands pulse blue.",
-    "wearsOff": ""
+    "castOnOther": "'s hands pulse blue.",
+    "wearsOff": "",
+    "icon": "summon"
   },
   "Disease Cloud": {
     "name": "Disease Cloud",
@@ -46,16 +48,17 @@
       "durationString": "3 minutes @L1 to 6 minutes @L2",
       "minDuration": {
         "duration": 180,
-        "level": "1"
+        "level": 1
       },
       "maxDuration": {
-        "duration": 540,
-        "level": "2"
+        "duration": 360,
+        "level": 2
       }
     },
     "castOnYou": "Your stomach begins to cramp.",
-    "castOnOther": "Someone  doubles over in pain.",
-    "wearsOff": "Your stomach feels better."
+    "castOnOther": "doubles over in pain.",
+    "wearsOff": "Your stomach feels better.",
+    "icon": "pox"
   },
   "Invisibility versus Undead": {
     "name": "Invisibility versus Undead",
@@ -72,16 +75,17 @@
       "durationString": "3 minutes @L1 to 27 minutes @L9",
       "minDuration": {
         "duration": 180,
-        "level": "1"
+        "level": 1
       },
       "maxDuration": {
-        "duration": 1800,
-        "level": "9"
+        "duration": 1620,
+        "level": 9
       }
     },
     "castOnYou": "You feel your skin tingle.",
-    "castOnOther": "Someone  fades a little.",
-    "wearsOff": "Your skin stops tingling."
+    "castOnOther": "fades a little.",
+    "wearsOff": "Your skin stops tingling.",
+    "icon": "eye"
   },
   "Lifetap": {
     "name": "Lifetap",
@@ -96,8 +100,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You feel your life force drain away.",
-    "castOnOther": "Someone  staggers.",
-    "wearsOff": ""
+    "castOnOther": "staggers.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Locate Corpse": {
     "name": "Locate Corpse",
@@ -113,7 +118,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": "You no longer sense the dead."
+    "wearsOff": "You no longer sense the dead.",
+    "icon": "eye"
   },
   "Minor Shielding": {
     "name": "Minor Shielding",
@@ -133,8 +139,9 @@
       }
     },
     "castOnYou": "You feel armored.",
-    "castOnOther": "Someone  is surrounded by a translucent shield.",
-    "wearsOff": "Your shielding fades away."
+    "castOnOther": "is surrounded by a translucent shield.",
+    "wearsOff": "Your shielding fades away.",
+    "icon": "shield"
   },
   "Reclaim Energy": {
     "name": "Reclaim Energy",
@@ -149,8 +156,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  disperses.",
-    "wearsOff": ""
+    "castOnOther": "disperses.",
+    "wearsOff": "",
+    "icon": "summon"
   },
   "Sense the Dead": {
     "name": "Sense the Dead",
@@ -166,7 +174,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "eye"
   },
   "Siphon Strength": {
     "name": "Siphon Strength",
@@ -183,16 +192,17 @@
       "durationString": "3 minutes @L1 to 6 minutes @L2",
       "minDuration": {
         "duration": 180,
-        "level": "1"
+        "level": 1
       },
       "maxDuration": {
-        "duration": 540,
-        "level": "2"
+        "duration": 360,
+        "level": 2
       }
     },
     "castOnYou": "You feel your strength grow.",
-    "castOnOther": "Someone  weakens.",
-    "wearsOff": "Your strength returns."
+    "castOnOther": "weakens.",
+    "wearsOff": "Your strength returns.",
+    "icon": "redArm"
   },
   "Clinging Darkness": {
     "name": "Clinging Darkness",
@@ -209,16 +219,17 @@
       "durationString": "2 ticks @L4 to 6 ticks @L12",
       "minDuration": {
         "duration": 12,
-        "level": "4"
+        "level": 4
       },
       "maxDuration": {
-        "duration": 48,
-        "level": "12"
+        "duration": 36,
+        "level": 12
       }
     },
     "castOnYou": "You are in the grip of darkness.",
-    "castOnOther": "Someone  is surrounded by darkness.",
-    "wearsOff": "The darkness fades."
+    "castOnOther": "is surrounded by darkness.",
+    "wearsOff": "The darkness fades.",
+    "icon": "reaper"
   },
   "Endure Cold": {
     "name": "Endure Cold",
@@ -235,16 +246,17 @@
       "durationString": "3 minutes @L1 to 27 minutes @L9",
       "minDuration": {
         "duration": 180,
-        "level": "1"
+        "level": 1
       },
       "maxDuration": {
-        "duration": 1800,
-        "level": "9"
+        "duration": 1620,
+        "level": 9
       }
     },
     "castOnYou": "You feel protected from cold.",
-    "castOnOther": "Someone  is protected from cold.",
-    "wearsOff": "Your endurance to cold fades."
+    "castOnOther": "is protected from cold.",
+    "wearsOff": "Your endurance to cold fades.",
+    "icon": "shield"
   },
   "Fear": {
     "name": "Fear",
@@ -264,8 +276,9 @@
       }
     },
     "castOnYou": "Your mind fills with fear.",
-    "castOnOther": "Someone  looks very afraid.",
-    "wearsOff": "You are no longer afraid."
+    "castOnOther": "looks very afraid.",
+    "wearsOff": "You are no longer afraid.",
+    "icon": "reaper"
   },
   "Gate": {
     "name": "Gate",
@@ -280,8 +293,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  fades away.",
-    "wearsOff": ""
+    "castOnOther": "fades away.",
+    "wearsOff": "",
+    "icon": "gate"
   },
   "Grim Aura": {
     "name": "Grim Aura",
@@ -298,16 +312,17 @@
       "durationString": "12 minutes @L4 to 27 minutes @L9",
       "minDuration": {
         "duration": 720,
-        "level": "4"
+        "level": 4
       },
       "maxDuration": {
-        "duration": 2340,
-        "level": "9"
+        "duration": 1620,
+        "level": 9
       }
     },
     "castOnYou": "A dull aura covers your hand.",
-    "castOnOther": "Someone 's hand is covered with a dull aura.",
-    "wearsOff": "The grim aura fades."
+    "castOnOther": "'s hand is covered with a dull aura.",
+    "wearsOff": "The grim aura fades.",
+    "icon": "redArm"
   },
   "Leering Corpse": {
     "name": "Leering Corpse",
@@ -322,8 +337,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  animates an undead servant.",
-    "wearsOff": ""
+    "castOnOther": "animates an undead servant.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Lifespike": {
     "name": "Lifespike",
@@ -338,8 +354,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You feel your life force drain away.",
-    "castOnOther": "Someone  staggers.",
-    "wearsOff": ""
+    "castOnOther": "staggers.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Numb the Dead": {
     "name": "Numb the Dead",
@@ -356,16 +373,17 @@
       "durationString": "1.4 minutes @L4 to 2 minutes @L10",
       "minDuration": {
         "duration": 84,
-        "level": "4"
+        "level": 4
       },
       "maxDuration": {
-        "duration": 204,
-        "level": "10"
+        "duration": 120,
+        "level": 10
       }
     },
     "castOnYou": "",
-    "castOnOther": "Someone  looks ambivalent.",
-    "wearsOff": ""
+    "castOnOther": "looks ambivalent.",
+    "wearsOff": "",
+    "icon": "redBrain"
   },
   "Poison Bolt": {
     "name": "Poison Bolt",
@@ -382,16 +400,17 @@
       "durationString": "2 ticks @L4 to 7 ticks @L12",
       "minDuration": {
         "duration": 12,
-        "level": "4"
+        "level": 4
       },
       "maxDuration": {
-        "duration": 54,
-        "level": "12"
+        "duration": 42,
+        "level": 12
       }
     },
     "castOnYou": "You have been poisoned.",
-    "castOnOther": "Someone  has been poisoned.",
-    "wearsOff": "The poison has run its course."
+    "castOnOther": "has been poisoned.",
+    "wearsOff": "The poison has run its course.",
+    "icon": "dagger"
   },
   "True North": {
     "name": "True North",
@@ -407,7 +426,8 @@
     "duration": 0,
     "castOnYou": "You spin to face north.",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "eye"
   },
   "Bone Walk": {
     "name": "Bone Walk",
@@ -422,8 +442,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  animates an undead servant.",
-    "wearsOff": ""
+    "castOnOther": "animates an undead servant.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Dark Empathy": {
     "name": "Dark Empathy",
@@ -438,8 +459,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "Your wounds disappear.",
-    "castOnOther": "Someone 's wounds disappear.",
-    "wearsOff": ""
+    "castOnOther": "'s wounds disappear.",
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Dark Pact": {
     "name": "Dark Pact",
@@ -456,16 +478,17 @@
       "durationString": "1.8 minutes @L8 to 7 minutes @L60",
       "minDuration": {
         "duration": 108,
-        "level": "8"
+        "level": 8
       },
       "maxDuration": {
-        "duration": 528,
-        "level": "60"
+        "duration": 420,
+        "level": 60
       }
     },
     "castOnYou": "You feel your health begin to drain.",
-    "castOnOther": "Someone  looks sick.",
-    "wearsOff": "You feel better."
+    "castOnOther": "looks sick.",
+    "wearsOff": "You feel better.",
+    "icon": "reaper"
   },
   "Deadeye": {
     "name": "Deadeye",
@@ -482,16 +505,17 @@
       "durationString": "24 minutes @L8 to 27 minutes @L9",
       "minDuration": {
         "duration": 1440,
-        "level": "8"
+        "level": 8
       },
       "maxDuration": {
-        "duration": 3060,
-        "level": "9"
+        "duration": 1620,
+        "level": 9
       }
     },
     "castOnYou": "Your vision shifts.",
-    "castOnOther": "Someone 's eyes glow red.",
-    "wearsOff": "Your vision returns to normal."
+    "castOnOther": "'s eyes glow red.",
+    "wearsOff": "Your vision returns to normal.",
+    "icon": "eye"
   },
   "Gather Shadows": {
     "name": "Gather Shadows",
@@ -511,8 +535,9 @@
       }
     },
     "castOnYou": "You gather shadows about you.",
-    "castOnOther": "Someone  steps into the shadows and disappears.",
-    "wearsOff": "Your shadows fade."
+    "castOnOther": "steps into the shadows and disappears.",
+    "wearsOff": "Your shadows fade.",
+    "icon": "eye"
   },
   "Impart Strength": {
     "name": "Impart Strength",
@@ -532,8 +557,9 @@
       }
     },
     "castOnYou": "You feel stronger.",
-    "castOnOther": "Someone  looks stronger.",
-    "wearsOff": "Your strength leaves you."
+    "castOnOther": "looks stronger.",
+    "wearsOff": "Your strength leaves you.",
+    "icon": "redArm"
   },
   "Lesser Shielding": {
     "name": "Lesser Shielding",
@@ -550,16 +576,17 @@
       "durationString": "24 minutes @L8 to 27 minutes @L9",
       "minDuration": {
         "duration": 1440,
-        "level": "8"
+        "level": 8
       },
       "maxDuration": {
-        "duration": 3060,
-        "level": "9"
+        "duration": 1620,
+        "level": 9
       }
     },
     "castOnYou": "You feel armored.",
     "castOnOther": "",
-    "wearsOff": "Your shielding fades."
+    "wearsOff": "Your shielding fades.",
+    "icon": "shield"
   },
   "Mend Bones": {
     "name": "Mend Bones",
@@ -574,8 +601,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  begins to mend.",
-    "wearsOff": ""
+    "castOnOther": "begins to mend.",
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Shadow Step": {
     "name": "Shadow Step",
@@ -590,8 +618,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  fades away.",
-    "wearsOff": ""
+    "castOnOther": "fades away.",
+    "wearsOff": "",
+    "icon": "gate"
   },
   "Vampiric Embrace": {
     "name": "Vampiric Embrace",
@@ -608,16 +637,17 @@
       "durationString": "1.8 minutes @L8 to 7.5 minutes @L65",
       "minDuration": {
         "duration": 108,
-        "level": "8"
+        "level": 8
       },
       "maxDuration": {
-        "duration": 558,
-        "level": "65"
+        "duration": 450,
+        "level": 65
       }
     },
     "castOnYou": "Your hand begins to glow.",
-    "castOnOther": "Someone 's hands begin to glow.",
-    "wearsOff": ""
+    "castOnOther": "'s hands begin to glow.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Ward Undead": {
     "name": "Ward Undead",
@@ -633,7 +663,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "redHand"
   },
   "Bind Affinity": {
     "name": "Bind Affinity",
@@ -648,8 +679,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel yourself bind to the area.",
-    "castOnOther": "Someone  is bound to the area.",
-    "wearsOff": ""
+    "castOnOther": "is bound to the area.",
+    "wearsOff": "",
+    "icon": "magic"
   },
   "Convoke Shadow": {
     "name": "Convoke Shadow",
@@ -664,8 +696,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  animates an undead servant.",
-    "wearsOff": ""
+    "castOnOther": "animates an undead servant.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Endure Disease": {
     "name": "Endure Disease",
@@ -685,8 +718,9 @@
       }
     },
     "castOnYou": "You feel protected from disease.",
-    "castOnOther": "Someone  is protected from disease.",
-    "wearsOff": "Your endurance to disease fades."
+    "castOnOther": "is protected from disease.",
+    "wearsOff": "Your endurance to disease fades.",
+    "icon": "shield"
   },
   "Engulfing Darkness": {
     "name": "Engulfing Darkness",
@@ -703,12 +737,13 @@
       "durationString": "11 ticks @L22",
       "minDuration": {
         "duration": 66,
-        "level": "22"
+        "level": 22
       }
     },
     "castOnYou": "You are engulfed by darkness.",
-    "castOnOther": "Someone  is engulfed in darkness.",
-    "wearsOff": "The darkness fades."
+    "castOnOther": "is engulfed in darkness.",
+    "wearsOff": "The darkness fades.",
+    "icon": "redHand"
   },
   "Heat Blood": {
     "name": "Heat Blood",
@@ -725,16 +760,17 @@
       "durationString": "6 ticks @L12 to 1 minute @L20",
       "minDuration": {
         "duration": 36,
-        "level": "12"
+        "level": 12
       },
       "maxDuration": {
-        "duration": 96,
-        "level": "20"
+        "duration": 60,
+        "level": 20
       }
     },
     "castOnYou": "Your blood simmers.",
-    "castOnOther": "Someone 's blood simmers.",
-    "wearsOff": "Your blood cools."
+    "castOnOther": "'s blood simmers.",
+    "wearsOff": "Your blood cools.",
+    "icon": "redHand"
   },
   "Leach": {
     "name": "Leach",
@@ -751,16 +787,17 @@
       "durationString": "7 ticks @L12 to 9 ticks @L15",
       "minDuration": {
         "duration": 42,
-        "level": "12"
+        "level": 12
       },
       "maxDuration": {
-        "duration": 96,
-        "level": "15"
+        "duration": 54,
+        "level": 15
       }
     },
     "castOnYou": "You feel your blood begin to leech away.",
-    "castOnOther": "Someone  pales.",
-    "wearsOff": ""
+    "castOnOther": "pales.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Lifedraw": {
     "name": "Lifedraw",
@@ -775,8 +812,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You feel your lifeforce drain away.",
-    "castOnOther": "Someone  staggers.",
-    "wearsOff": ""
+    "castOnOther": "staggers.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Scent of Dusk": {
     "name": "Scent of Dusk",
@@ -793,16 +831,17 @@
       "durationString": "3.4 minutes @L12 to 14 minutes @L65",
       "minDuration": {
         "duration": 204,
-        "level": "12"
+        "level": 12
       },
       "maxDuration": {
-        "duration": 1044,
-        "level": "65"
+        "duration": 840,
+        "level": 65
       }
     },
     "castOnYou": "You smell the faint scent of dusk.",
-    "castOnOther": "Someone  is surrounded by a dull haze.",
-    "wearsOff": "The scent of dusk fades."
+    "castOnOther": "is surrounded by a dull haze.",
+    "wearsOff": "The scent of dusk fades.",
+    "icon": "reaper"
   },
   "Sight Graft": {
     "name": "Sight Graft",
@@ -822,8 +861,9 @@
       }
     },
     "castOnYou": "",
-    "castOnOther": "Someone 's eyes shimmer.",
-    "wearsOff": ""
+    "castOnOther": "'s eyes shimmer.",
+    "wearsOff": "",
+    "icon": "eye"
   },
   "Spook the Dead": {
     "name": "Spook the Dead",
@@ -840,16 +880,17 @@
       "durationString": "1 ticks @L1 to 3 ticks @L5",
       "minDuration": {
         "duration": 6,
-        "level": "1"
+        "level": 1
       },
       "maxDuration": {
-        "duration": 24,
-        "level": "5"
+        "duration": 18,
+        "level": 5
       }
     },
     "castOnYou": "Your bones tingle.",
-    "castOnOther": "Someone  has the fear of life put in them.",
-    "wearsOff": ""
+    "castOnOther": "has the fear of life put in them.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Wave of Enfeeblement": {
     "name": "Wave of Enfeeblement",
@@ -866,16 +907,17 @@
       "durationString": "2.2 minutes @L12 to 4 minutes @L30",
       "minDuration": {
         "duration": 132,
-        "level": "12"
+        "level": 12
       },
       "maxDuration": {
-        "duration": 372,
-        "level": "30"
+        "duration": 240,
+        "level": 30
       }
     },
     "castOnYou": "You feel your strength dwindle.",
-    "castOnOther": "Someone  weakens.",
-    "wearsOff": "You feel your strength return."
+    "castOnOther": "weakens.",
+    "wearsOff": "You feel your strength return.",
+    "icon": "redArm"
   },
   "Banshee Aura": {
     "name": "Banshee Aura",
@@ -892,16 +934,17 @@
       "durationString": "4.2 minutes @L16 to 9 minutes @L40",
       "minDuration": {
         "duration": 252,
-        "level": "16"
+        "level": 16
       },
       "maxDuration": {
-        "duration": 792,
-        "level": "40"
+        "duration": 540,
+        "level": 40
       }
     },
     "castOnYou": "A shrieking aura surrounds you.",
-    "castOnOther": "Someone  is surrounded by a shrieking aura.",
-    "wearsOff": "The shrieking aura fades."
+    "castOnOther": "is surrounded by a shrieking aura.",
+    "wearsOff": "The shrieking aura fades.",
+    "icon": "blueHand"
   },
   "Cancel Magic": {
     "name": "Cancel Magic",
@@ -916,8 +959,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel a bit dispelled.",
-    "castOnOther": "Someone  feels a bit dispelled.",
-    "wearsOff": ""
+    "castOnOther": "feels a bit dispelled.",
+    "wearsOff": "",
+    "icon": "magic"
   },
   "Cure Disease": {
     "name": "Cure Disease",
@@ -933,7 +977,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Feign Death": {
     "name": "Feign Death",
@@ -948,8 +993,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  dies.",
-    "wearsOff": "You no longer appear dead."
+    "castOnOther": "dies.",
+    "wearsOff": "You no longer appear dead.",
+    "icon": "reaper"
   },
   "Heart Flutter": {
     "name": "Heart Flutter",
@@ -966,16 +1012,17 @@
       "durationString": "8 ticks @L16 to 1.2 minutes @L24",
       "minDuration": {
         "duration": 48,
-        "level": "16"
+        "level": 16
       },
       "maxDuration": {
-        "duration": 120,
-        "level": "24"
+        "duration": 72,
+        "level": 24
       }
     },
     "castOnYou": "Your heartbeat becomes irregular.",
-    "castOnOther": "Someone  clutches their chest.",
-    "wearsOff": "Your heartbeat steadies."
+    "castOnOther": "clutches their chest.",
+    "wearsOff": "Your heartbeat steadies.",
+    "icon": "pox"
   },
   "Hungry Earth": {
     "name": "Hungry Earth",
@@ -995,8 +1042,9 @@
       }
     },
     "castOnYou": "",
-    "castOnOther": "Someone 's feet sink into the ground.",
-    "wearsOff": ""
+    "castOnOther": "'s feet sink into the ground.",
+    "wearsOff": "",
+    "icon": "earth"
   },
   "Infectious Cloud": {
     "name": "Infectious Cloud",
@@ -1016,8 +1064,9 @@
       }
     },
     "castOnYou": "The bile wells up in your throat.",
-    "castOnOther": "Someone  starts to retch.",
-    "wearsOff": "You feel better."
+    "castOnOther": "starts to retch.",
+    "wearsOff": "You feel better.",
+    "icon": "pox"
   },
   "Restless Bones": {
     "name": "Restless Bones",
@@ -1032,8 +1081,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  animates an undead servant.",
-    "wearsOff": ""
+    "castOnOther": "animates an undead servant.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Shielding": {
     "name": "Shielding",
@@ -1054,7 +1104,8 @@
     },
     "castOnYou": "You feel armored.",
     "castOnOther": "",
-    "wearsOff": "Your shielding fades away."
+    "wearsOff": "Your shielding fades away.",
+    "icon": "shield"
   },
   "Shieldskin": {
     "name": "Shieldskin",
@@ -1074,8 +1125,9 @@
       }
     },
     "castOnYou": "A mystic force shields your skin.",
-    "castOnOther": "Someone 's skin is covered in a mystic glow.",
-    "wearsOff": "Your skin returns to normal."
+    "castOnOther": "'s skin is covered in a mystic glow.",
+    "wearsOff": "Your skin returns to normal.",
+    "icon": "shield"
   },
   "Spirit Armor": {
     "name": "Spirit Armor",
@@ -1095,8 +1147,9 @@
       }
     },
     "castOnYou": "Translucent armor gathers around you.",
-    "castOnOther": "Someone  is coated in translucent armor.",
-    "wearsOff": "Your spiritual armor fades."
+    "castOnOther": "is coated in translucent armor.",
+    "wearsOff": "Your spiritual armor fades.",
+    "icon": "shield"
   },
   "Voice Graft": {
     "name": "Voice Graft",
@@ -1114,8 +1167,9 @@
       "minDuration": {}
     },
     "castOnYou": "10",
-    "castOnOther": "Divination",
-    "wearsOff": "6.00"
+    "castOnOther": "",
+    "wearsOff": "6.00",
+    "icon": "magic"
   },
   "Allure of Death": {
     "name": "Allure of Death",
@@ -1132,16 +1186,17 @@
       "durationString": "5 minutes @L20 to 13 minutes @L60",
       "minDuration": {
         "duration": 300,
-        "level": "20"
+        "level": 20
       },
       "maxDuration": {
-        "duration": 1080,
-        "level": "60"
+        "duration": 780,
+        "level": 60
       }
     },
     "castOnYou": "You feel your health begin to drain away.",
-    "castOnOther": "Someone  looks sick.",
-    "wearsOff": "You feel better."
+    "castOnOther": "looks sick.",
+    "wearsOff": "You feel better.",
+    "icon": "reaper"
   },
   "Animate Dead": {
     "name": "Animate Dead",
@@ -1156,8 +1211,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  animates an undead servant.",
-    "wearsOff": ""
+    "castOnOther": "animates an undead servant.",
+    "wearsOff": "",
+    "icon": "summon"
   },
   "Dominate Undead": {
     "name": "Dominate Undead",
@@ -1174,16 +1230,17 @@
       "durationString": "7 minutes @L20 to 20.5 minutes @L65",
       "minDuration": {
         "duration": 420,
-        "level": "20"
+        "level": 20
       },
       "maxDuration": {
-        "duration": 1650,
-        "level": "65"
+        "duration": 1230,
+        "level": 65
       }
     },
     "castOnYou": "",
-    "castOnOther": "Someone  moans.",
-    "wearsOff": ""
+    "castOnOther": "moans.",
+    "wearsOff": "",
+    "icon": "redBrain"
   },
   "Expulse Undead": {
     "name": "Expulse Undead",
@@ -1199,7 +1256,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "redHand"
   },
   "Harmshield": {
     "name": "Harmshield",
@@ -1220,7 +1278,8 @@
     },
     "castOnYou": "You no longer feel pain.",
     "castOnOther": "",
-    "wearsOff": "Your invulnerability fades."
+    "wearsOff": "Your invulnerability fades.",
+    "icon": "shield"
   },
   "Identify": {
     "name": "Identify",
@@ -1236,7 +1295,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "magic"
   },
   "Shadow Compact": {
     "name": "Shadow Compact",
@@ -1256,8 +1316,9 @@
       }
     },
     "castOnYou": "Your wounds begin to heal.",
-    "castOnOther": "Someone  pulses with a blue-green aura.",
-    "wearsOff": "Your pact has faded."
+    "castOnOther": "pulses with a blue-green aura.",
+    "wearsOff": "Your pact has faded.",
+    "icon": "blueHand"
   },
   "Shadow Vortex": {
     "name": "Shadow Vortex",
@@ -1274,16 +1335,17 @@
       "durationString": "3 minutes @L20 to 7.5 minutes @L65",
       "minDuration": {
         "duration": 180,
-        "level": "20"
+        "level": 20
       },
       "maxDuration": {
-        "duration": 630,
-        "level": "65"
+        "duration": 450,
+        "level": 65
       }
     },
     "castOnYou": "You feel a shadow pass over you.",
-    "castOnOther": "Someone  is surrounded by a vortex of shadows.",
-    "wearsOff": "The vortex of shadows fades."
+    "castOnOther": "is surrounded by a vortex of shadows.",
+    "wearsOff": "The vortex of shadows fades.",
+    "icon": "cyclone"
   },
   "Siphon Life": {
     "name": "Siphon Life",
@@ -1298,8 +1360,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You feel your life force drain away.",
-    "castOnOther": "Someone  staggers.",
-    "wearsOff": ""
+    "castOnOther": "staggers.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Track Corpse": {
     "name": "Track Corpse",
@@ -1320,7 +1383,8 @@
     },
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": "You no longer track the dead."
+    "wearsOff": "You no longer track the dead.",
+    "icon": "eye"
   },
   "Word of Shadow": {
     "name": "Word of Shadow",
@@ -1335,8 +1399,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You are wracked with pain.",
-    "castOnOther": "Someone  writhes in pain.",
-    "wearsOff": ""
+    "castOnOther": "writhes in pain.",
+    "wearsOff": "",
+    "icon": "redHand"
   },
   "Breath of the Dead": {
     "name": "Breath of the Dead",
@@ -1356,8 +1421,9 @@
       }
     },
     "castOnYou": "You feel your heart stop beating.",
-    "castOnOther": "Someone  stops breathing.",
-    "wearsOff": "You resume breathing."
+    "castOnOther": "stops breathing.",
+    "wearsOff": "You resume breathing.",
+    "icon": "water"
   },
   "Haunting Corpse": {
     "name": "Haunting Corpse",
@@ -1372,8 +1438,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  animates an undead servant.",
-    "wearsOff": ""
+    "castOnOther": "animates an undead servant.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Intensify Death": {
     "name": "Intensify Death",
@@ -1390,16 +1457,17 @@
       "durationString": "3.4 minutes @L24 to 7.5 minutes @L65",
       "minDuration": {
         "duration": 204,
-        "level": "24"
+        "level": 24
       },
       "maxDuration": {
-        "duration": 654,
-        "level": "65"
+        "duration": 450,
+        "level": 65
       }
     },
     "castOnYou": "",
-    "castOnOther": "Someone 's eyes gleam with madness.",
-    "wearsOff": ""
+    "castOnOther": "'s eyes gleam with madness.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Leatherskin": {
     "name": "Leatherskin",
@@ -1419,8 +1487,9 @@
       }
     },
     "castOnYou": "Your skin becomes leathery.",
-    "castOnOther": "Someone 's skin looks like leather.",
-    "wearsOff": "Your skin returns to normal."
+    "castOnOther": "'s skin looks like leather.",
+    "wearsOff": "Your skin returns to normal.",
+    "icon": "shield"
   },
   "Major Shielding": {
     "name": "Major Shielding",
@@ -1441,7 +1510,8 @@
     },
     "castOnYou": "You feel armored.",
     "castOnOther": "",
-    "wearsOff": "Your shielding fades."
+    "wearsOff": "Your shielding fades.",
+    "icon": "shield"
   },
   "Rapacious Subversion": {
     "name": "Rapacious Subversion",
@@ -1456,8 +1526,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "A foreign surge of mana refreshes your mind.",
-    "castOnOther": "Someone  twitches.",
-    "wearsOff": ""
+    "castOnOther": "twitches.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Resist Cold": {
     "name": "Resist Cold",
@@ -1477,8 +1548,9 @@
       }
     },
     "castOnYou": "You feel resistant from cold.",
-    "castOnOther": "Someone  is resistant to cold.",
-    "wearsOff": "Your cold resistance fades."
+    "castOnOther": "is resistant to cold.",
+    "wearsOff": "Your cold resistance fades.",
+    "icon": "shield"
   },
   "Rest the Dead": {
     "name": "Rest the Dead",
@@ -1498,8 +1570,9 @@
       }
     },
     "castOnYou": "",
-    "castOnOther": "Someone  looks ambivalent.",
-    "wearsOff": ""
+    "castOnOther": "looks ambivalent.",
+    "wearsOff": "",
+    "icon": "redBrain"
   },
   "Scent of Shadow": {
     "name": "Scent of Shadow",
@@ -1516,16 +1589,17 @@
       "durationString": "5.8 minutes @L24 to 14 minutes @L65",
       "minDuration": {
         "duration": 348,
-        "level": "24"
+        "level": 24
       },
       "maxDuration": {
-        "duration": 1188,
-        "level": "65"
+        "duration": 840,
+        "level": 65
       }
     },
     "castOnYou": "You smell the faint scent of shadow.",
-    "castOnOther": "Someone  is surrounded by a dim haze.",
-    "wearsOff": "The scent of shadow fades."
+    "castOnOther": "is surrounded by a dim haze.",
+    "wearsOff": "The scent of shadow fades.",
+    "icon": "reaper"
   },
   "Screaming Terror": {
     "name": "Screaming Terror",
@@ -1545,8 +1619,9 @@
       }
     },
     "castOnYou": "You begin to scream.",
-    "castOnOther": "Someone  begins to scream.",
-    "wearsOff": "You stop screaming."
+    "castOnOther": "begins to scream.",
+    "wearsOff": "You stop screaming.",
+    "icon": "reaper"
   },
   "Shadow Sight": {
     "name": "Shadow Sight",
@@ -1566,8 +1641,9 @@
       }
     },
     "castOnYou": "The shadows fade.",
-    "castOnOther": "Someone 's eyes glow violet.",
-    "wearsOff": "Your shadow sight fades."
+    "castOnOther": "'s eyes glow violet.",
+    "wearsOff": "Your shadow sight fades.",
+    "icon": "eye"
   },
   "Shock of Poison": {
     "name": "Shock of Poison",
@@ -1582,8 +1658,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You feel your skin burn as poison seeps through your skin.",
-    "castOnOther": "Someone  screams in agony.",
-    "wearsOff": ""
+    "castOnOther": "screams in agony.",
+    "wearsOff": "",
+    "icon": "dagger"
   },
   "Boil Blood": {
     "name": "Boil Blood",
@@ -1600,16 +1677,17 @@
       "durationString": "16 ticks @L29 to 21 ticks @L42",
       "minDuration": {
         "duration": 96,
-        "level": "29"
+        "level": 29
       },
       "maxDuration": {
-        "duration": 222,
-        "level": "42"
+        "duration": 126,
+        "level": 42
       }
     },
     "castOnYou": "Your blood boils.",
-    "castOnOther": "Someone 's blood boils.",
-    "wearsOff": "Your blood cools."
+    "castOnOther": "'s blood boils.",
+    "wearsOff": "Your blood cools.",
+    "icon": "fire"
   },
   "Dismiss Undead": {
     "name": "Dismiss Undead",
@@ -1624,8 +1702,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  staggers.",
-    "wearsOff": ""
+    "castOnOther": "staggers.",
+    "wearsOff": "",
+    "icon": "redHand"
   },
   "Dooming Darkness": {
     "name": "Dooming Darkness",
@@ -1642,16 +1721,17 @@
       "durationString": "1.5 minutes @L29 to 1.6 minutes @L30",
       "minDuration": {
         "duration": 90,
-        "level": "29"
+        "level": 29
       },
       "maxDuration": {
-        "duration": 186,
-        "level": "30"
+        "duration": 96,
+        "level": 30
       }
     },
     "castOnYou": "You are engulfed in darkness.",
-    "castOnOther": "Someone  is engulfed in darkness.",
-    "wearsOff": "The darkness fades."
+    "castOnOther": "is engulfed in darkness.",
+    "wearsOff": "The darkness fades.",
+    "icon": "reaper"
   },
   "Panic the Dead": {
     "name": "Panic the Dead",
@@ -1671,8 +1751,9 @@
       }
     },
     "castOnYou": "Your bones tingle.",
-    "castOnOther": "Someone  has the fear of life put in them.",
-    "wearsOff": ""
+    "castOnOther": "has the fear of life put in them.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Renew Bones": {
     "name": "Renew Bones",
@@ -1687,8 +1768,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  begins to mend.",
-    "wearsOff": ""
+    "castOnOther": "begins to mend.",
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Spirit Tap": {
     "name": "Spirit Tap",
@@ -1703,8 +1785,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You feel your life force drain away.",
-    "castOnOther": "Someone  staggers.",
-    "wearsOff": ""
+    "castOnOther": "staggers.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Summon Dead": {
     "name": "Summon Dead",
@@ -1719,8 +1802,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  animates an undead servant.",
-    "wearsOff": ""
+    "castOnOther": "animates an undead servant.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Vampiric Curse": {
     "name": "Vampiric Curse",
@@ -1740,8 +1824,9 @@
       }
     },
     "castOnYou": "You feel your blood being drained away.",
-    "castOnOther": "Someone  pales.",
-    "wearsOff": "The curse fades."
+    "castOnOther": "pales.",
+    "wearsOff": "The curse fades.",
+    "icon": "reaper"
   },
   "Word of Spirit": {
     "name": "Word of Spirit",
@@ -1756,8 +1841,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You are wracked with pain.",
-    "castOnOther": "Someone  writhes in pain.",
-    "wearsOff": ""
+    "castOnOther": "writhes in pain.",
+    "wearsOff": "",
+    "icon": "redHand"
   },
   "Beguile Undead": {
     "name": "Beguile Undead",
@@ -1774,16 +1860,17 @@
       "durationString": "11.2 minutes @L34 to 20.5 minutes @L65",
       "minDuration": {
         "duration": 672,
-        "level": "34"
+        "level": 34
       },
       "maxDuration": {
-        "duration": 1902,
-        "level": "65"
+        "duration": 1230,
+        "level": 65
       }
     },
     "castOnYou": "",
-    "castOnOther": "Someone  moans.",
-    "wearsOff": ""
+    "castOnOther": "moans.",
+    "wearsOff": "",
+    "icon": "redBrain"
   },
   "Call of Bones": {
     "name": "Call of Bones",
@@ -1801,8 +1888,9 @@
       "minDuration": {}
     },
     "castOnYou": "You feel the skin peel from your bones.",
-    "castOnOther": "Someone 's skin peels away.",
-    "wearsOff": "Your flesh returns."
+    "castOnOther": "'s skin peels away.",
+    "wearsOff": "Your flesh returns.",
+    "icon": "reaper"
   },
   "Greater Shielding": {
     "name": "Greater Shielding",
@@ -1823,7 +1911,8 @@
     },
     "castOnYou": "You feel armored.",
     "castOnOther": "",
-    "wearsOff": "Your shielding fades."
+    "wearsOff": "Your shielding fades.",
+    "icon": "shield"
   },
   "Invoke Fear": {
     "name": "Invoke Fear",
@@ -1843,8 +1932,9 @@
       }
     },
     "castOnYou": "Your mind fills with fear.",
-    "castOnOther": "Someone  looks very afraid.",
-    "wearsOff": "You are no longer afraid."
+    "castOnOther": "looks very afraid.",
+    "wearsOff": "You are no longer afraid.",
+    "icon": "reaper"
   },
   "Invoke Shadow": {
     "name": "Invoke Shadow",
@@ -1859,8 +1949,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  animates an undead servant.",
-    "wearsOff": ""
+    "castOnOther": "animates an undead servant.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Resist Disease": {
     "name": "Resist Disease",
@@ -1880,8 +1971,9 @@
       }
     },
     "castOnYou": "You feel resistant from disease.",
-    "castOnOther": "Someone  is resistant to disease.",
-    "wearsOff": "Your disease resistance fades."
+    "castOnOther": "is resistant to disease.",
+    "wearsOff": "Your disease resistance fades.",
+    "icon": "shield"
   },
   "Root": {
     "name": "Root",
@@ -1898,16 +1990,17 @@
       "durationString": "2 ticks @L4 to 8 ticks @L14",
       "minDuration": {
         "duration": 12,
-        "level": "4"
+        "level": 4
       },
       "maxDuration": {
-        "duration": 60,
-        "level": "14"
+        "duration": 48,
+        "level": 14
       }
     },
     "castOnYou": "Your feet adhere to the ground.",
-    "castOnOther": "Someone 's feet adhere to the ground.",
-    "wearsOff": "Your feet come free."
+    "castOnOther": "'s feet adhere to the ground.",
+    "wearsOff": "Your feet come free.",
+    "icon": "earth"
   },
   "Steelskin": {
     "name": "Steelskin",
@@ -1927,8 +2020,9 @@
       }
     },
     "castOnYou": "Your skin becomes like steel.",
-    "castOnOther": "Someone's skin looks like steel.",
-    "wearsOff": "Your skin returns to normal."
+    "castOnOther": "skin looks like steel.",
+    "wearsOff": "Your skin returns to normal.",
+    "icon": "shield"
   },
   "Surge of Enfeeblement": {
     "name": "Surge of Enfeeblement",
@@ -1948,8 +2042,9 @@
       }
     },
     "castOnYou": "You feel your strength dwindle.",
-    "castOnOther": "Someone  weakens.",
-    "wearsOff": "You feel your strength return."
+    "castOnOther": "weakens.",
+    "wearsOff": "You feel your strength return.",
+    "icon": "redArm"
   },
   "Torbas' Acid Blast": {
     "name": "Torbas' Acid Blast",
@@ -1964,8 +2059,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "A blast of acid eats at your skin.",
-    "castOnOther": "Someone  is blasted by a jet of acid.",
-    "wearsOff": ""
+    "castOnOther": "is blasted by a jet of acid.",
+    "wearsOff": "",
+    "icon": "dagger"
   },
   "Venom of the Snake": {
     "name": "Venom of the Snake",
@@ -1982,16 +2078,17 @@
       "durationString": "7 ticks @L34 to 8 ticks @L36",
       "minDuration": {
         "duration": 42,
-        "level": "34"
+        "level": 34
       },
       "maxDuration": {
-        "duration": 90,
-        "level": "36"
+        "duration": 48,
+        "level": 36
       }
     },
     "castOnYou": "You have been poisoned.",
-    "castOnOther": "Someone  has been poisoned.",
-    "wearsOff": "The poison has run its course."
+    "castOnOther": "has been poisoned.",
+    "wearsOff": "The poison has run its course.",
+    "icon": "dagger"
   },
   "Augment Death": {
     "name": "Augment Death",
@@ -2008,16 +2105,17 @@
       "durationString": "12.7 minutes @L39 to 15 minutes @L47",
       "minDuration": {
         "duration": 762,
-        "level": "39"
+        "level": 39
       },
       "maxDuration": {
-        "duration": 1662,
-        "level": "47"
+        "duration": 900,
+        "level": 47
       }
     },
     "castOnYou": "",
-    "castOnOther": "Someone 's eyes gleam with madness.",
-    "wearsOff": ""
+    "castOnOther": "'s eyes gleam with madness.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Chilling Embrace": {
     "name": "Chilling Embrace",
@@ -2037,8 +2135,9 @@
       }
     },
     "castOnYou": "You are wracked by chilling poison.",
-    "castOnOther": "Someone  is wracked by chilling poison.",
-    "wearsOff": "The poison leaves."
+    "castOnOther": "is wracked by chilling poison.",
+    "wearsOff": "The poison leaves.",
+    "icon": "dagger"
   },
   "Counteract Disease": {
     "name": "Counteract Disease",
@@ -2054,7 +2153,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Drain Spirit": {
     "name": "Drain Spirit",
@@ -2069,8 +2169,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You feel your life force drain away.",
-    "castOnOther": "Someone  staggers.",
-    "wearsOff": ""
+    "castOnOther": "staggers.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Expel Undead": {
     "name": "Expel Undead",
@@ -2085,8 +2186,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  staggers.",
-    "wearsOff": ""
+    "castOnOther": "staggers.",
+    "wearsOff": "",
+    "icon": "redHand"
   },
   "Malignant Dead": {
     "name": "Malignant Dead",
@@ -2101,8 +2203,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  animates an undead servant.",
-    "wearsOff": ""
+    "castOnOther": "animates an undead servant.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Nullify Magic": {
     "name": "Nullify Magic",
@@ -2117,8 +2220,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel dispelled.",
-    "castOnOther": "Someone  feels dispelled.",
-    "wearsOff": ""
+    "castOnOther": "feels dispelled.",
+    "wearsOff": "",
+    "icon": "magic"
   },
   "Scent of Darkness": {
     "name": "Scent of Darkness",
@@ -2135,16 +2239,17 @@
       "durationString": "8.8 minutes @L39 to 14 minutes @L65",
       "minDuration": {
         "duration": 528,
-        "level": "39"
+        "level": 39
       },
       "maxDuration": {
-        "duration": 1368,
-        "level": "65"
+        "duration": 840,
+        "level": 65
       }
     },
     "castOnYou": "You smell the faint scent of darkness.",
-    "castOnOther": "Someone  is surrounded by a dark haze.",
-    "wearsOff": "The scent of darkness fades."
+    "castOnOther": "is surrounded by a dark haze.",
+    "wearsOff": "The scent of darkness fades.",
+    "icon": "reaper"
   },
   "Scourge": {
     "name": "Scourge",
@@ -2164,8 +2269,9 @@
       }
     },
     "castOnYou": "You feel feverish.",
-    "castOnOther": "Someone  sweats and shivers, looking feverish.",
-    "wearsOff": "Your fever has broken."
+    "castOnOther": "sweats and shivers, looking feverish.",
+    "wearsOff": "Your fever has broken.",
+    "icon": "pox"
   },
   "Summon Corpse": {
     "name": "Summon Corpse",
@@ -2181,7 +2287,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "magic"
   },
   "Word of Souls": {
     "name": "Word of Souls",
@@ -2196,8 +2303,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You are wracked with pain.",
-    "castOnOther": "Someone  writhes in pain.",
-    "wearsOff": ""
+    "castOnOther": "writhes in pain.",
+    "wearsOff": "",
+    "icon": "redHand"
   },
   "Arch Shielding": {
     "name": "Arch Shielding",
@@ -2218,7 +2326,8 @@
     },
     "castOnYou": "You feel armored.",
     "castOnOther": "",
-    "wearsOff": "Your shielding fades."
+    "wearsOff": "Your shielding fades.",
+    "icon": "shield"
   },
   "Asystole": {
     "name": "Asystole",
@@ -2238,8 +2347,9 @@
       }
     },
     "castOnYou": "Your heart stops.",
-    "castOnOther": "Someone  clutches their chest.",
-    "wearsOff": "Your heartbeat resumes."
+    "castOnOther": "clutches their chest.",
+    "wearsOff": "Your heartbeat resumes.",
+    "icon": "pox"
   },
   "Cackling Bones": {
     "name": "Cackling Bones",
@@ -2254,8 +2364,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  animates an undead servant.",
-    "wearsOff": ""
+    "castOnOther": "animates an undead servant.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Corporeal Empathy": {
     "name": "Corporeal Empathy",
@@ -2270,8 +2381,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "Your wounds disappear.",
-    "castOnOther": "Someone 's wounds disappear.",
-    "wearsOff": ""
+    "castOnOther": "'s wounds disappear.",
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Covetous Subversion": {
     "name": "Covetous Subversion",
@@ -2286,8 +2398,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "A foreign surge of mana refreshes your mind.",
-    "castOnOther": "Someone  twitches.",
-    "wearsOff": ""
+    "castOnOther": "twitches.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Dead Man Floating": {
     "name": "Dead Man Floating",
@@ -2307,8 +2420,9 @@
       }
     },
     "castOnYou": "You become like the dead.",
-    "castOnOther": "Someone  looks dead.",
-    "wearsOff": "You return to life."
+    "castOnOther": "looks dead.",
+    "wearsOff": "You return to life.",
+    "icon": "reaper"
   },
   "Diamondskin": {
     "name": "Diamondskin",
@@ -2328,8 +2442,9 @@
       }
     },
     "castOnYou": "Your skin becomes like diamond.",
-    "castOnOther": "Someone 's skin sparkles like a diamond.",
-    "wearsOff": "Your skin returns to normal."
+    "castOnOther": "'s skin sparkles like a diamond.",
+    "wearsOff": "Your skin returns to normal.",
+    "icon": "shield"
   },
   "Ignite Bones": {
     "name": "Ignite Bones",
@@ -2349,8 +2464,9 @@
       }
     },
     "castOnYou": "You feel your skin burn from your body.",
-    "castOnOther": "Someone 's skin burns away.",
-    "wearsOff": ""
+    "castOnOther": "'s skin burns away.",
+    "wearsOff": "",
+    "icon": "fire"
   },
   "Incinerate Bones": {
     "name": "Incinerate Bones",
@@ -2365,8 +2481,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You shriek as your bones are ablaze.",
-    "castOnOther": "Someone  shrieks as their bones are set ablaze.",
-    "wearsOff": ""
+    "castOnOther": "shrieks as their bones are set ablaze.",
+    "wearsOff": "",
+    "icon": "fire"
   },
   "Pact of Shadow": {
     "name": "Pact of Shadow",
@@ -2386,8 +2503,9 @@
       }
     },
     "castOnYou": "Your wounds begin to heal.",
-    "castOnOther": "Someone  pulses with a blue-green aura.",
-    "wearsOff": "Your pact has faded."
+    "castOnOther": "pulses with a blue-green aura.",
+    "wearsOff": "Your pact has faded.",
+    "icon": "reaper"
   },
   "Summon Companion": {
     "name": "Summon Companion",
@@ -2402,8 +2520,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You summon your companion to your side.",
-    "castOnOther": "Someone  summons a companion to their side.",
-    "wearsOff": ""
+    "castOnOther": "summons a companion to their side.",
+    "wearsOff": "",
+    "icon": "summon"
   },
   "Banish Undead": {
     "name": "Banish Undead",
@@ -2418,8 +2537,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  staggers.",
-    "wearsOff": ""
+    "castOnOther": "staggers.",
+    "wearsOff": "",
+    "icon": "redHand"
   },
   "Bond of Death": {
     "name": "Bond of Death",
@@ -2439,8 +2559,9 @@
       }
     },
     "castOnYou": "You feel your life force drain away.",
-    "castOnOther": "Someone  staggers.",
-    "wearsOff": "The bond fades."
+    "castOnOther": "staggers.",
+    "wearsOff": "The bond fades.",
+    "icon": "reaper"
   },
   "Cajole Undead": {
     "name": "Cajole Undead",
@@ -2457,16 +2578,17 @@
       "durationString": "15.7 minutes @L49 to 19 minutes @L60",
       "minDuration": {
         "duration": 942,
-        "level": "49"
+        "level": 49
       },
       "maxDuration": {
-        "duration": 2082,
-        "level": "60"
+        "duration": 1140,
+        "level": 60
       }
     },
     "castOnYou": "",
-    "castOnOther": "Someone  moans.",
-    "wearsOff": ""
+    "castOnOther": "moans.",
+    "wearsOff": "",
+    "icon": "redBrain"
   },
   "Cascading Darkness": {
     "name": "Cascading Darkness",
@@ -2486,8 +2608,9 @@
       }
     },
     "castOnYou": "You are engulfed in darkness.",
-    "castOnOther": "Someone  is engulfed in darkness.",
-    "wearsOff": "The darkness fades."
+    "castOnOther": "is engulfed in darkness.",
+    "wearsOff": "The darkness fades.",
+    "icon": "reaper"
   },
   "Dead Men Floating": {
     "name": "Dead Men Floating",
@@ -2507,8 +2630,9 @@
       }
     },
     "castOnYou": "You become like the dead.",
-    "castOnOther": "Someone  looks dead.",
-    "wearsOff": "You return to life."
+    "castOnOther": "looks dead.",
+    "wearsOff": "You return to life.",
+    "icon": "reaper"
   },
   "Drain Soul": {
     "name": "Drain Soul",
@@ -2523,8 +2647,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You feel your life force drain away.",
-    "castOnOther": "Someone  staggers.",
-    "wearsOff": ""
+    "castOnOther": "staggers.",
+    "wearsOff": "",
+    "icon": "redHand"
   },
   "Ignite Blood": {
     "name": "Ignite Blood",
@@ -2544,8 +2669,9 @@
       }
     },
     "castOnYou": "Your blood ignites.",
-    "castOnOther": "Someone 's blood ignites.",
-    "wearsOff": "Your blood cools."
+    "castOnOther": "'s blood ignites.",
+    "wearsOff": "Your blood cools.",
+    "icon": "fire"
   },
   "Invoke Death": {
     "name": "Invoke Death",
@@ -2560,8 +2686,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  animates an undead servant.",
-    "wearsOff": ""
+    "castOnOther": "animates an undead servant.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Lich": {
     "name": "Lich",
@@ -2575,19 +2702,20 @@
     "targetType": "Self",
     "spellType": "Beneficial",
     "duration": {
-      "durationString": "15.7 minutes @L49 to 20.5 minutes @L65",
+      "durationString": "15.7 minutes @L49 to 17.9 minutes @L56 to 20.5 minutes @L65",
       "minDuration": {
         "duration": 942,
-        "level": "49"
+        "level": 49
       },
       "maxDuration": {
-        "duration": 2172,
-        "level": "65"
+        "duration": 1230,
+        "level": 65
       }
     },
     "castOnYou": "You feel the skin peel from your bones.",
-    "castOnOther": "Someone 's skin peels away.",
-    "wearsOff": "Your flesh returns."
+    "castOnOther": "'s skin peels away.",
+    "wearsOff": "Your flesh returns.",
+    "icon": "reaper"
   },
   "Paralyzing Earth": {
     "name": "Paralyzing Earth",
@@ -2607,8 +2735,9 @@
       }
     },
     "castOnYou": "Your feet adhere to the ground.",
-    "castOnOther": "Someone 's feet adhere to the ground.",
-    "wearsOff": "Your feet come free."
+    "castOnOther": "'s feet adhere to the ground.",
+    "wearsOff": "Your feet come free.",
+    "icon": "earth"
   },
   "Improved Invis to Undead": {
     "name": "Improved Invis to Undead",
@@ -2628,8 +2757,9 @@
       }
     },
     "castOnYou": "You feel your skin tingle.",
-    "castOnOther": "Someone  fades a little.",
-    "wearsOff": "Your skin stops tingling."
+    "castOnOther": "fades a little.",
+    "wearsOff": "Your skin stops tingling.",
+    "icon": "eye"
   },
   "Dread of Night": {
     "name": "Dread of Night",
@@ -2649,8 +2779,9 @@
       }
     },
     "castOnYou": "Your bones tingle.",
-    "castOnOther": "Someone  has been instilled with the dread of night.",
-    "wearsOff": ""
+    "castOnOther": "has been instilled with the dread of night.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Envenomed Bolt": {
     "name": "Envenomed Bolt",
@@ -2670,27 +2801,26 @@
       }
     },
     "castOnYou": "You have been poisoned.",
-    "castOnOther": "Someone  has been poisoned.",
-    "wearsOff": "The poison has run its course."
+    "castOnOther": "has been poisoned.",
+    "wearsOff": "The poison has run its course.",
+    "icon": "dagger"
   },
-  "Sacrifice": {
-    "name": "Sacrifice",
-    "mana": "",
-    "skill": "",
-    "castTime": "",
-    "recastTime": "",
-    "fizzleTime": "",
-    "resist": "",
-    "range": "",
-    "targetType": "",
-    "spellType": "",
-    "duration": {
-      "durationString": "",
-      "minDuration": {}
-    },
+  "Sacrifice (spell)": {
+    "name": "Sacrifice (spell)",
+    "mana": "100",
+    "skill": "Alteration",
+    "castTime": "5.00",
+    "recastTime": "0.00",
+    "fizzleTime": "2.25",
+    "resist": "Unresistable",
+    "range": "100",
+    "targetType": "Single",
+    "spellType": "Beneficial",
+    "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Splurt": {
     "name": "Splurt",
@@ -2710,8 +2840,9 @@
       }
     },
     "castOnYou": "Your body begins to splurt.",
-    "castOnOther": "Someone 's body begins to splurt.",
-    "wearsOff": "Your body stops splurting."
+    "castOnOther": "'s body begins to splurt.",
+    "wearsOff": "Your body stops splurting.",
+    "icon": "magic"
   },
   "Defoliation": {
     "name": "Defoliation",
@@ -2726,8 +2857,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  wilts.",
-    "wearsOff": ""
+    "castOnOther": "wilts.",
+    "wearsOff": "",
+    "icon": "pox"
   },
   "Manaskin": {
     "name": "Manaskin",
@@ -2747,8 +2879,9 @@
       }
     },
     "castOnYou": "Your skin gleams with an incandescent glow.",
-    "castOnOther": "Someone 's skin gleams with an incandescent glow.",
-    "wearsOff": "Your skin returns to normal."
+    "castOnOther": "'s skin gleams with an incandescent glow.",
+    "wearsOff": "Your skin returns to normal.",
+    "icon": "shield"
   },
   "Plague": {
     "name": "Plague",
@@ -2768,8 +2901,9 @@
       }
     },
     "castOnYou": "You feel feverish.",
-    "castOnOther": "Someone  sweats and shivers, looking feverish.",
-    "wearsOff": "Your fever has broken."
+    "castOnOther": "sweats and shivers, looking feverish.",
+    "wearsOff": "Your fever has broken.",
+    "icon": "pox"
   },
   "Scent of Terris": {
     "name": "Scent of Terris",
@@ -2786,16 +2920,17 @@
       "durationString": "11.4 minutes @L52 to 13 minutes @L60",
       "minDuration": {
         "duration": 684,
-        "level": "52"
+        "level": 52
       },
       "maxDuration": {
-        "duration": 1464,
-        "level": "60"
+        "duration": 780,
+        "level": 60
       }
     },
     "castOnYou": "You smell the faint scent of Terris.",
-    "castOnOther": "Someone  is surrounded by a dark haze.",
-    "wearsOff": "The scent of Terris fades."
+    "castOnOther": "is surrounded by a dark haze.",
+    "wearsOff": "The scent of Terris fades.",
+    "icon": "reaper"
   },
   "Annul Magic": {
     "name": "Annul Magic",
@@ -2810,8 +2945,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel annulled.",
-    "castOnOther": "Someone  feels annulled.",
-    "wearsOff": ""
+    "castOnOther": "feels annulled.",
+    "wearsOff": "",
+    "icon": "magic"
   },
   "Convergence": {
     "name": "Convergence",
@@ -2827,7 +2963,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Enstill": {
     "name": "Enstill",
@@ -2844,16 +2981,17 @@
       "durationString": "1.2 minutes @L20 to 1.6 minutes @L27",
       "minDuration": {
         "duration": 72,
-        "level": "20"
+        "level": 20
       },
       "maxDuration": {
-        "duration": 168,
-        "level": "27"
+        "duration": 96,
+        "level": 27
       }
     },
     "castOnYou": "Your feet adhere to the ground.",
-    "castOnOther": "Someone 's feet adhere to the ground.",
-    "wearsOff": "Your feet come free."
+    "castOnOther": "'s feet adhere to the ground.",
+    "wearsOff": "Your feet come free.",
+    "icon": "earth"
   },
   "Minion of Shadows": {
     "name": "Minion of Shadows",
@@ -2868,8 +3006,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  animates an undead servant.",
-    "wearsOff": ""
+    "castOnOther": "animates an undead servant.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Deflux": {
     "name": "Deflux",
@@ -2884,8 +3023,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You feel your life force drain away.",
-    "castOnOther": "Someone  staggers.",
-    "wearsOff": ""
+    "castOnOther": "staggers.",
+    "wearsOff": "",
+    "icon": "redHand"
   },
   "Shadowbond": {
     "name": "Shadowbond",
@@ -2905,8 +3045,9 @@
       }
     },
     "castOnYou": "Your wounds begin to heal.",
-    "castOnOther": "Someone  pulses with a blue-green aura.",
-    "wearsOff": "Your pact fades."
+    "castOnOther": "pulses with a blue-green aura.",
+    "wearsOff": "Your pact fades.",
+    "icon": "reaper"
   },
   "Shield of the Magi": {
     "name": "Shield of the Magi",
@@ -2927,7 +3068,8 @@
     },
     "castOnYou": "You feel armored.",
     "castOnOther": "",
-    "wearsOff": "Your shielding fades."
+    "wearsOff": "Your shielding fades.",
+    "icon": "shield"
   },
   "Thrall of Bones": {
     "name": "Thrall of Bones",
@@ -2944,16 +3086,17 @@
       "durationString": "17.2 minutes @L54 to 20.5 minutes @L65",
       "minDuration": {
         "duration": 1032,
-        "level": "54"
+        "level": 54
       },
       "maxDuration": {
-        "duration": 2262,
-        "level": "65"
+        "duration": 1230,
+        "level": 65
       }
     },
     "castOnYou": "",
-    "castOnOther": "Someone  moans.",
-    "wearsOff": ""
+    "castOnOther": "moans.",
+    "wearsOff": "",
+    "icon": "redBrain"
   },
   "Augmentation of Death": {
     "name": "Augmentation of Death",
@@ -2973,8 +3116,9 @@
       }
     },
     "castOnYou": "",
-    "castOnOther": "Someone 's eyes gleam with madness.",
-    "wearsOff": ""
+    "castOnOther": "'s eyes gleam with madness.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Chill Bones": {
     "name": "Chill Bones",
@@ -2994,8 +3138,9 @@
       }
     },
     "castOnYou": "You feel your skin harden and crack from the frost.",
-    "castOnOther": "Someone 's skin freezes and cracks off.",
-    "wearsOff": ""
+    "castOnOther": "'s skin freezes and cracks off.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Conglaciation of Bone": {
     "name": "Conglaciation of Bone",
@@ -3013,8 +3158,9 @@
       "minDuration": {}
     },
     "castOnYou": "210",
-    "castOnOther": "Evocation",
-    "wearsOff": "6.00"
+    "castOnOther": "",
+    "wearsOff": "6.00",
+    "icon": "reaper"
   },
   "Infusion": {
     "name": "Infusion",
@@ -3029,8 +3175,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "Your mind clears as a rush of essence fills you.",
-    "castOnOther": "Someone  radiates with essence.",
-    "wearsOff": ""
+    "castOnOther": "radiates with essence.",
+    "wearsOff": "",
+    "icon": "blueBrain"
   },
   "Levant": {
     "name": "Levant",
@@ -3045,8 +3192,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  steps into the shadows.",
-    "wearsOff": ""
+    "castOnOther": "steps into the shadows.",
+    "wearsOff": "",
+    "icon": "gate"
   },
   "Skin of the Shadow": {
     "name": "Skin of the Shadow",
@@ -3063,16 +3211,17 @@
       "durationString": "17.5 minutes @L55 to 20.5 minutes @L65",
       "minDuration": {
         "duration": 1050,
-        "level": "55"
+        "level": 55
       },
       "maxDuration": {
-        "duration": 2280,
-        "level": "65"
+        "duration": 1230,
+        "level": 65
       }
     },
     "castOnYou": "Your skin becomes shadow.",
-    "castOnOther": "Someone 's skin turns to shadow.",
-    "wearsOff": "Your skin returns to normal."
+    "castOnOther": "'s skin turns to shadow.",
+    "wearsOff": "Your skin returns to normal.",
+    "icon": "eye"
   },
   "Cessation of Cor": {
     "name": "Cessation of Cor",
@@ -3092,8 +3241,9 @@
       }
     },
     "castOnYou": "The blood stops flowing in your veins.",
-    "castOnOther": "Someone 's blood stills within their veins.",
-    "wearsOff": "Your blood resumes movement."
+    "castOnOther": "'s blood stills within their veins.",
+    "wearsOff": "Your blood resumes movement.",
+    "icon": "pox"
   },
   "Sedulous Subversion": {
     "name": "Sedulous Subversion",
@@ -3108,8 +3258,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "A foreign surge of mana refreshes your mind.",
-    "castOnOther": "Someone  twitches.",
-    "wearsOff": ""
+    "castOnOther": "twitches.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Servant of Bones": {
     "name": "Servant of Bones",
@@ -3124,8 +3275,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  animates an undead servant.",
-    "wearsOff": ""
+    "castOnOther": "animates an undead servant.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Trepidation": {
     "name": "Trepidation",
@@ -3145,8 +3297,9 @@
       }
     },
     "castOnYou": "Your mind fills with trepidation.",
-    "castOnOther": "Someone  is filled with trepidation.",
-    "wearsOff": "The trepidation fades."
+    "castOnOther": "is filled with trepidation.",
+    "wearsOff": "The trepidation fades.",
+    "icon": "reaper"
   },
   "Conjure Corpse": {
     "name": "Conjure Corpse",
@@ -3162,7 +3315,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "magic"
   },
   "Exile Undead": {
     "name": "Exile Undead",
@@ -3177,8 +3331,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  staggers.",
-    "wearsOff": ""
+    "castOnOther": "staggers.",
+    "wearsOff": "",
+    "icon": "redHand"
   },
   "Vexing Mordinia": {
     "name": "Vexing Mordinia",
@@ -3198,8 +3353,9 @@
       }
     },
     "castOnYou": "Vexing Mordinia begins to drain your life away.",
-    "castOnOther": "Someone  staggers under the curse of Vexing Mordinia.",
-    "wearsOff": "The Mordinia fades."
+    "castOnOther": "staggers under the curse of Vexing Mordinia.",
+    "wearsOff": "The Mordinia fades.",
+    "icon": "reaper"
   },
   "Immobilize": {
     "name": "Immobilize",
@@ -3219,8 +3375,9 @@
       }
     },
     "castOnYou": "Your feet adhere to the ground.",
-    "castOnOther": "Someone's feet adhere to the ground.",
-    "wearsOff": "Your feet come free."
+    "castOnOther": "feet adhere to the ground.",
+    "wearsOff": "Your feet come free.",
+    "icon": "earth"
   },
   "Pyrocruor": {
     "name": "Pyrocruor",
@@ -3240,8 +3397,9 @@
       }
     },
     "castOnYou": "Your blood ignites.",
-    "castOnOther": "Someone 's blood ignites.",
-    "wearsOff": "Your blood cools."
+    "castOnOther": "'s blood ignites.",
+    "wearsOff": "Your blood cools.",
+    "icon": "fire"
   },
   "Quivering Veil of Xarn": {
     "name": "Quivering Veil of Xarn",
@@ -3261,8 +3419,9 @@
       }
     },
     "castOnYou": "You are surrounded by the Quivering Veil of Xarn.",
-    "castOnOther": "Someone  has been surrounded by the Quivering Veil of Xarn.",
-    "wearsOff": "Your invulnerability fades."
+    "castOnOther": "has been surrounded by the Quivering Veil of Xarn.",
+    "wearsOff": "Your invulnerability fades.",
+    "icon": "shield"
   },
   "Devouring Darkness": {
     "name": "Devouring Darkness",
@@ -3282,8 +3441,9 @@
       }
     },
     "castOnYou": "You are engulfed by devouring darkness.",
-    "castOnOther": "Someone  is engulfed in devouring darkness.",
-    "wearsOff": "The darkness fades."
+    "castOnOther": "is engulfed in devouring darkness.",
+    "wearsOff": "The darkness fades.",
+    "icon": "reaper"
   },
   "Emissary of Thule": {
     "name": "Emissary of Thule",
@@ -3298,8 +3458,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  calls forth a servant of fear.",
-    "wearsOff": ""
+    "castOnOther": "calls forth a servant of fear.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Touch of Night": {
     "name": "Touch of Night",
@@ -3314,8 +3475,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "Your life force drains away at the Touch of Night.",
-    "castOnOther": "Someone  staggers.",
-    "wearsOff": ""
+    "castOnOther": "staggers.",
+    "wearsOff": "",
+    "icon": "redHand"
   },
   "Arch Lich": {
     "name": "Arch Lich",
@@ -3335,8 +3497,9 @@
       }
     },
     "castOnYou": "You feel the skin peel from your bones.",
-    "castOnOther": "Someone 's skin peels away.",
-    "wearsOff": "Your flesh returns."
+    "castOnOther": "'s skin peels away.",
+    "wearsOff": "Your flesh returns.",
+    "icon": "reaper"
   },
   "Banishment of Shadows": {
     "name": "Banishment of Shadows",
@@ -3352,7 +3515,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Demi Lich": {
     "name": "Demi Lich",
@@ -3372,8 +3536,9 @@
       }
     },
     "castOnYou": "You feel the skin peel from your bones.",
-    "castOnOther": "Someone 's skin peels away.",
-    "wearsOff": "Your flesh returns."
+    "castOnOther": "'s skin peels away.",
+    "wearsOff": "Your flesh returns.",
+    "icon": "reaper"
   },
   "Enslave Death": {
     "name": "Enslave Death",
@@ -3393,8 +3558,9 @@
       }
     },
     "castOnYou": "",
-    "castOnOther": "Someone  moans.",
-    "wearsOff": ""
+    "castOnOther": "moans.",
+    "wearsOff": "",
+    "icon": "redBrain"
   },
   "Gangrenous Touch of Zum`uul": {
     "name": "Gangrenous Touch of Zum`uul",
@@ -3409,8 +3575,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "Your life force drains away at the Gangrenous Touch of Zum`uul.",
-    "castOnOther": "Someone  staggers.",
-    "wearsOff": ""
+    "castOnOther": "staggers.",
+    "wearsOff": "",
+    "icon": "reaper"
   },
   "Trucidation": {
     "name": "Trucidation",
@@ -3425,7 +3592,8 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "Your essence drains away.",
-    "castOnOther": "Someone  seems drained.",
-    "wearsOff": ""
+    "castOnOther": "seems drained.",
+    "wearsOff": "",
+    "icon": "redHand"
   }
 }

@@ -13,24 +13,72 @@ body {
   width: 40px;
 }
 
+.spell.dagger {
+  background-position: 0px 0px;
+}
 .spell.boot {
   background-position: -40px 0;
 }
 .spell.eye {
   background-position: -80px 0;
 }
-.spell.hand {
+.spell.redHand {
   background-position: -120px 0;
 }
-.spell.mind {
+.spell.redBrain {
   background-position: -160px 0;
+}
+.spell.pox {
+  background-position: -200px 0;
+}
+
+.spell.water {
+  background-position: 0px -40px;
+}
+.spell.reaper {
+  background-position: -40px -40px;
+}
+.spell.blueBrain {
+  background-position: -80px -40px;
+}
+.spell.redArm {
+  background-position: -120px -40px;
+}
+.spell.blueHand {
+  background-position: -160px -40px;
 }
 .spell.shield {
   background-position: -200px -40px;
 }
-.spell.leftArm {
-  background-position: 0 -120px;
+
+.spell.summon {
+  background-position: 0px -80px;
 }
-.spell.mountain {
+.spell.cyclone {
+  background-position: -40px -80px;
+}
+.spell.fire {
+  background-position: -120px -80px;
+}
+.spell.plant {
+  background-position: -160px -80px;
+}
+.spell.earth {
   background-position: -200px -80px;
+}
+
+.spell.blueArm {
+  background-position: -0px -120px;
+}
+.spell.snowflake {
+  background-position: -40px -120px;
+}
+.spell.wolf {
+  background-position: -80px -120px;
+}
+.spell.magic {
+  background-position: -120px -120px;
+}
+.spell.gatee {
+  background-position: -160px -120px;
 }

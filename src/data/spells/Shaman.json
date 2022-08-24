@@ -12,8 +12,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You feel your skin singe as the Burst of Flame hits you.",
-    "castOnOther": "Someone  singes as the Burst of Flame hits them.",
-    "wearsOff": ""
+    "castOnOther": "singes as the Burst of Flame hits them.",
+    "wearsOff": "",
+    "icon": "fire"
   },
   "Cure Disease": {
     "name": "Cure Disease",
@@ -29,7 +30,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Dexterous Aura": {
     "name": "Dexterous Aura",
@@ -49,8 +51,9 @@
       }
     },
     "castOnYou": "You feel dexterous.",
-    "castOnOther": "Someone  looks more dexterous.",
-    "wearsOff": "Your magical dexterity fades."
+    "castOnOther": "looks more dexterous.",
+    "wearsOff": "Your magical dexterity fades.",
+    "icon": "blueArm"
   },
   "Endure Cold": {
     "name": "Endure Cold",
@@ -67,16 +70,17 @@
       "durationString": "3 minutes @L1 to 27 minutes @L9",
       "minDuration": {
         "duration": 180,
-        "level": "1"
+        "level": 1
       },
       "maxDuration": {
-        "duration": 1800,
-        "level": "9"
+        "duration": 1620,
+        "level": 9
       }
     },
     "castOnYou": "You feel protected from cold.",
-    "castOnOther": "Someone  is protected from cold.",
-    "wearsOff": "Your endurance to cold fades."
+    "castOnOther": "is protected from cold.",
+    "wearsOff": "Your endurance to cold fades.",
+    "icon": "shield"
   },
   "Flash of Light": {
     "name": "Flash of Light",
@@ -96,8 +100,9 @@
       }
     },
     "castOnYou": "You are blinded by a flash of light.",
-    "castOnOther": "Someone  is blinded by a flash of light.",
-    "wearsOff": "Your sight returns."
+    "castOnOther": "is blinded by a flash of light.",
+    "wearsOff": "Your sight returns.",
+    "icon": "eye"
   },
   "Inner Fire": {
     "name": "Inner Fire",
@@ -117,8 +122,9 @@
       }
     },
     "castOnYou": "You feel your body pulse with energy.",
-    "castOnOther": "Someone 's body pulses with energy.",
-    "wearsOff": "The inner fire fades."
+    "castOnOther": "'s body pulses with energy.",
+    "wearsOff": "The inner fire fades.",
+    "icon": "shield"
   },
   "Minor Healing": {
     "name": "Minor Healing",
@@ -133,8 +139,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel a little better.",
-    "castOnOther": "Someone  feels a little better.",
-    "wearsOff": ""
+    "castOnOther": "feels a little better.",
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Strengthen": {
     "name": "Strengthen",
@@ -154,8 +161,9 @@
       }
     },
     "castOnYou": "You feel stronger.",
-    "castOnOther": "Someone  looks stronger.",
-    "wearsOff": "Your strength fades."
+    "castOnOther": "looks stronger.",
+    "wearsOff": "Your strength fades.",
+    "icon": "blueArm"
   },
   "True North": {
     "name": "True North",
@@ -171,7 +179,8 @@
     "duration": 0,
     "castOnYou": "You spin to face north.",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "eye"
   },
   "Cure Poison": {
     "name": "Cure Poison",
@@ -187,7 +196,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Drowsy": {
     "name": "Drowsy",
@@ -204,16 +214,17 @@
       "durationString": "2 ticks @L5 to 3.2 minutes @L65",
       "minDuration": {
         "duration": 12,
-        "level": "5"
+        "level": 5
       },
       "maxDuration": {
-        "duration": 204,
-        "level": "65"
+        "duration": 192,
+        "level": 65
       }
     },
     "castOnYou": "You feel drowsy.",
-    "castOnOther": "Someone  yawns.",
-    "wearsOff": "You feel less drowsy."
+    "castOnOther": "yawns.",
+    "wearsOff": "You feel less drowsy.",
+    "icon": "boot"
   },
   "Endure Fire": {
     "name": "Endure Fire",
@@ -230,16 +241,17 @@
       "durationString": "3 minutes @L1 to 27 minutes @L9",
       "minDuration": {
         "duration": 180,
-        "level": "1"
+        "level": 1
       },
       "maxDuration": {
-        "duration": 1800,
-        "level": "9"
+        "duration": 1620,
+        "level": 9
       }
     },
     "castOnYou": "You feel protected from fire.",
-    "castOnOther": "Someone  is protected from fire.",
-    "wearsOff": "Your endurance to fire fades."
+    "castOnOther": "is protected from fire.",
+    "wearsOff": "Your endurance to fire fades.",
+    "icon": "shield"
   },
   "Feet like Cat": {
     "name": "Feet like Cat",
@@ -259,8 +271,9 @@
       }
     },
     "castOnYou": "You feel more agile.",
-    "castOnOther": "Someone  looks more agile.",
-    "wearsOff": "Your agility fades."
+    "castOnOther": "looks more agile.",
+    "wearsOff": "Your agility fades.",
+    "icon": "boot"
   },
   "Fleeting Fury": {
     "name": "Fleeting Fury",
@@ -277,16 +290,17 @@
       "durationString": "2 ticks @L5 to 3 ticks @L6",
       "minDuration": {
         "duration": 12,
-        "level": "5"
+        "level": 5
       },
       "maxDuration": {
-        "duration": 30,
-        "level": "6"
+        "duration": 18,
+        "level": 6
       }
     },
     "castOnYou": "You simmer with fury.",
-    "castOnOther": "Someone  simmers with fury.",
-    "wearsOff": "Your fury fades."
+    "castOnOther": "simmers with fury.",
+    "wearsOff": "Your fury fades.",
+    "icon": "blueArm"
   },
   "Frost Rift": {
     "name": "Frost Rift",
@@ -301,8 +315,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You feel your skin numb as the frost rift strikes you.",
-    "castOnOther": "Someone  is struck by the frost rift.",
-    "wearsOff": ""
+    "castOnOther": "is struck by the frost rift.",
+    "wearsOff": "",
+    "icon": "snowflake"
   },
   "Gate": {
     "name": "Gate",
@@ -317,8 +332,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone  fades away.",
-    "wearsOff": ""
+    "castOnOther": "fades away.",
+    "wearsOff": "",
+    "icon": "gate"
   },
   "Scale Skin": {
     "name": "Scale Skin",
@@ -335,16 +351,17 @@
       "durationString": "15 minutes @L5 to 27 minutes @L9",
       "minDuration": {
         "duration": 900,
-        "level": "5"
+        "level": 5
       },
       "maxDuration": {
-        "duration": 2520,
-        "level": "9"
+        "duration": 1620,
+        "level": 9
       }
     },
     "castOnYou": "You grow scales.",
-    "castOnOther": "Someone  grows scales.",
-    "wearsOff": "You shed your scales."
+    "castOnOther": "grows scales.",
+    "wearsOff": "You shed your scales.",
+    "icon": "shield"
   },
   "Sicken": {
     "name": "Sicken",
@@ -361,16 +378,17 @@
       "durationString": "1.5 minutes @L5 to 2.1 minutes @L11",
       "minDuration": {
         "duration": 90,
-        "level": "5"
+        "level": 5
       },
       "maxDuration": {
-        "duration": 216,
-        "level": "11"
+        "duration": 126,
+        "level": 11
       }
     },
     "castOnYou": "You feel feverish.",
-    "castOnOther": "Someone  sweats and shivers, looking feverish.",
-    "wearsOff": "Your fever has broken."
+    "castOnOther": "sweats and shivers, looking feverish.",
+    "wearsOff": "Your fever has broken.",
+    "icon": "pox"
   },
   "Spirit Pouch": {
     "name": "Spirit Pouch",
@@ -386,7 +404,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "summon"
   },
   "Summon Drink": {
     "name": "Summon Drink",
@@ -402,7 +421,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "summon"
   },
   "Cure Blindness": {
     "name": "Cure Blindness",
@@ -417,8 +437,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "",
-    "castOnOther": "Someone 's eyes sparkle.",
-    "wearsOff": ""
+    "castOnOther": "'s eyes sparkle.",
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Endure Disease": {
     "name": "Endure Disease",
@@ -438,8 +459,9 @@
       }
     },
     "castOnYou": "You feel protected from disease.",
-    "castOnOther": "Someone  is protected from disease.",
-    "wearsOff": "Your endurance to disease fades."
+    "castOnOther": "is protected from disease.",
+    "wearsOff": "Your endurance to disease fades.",
+    "icon": "shield"
   },
   "Light Healing": {
     "name": "Light Healing",
@@ -454,8 +476,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel better.",
-    "castOnOther": "Someone  feels better.",
-    "wearsOff": ""
+    "castOnOther": "feels better.",
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Sense Animals": {
     "name": "Sense Animals",
@@ -471,7 +494,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "eye"
   },
   "Serpent Sight": {
     "name": "Serpent Sight",
@@ -491,8 +515,9 @@
       }
     },
     "castOnYou": "Your eyes tingle.",
-    "castOnOther": "Someone 's eyes glow red.",
-    "wearsOff": "Your infravision fades."
+    "castOnOther": "'s eyes glow red.",
+    "wearsOff": "Your infravision fades.",
+    "icon": "eye"
   },
   "Spirit of Bear": {
     "name": "Spirit of Bear",
@@ -509,16 +534,17 @@
       "durationString": "27 minutes @L9 to 36 minutes @L12",
       "minDuration": {
         "duration": 1620,
-        "level": "9"
+        "level": 9
       },
       "maxDuration": {
-        "duration": 3780,
-        "level": "12"
+        "duration": 2160,
+        "level": 12
       }
     },
     "castOnYou": "You feel the spirit of bear enter you.",
-    "castOnOther": "Someone  is surrounded by a brief ursine aura.",
-    "wearsOff": "The spirit of bear leaves you."
+    "castOnOther": "is surrounded by a brief ursine aura.",
+    "wearsOff": "The spirit of bear leaves you.",
+    "icon": "blueArm"
   },
   "Spirit of Wolf": {
     "name": "Spirit of Wolf",
@@ -535,16 +561,17 @@
       "durationString": "27.0 mins @L9 to 36.0 mins @L12",
       "minDuration": {
         "duration": 1620,
-        "level": "9"
+        "level": 9
       },
       "maxDuration": {
-        "duration": 3780,
-        "level": "12"
+        "duration": 2160,
+        "level": 12
       }
     },
     "castOnYou": "You feel the spirit of wolf enter you.",
-    "castOnOther": "Someone  is surrounded by a brief lupine aura.",
-    "wearsOff": "The spirit of wolf leaves you."
+    "castOnOther": "is surrounded by a brief lupine aura.",
+    "wearsOff": "The spirit of wolf leaves you.",
+    "icon": "boot"
   },
   "Spirit Sight": {
     "name": "Spirit Sight",
@@ -564,8 +591,9 @@
       }
     },
     "castOnYou": "Your eyes tingle.",
-    "castOnOther": "Someone 's eyes tingle.",
-    "wearsOff": "Your eyes stop tingling."
+    "castOnOther": "'s eyes tingle.",
+    "wearsOff": "Your eyes stop tingling.",
+    "icon": "eye"
   },
   "Summon Food": {
     "name": "Summon Food",
@@ -581,7 +609,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "summon"
   },
   "Tainted Breath": {
     "name": "Tainted Breath",
@@ -601,8 +630,9 @@
       }
     },
     "castOnYou": "You have been poisoned.",
-    "castOnOther": "Someone  has been poisoned.",
-    "wearsOff": "You are no longer poisoned."
+    "castOnOther": "has been poisoned.",
+    "wearsOff": "You are no longer poisoned.",
+    "icon": "dagger"
   },
   "Bind Affinity": {
     "name": "Bind Affinity",
@@ -617,8 +647,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel yourself bind to the area.",
-    "castOnOther": "Someone  is bound to the area.",
-    "wearsOff": ""
+    "castOnOther": "is bound to the area.",
+    "wearsOff": "",
+    "icon": "magic"
   },
   "Burst of Strength": {
     "name": "Burst of Strength",
@@ -638,8 +669,9 @@
       }
     },
     "castOnYou": "Your muscles scream with strength.",
-    "castOnOther": "Someone  looks stronger.",
-    "wearsOff": "Your strength fades."
+    "castOnOther": "looks stronger.",
+    "wearsOff": "Your strength fades.",
+    "icon": "blueArm"
   },
   "Disempower": {
     "name": "Disempower",
@@ -656,16 +688,17 @@
       "durationString": "1.4 minutes @L14 to 2 minutes @L20",
       "minDuration": {
         "duration": 84,
-        "level": "14"
+        "level": 14
       },
       "maxDuration": {
-        "duration": 204,
-        "level": "20"
+        "duration": 120,
+        "level": 20
       }
     },
     "castOnYou": "You feel frail.",
-    "castOnOther": "Someone  looks frail.",
-    "wearsOff": "You feel your strength return."
+    "castOnOther": "looks frail.",
+    "wearsOff": "You feel your strength return.",
+    "icon": "redArm"
   },
   "Endure Poison": {
     "name": "Endure Poison",
@@ -685,8 +718,9 @@
       }
     },
     "castOnYou": "You feel protected from poison.",
-    "castOnOther": "Someone  is protected from poison.",
-    "wearsOff": "Your endurance to poison fades."
+    "castOnOther": "is protected from poison.",
+    "wearsOff": "Your endurance to poison fades.",
+    "icon": "shield"
   },
   "Enduring Breath": {
     "name": "Enduring Breath",
@@ -706,8 +740,9 @@
       }
     },
     "castOnYou": "You feel no need to breathe.",
-    "castOnOther": "Someone  doesn't seem to be breathing anymore.",
-    "wearsOff": "You resume breathing."
+    "castOnOther": "doesn't seem to be breathing anymore.",
+    "wearsOff": "You resume breathing.",
+    "icon": "water"
   },
   "Invisibility versus Animals": {
     "name": "Invisibility versus Animals",
@@ -724,16 +759,17 @@
       "durationString": "27 minutes @L9 to 36 minutes @L12",
       "minDuration": {
         "duration": 1620,
-        "level": "9"
+        "level": 9
       },
       "maxDuration": {
-        "duration": 3780,
-        "level": "12"
+        "duration": 2160,
+        "level": 12
       }
     },
     "castOnYou": "Part of your image fades away.",
-    "castOnOther": "Someone  is surrounded by an aura which shimmers, and then fades away.",
-    "wearsOff": "Your image returns."
+    "castOnOther": "is surrounded by an aura which shimmers, and then fades away.",
+    "wearsOff": "Your image returns.",
+    "icon": "eye"
   },
   "Levitate": {
     "name": "Levitate",
@@ -750,16 +786,17 @@
       "durationString": "5.2 minutes @L14 to 19 minutes @L60",
       "minDuration": {
         "duration": 312,
-        "level": "14"
+        "level": 14
       },
       "maxDuration": {
-        "duration": 1452,
-        "level": "60"
+        "duration": 1140,
+        "level": 60
       }
     },
     "castOnYou": "Your feet leave the ground.",
-    "castOnOther": "Someone's feet leave the ground.",
-    "wearsOff": "You can no longer levitate."
+    "castOnOther": "feet leave the ground.",
+    "wearsOff": "You can no longer levitate.",
+    "icon": "cyclone"
   },
   "Root": {
     "name": "Root",
@@ -776,16 +813,17 @@
       "durationString": "2 ticks @L4 to 8 ticks @L14",
       "minDuration": {
         "duration": 12,
-        "level": "4"
+        "level": 4
       },
       "maxDuration": {
-        "duration": 60,
-        "level": "14"
+        "duration": 48,
+        "level": 14
       }
     },
     "castOnYou": "Your feet adhere to the ground.",
-    "castOnOther": "Someone 's feet adhere to the ground.",
-    "wearsOff": "Your feet come free."
+    "castOnOther": "'s feet adhere to the ground.",
+    "wearsOff": "Your feet come free.",
+    "icon": "earth"
   },
   "Spirit of Snake": {
     "name": "Spirit of Snake",
@@ -805,8 +843,9 @@
       }
     },
     "castOnYou": "You feel the spirit of snake enter you.",
-    "castOnOther": "Someone  is surrounded by a brief serpentine aura.",
-    "wearsOff": "The spirit of snake leaves you."
+    "castOnOther": "is surrounded by a brief serpentine aura.",
+    "wearsOff": "The spirit of snake leaves you.",
+    "icon": "shield"
   },
   "Spirit Strike": {
     "name": "Spirit Strike",
@@ -821,8 +860,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You stagger as spirits of frost slam against you.",
-    "castOnOther": "Someone  staggers as spirits of frost slam against them.",
-    "wearsOff": ""
+    "castOnOther": "staggers as spirits of frost slam against them.",
+    "wearsOff": "",
+    "icon": "snowflake"
   },
   "Turtle Skin": {
     "name": "Turtle Skin",
@@ -842,8 +882,9 @@
       }
     },
     "castOnYou": "Your skin turns hard as turtle shell.",
-    "castOnOther": "Someone 's skin looks greener.",
-    "wearsOff": "Your skin returns to normal."
+    "castOnOther": "'s skin looks greener.",
+    "wearsOff": "Your skin returns to normal.",
+    "icon": "shield"
   },
   "Walking Sleep": {
     "name": "Walking Sleep",
@@ -860,16 +901,17 @@
       "durationString": "7 ticks @L14 to 3.2 minutes @L65",
       "minDuration": {
         "duration": 42,
-        "level": "14"
+        "level": 14
       },
       "maxDuration": {
-        "duration": 234,
-        "level": "65"
+        "duration": 192,
+        "level": 65
       }
     },
     "castOnYou": "You feel drowsy.",
-    "castOnOther": "Someone  yawns.",
-    "wearsOff": "You feel less drowsy."
+    "castOnOther": "yawns.",
+    "wearsOff": "You feel less drowsy.",
+    "icon": "boot"
   },
   "Affliction": {
     "name": "Affliction",
@@ -889,8 +931,9 @@
       }
     },
     "castOnYou": "You feel feverish.",
-    "castOnOther": "Someone  sweats and shivers, looking feverish.",
-    "wearsOff": "Your fever has broken."
+    "castOnOther": "sweats and shivers, looking feverish.",
+    "wearsOff": "Your fever has broken.",
+    "icon": "pox"
   },
   "Cancel Magic": {
     "name": "Cancel Magic",
@@ -905,8 +948,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel a bit dispelled.",
-    "castOnOther": "Someone  feels a bit dispelled.",
-    "wearsOff": ""
+    "castOnOther": "feels a bit dispelled.",
+    "wearsOff": "",
+    "icon": "magic"
   },
   "Endure Magic": {
     "name": "Endure Magic",
@@ -926,8 +970,9 @@
       }
     },
     "castOnYou": "You feel protected from magic.",
-    "castOnOther": "Someone  is protected from magic.",
-    "wearsOff": "Your endurance to magic fades."
+    "castOnOther": "is protected from magic.",
+    "wearsOff": "Your endurance to magic fades.",
+    "icon": "shield"
   },
   "Frenzy": {
     "name": "Frenzy",
@@ -944,16 +989,17 @@
       "durationString": "6.7 minutes @L19 to 20.5 minutes @L65",
       "minDuration": {
         "duration": 402,
-        "level": "19"
+        "level": 19
       },
       "maxDuration": {
-        "duration": 1632,
-        "level": "65"
+        "duration": 1230,
+        "level": 65
       }
     },
     "castOnYou": "You go berserk.",
-    "castOnOther": "Someone  goes berserk.",
-    "wearsOff": "Your frenzy fades."
+    "castOnOther": "goes berserk.",
+    "wearsOff": "Your frenzy fades.",
+    "icon": "blueArm"
   },
   "Healing": {
     "name": "Healing",
@@ -968,8 +1014,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel much better.",
-    "castOnOther": "Someone  feels much better.",
-    "wearsOff": ""
+    "castOnOther": "feels much better.",
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Infectious Cloud": {
     "name": "Infectious Cloud",
@@ -989,8 +1036,9 @@
       }
     },
     "castOnYou": "The bile wells up in your throat.",
-    "castOnOther": "Someone  starts to retch.",
-    "wearsOff": "You feel better."
+    "castOnOther": "starts to retch.",
+    "wearsOff": "You feel better.",
+    "icon": "pox"
   },
   "Insidious Fever": {
     "name": "Insidious Fever",
@@ -1007,16 +1055,17 @@
       "durationString": "4.8 minutes @L19 to 14 minutes @L65",
       "minDuration": {
         "duration": 288,
-        "level": "19"
+        "level": 19
       },
       "maxDuration": {
-        "duration": 1128,
-        "level": "65"
+        "duration": 840,
+        "level": 65
       }
     },
     "castOnYou": "You feel a fever settle upon you.",
-    "castOnOther": "Someone  sweats and shivers, looking feverish.",
-    "wearsOff": "Your fever has broken."
+    "castOnOther": "sweats and shivers, looking feverish.",
+    "wearsOff": "Your fever has broken.",
+    "icon": "pox"
   },
   "Malaise": {
     "name": "Malaise",
@@ -1033,16 +1082,17 @@
       "durationString": "4.8 minutes @L19 to 14 minutes @L65",
       "minDuration": {
         "duration": 288,
-        "level": "19"
+        "level": 19
       },
       "maxDuration": {
-        "duration": 1128,
-        "level": "65"
+        "duration": 840,
+        "level": 65
       }
     },
     "castOnYou": "You feel somewhat vulnerable.",
-    "castOnOther": "Someone  looks somewhat uncomfortable.",
-    "wearsOff": "Your vulnerability fades."
+    "castOnOther": "looks somewhat uncomfortable.",
+    "wearsOff": "Your vulnerability fades.",
+    "icon": "reaper"
   },
   "Shrink": {
     "name": "Shrink",
@@ -1057,8 +1107,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel smaller.",
-    "castOnOther": "Someone  shrinks.",
-    "wearsOff": "You return to normal height."
+    "castOnOther": "shrinks.",
+    "wearsOff": "You return to normal height.",
+    "icon": "magic"
   },
   "Spirit of Cat": {
     "name": "Spirit of Cat",
@@ -1078,8 +1129,9 @@
       }
     },
     "castOnYou": "You feel the spirit of cat enter you.",
-    "castOnOther": "Someone  is surrounded by a brief feline aura.",
-    "wearsOff": "The spirit of cat leaves you."
+    "castOnOther": "is surrounded by a brief feline aura.",
+    "wearsOff": "The spirit of cat leaves you.",
+    "icon": "boot"
   },
   "Spirit Strength": {
     "name": "Spirit Strength",
@@ -1099,8 +1151,9 @@
       }
     },
     "castOnYou": "You feel stronger.",
-    "castOnOther": "Someone  looks stronger.",
-    "wearsOff": "Your strength fades."
+    "castOnOther": "looks stronger.",
+    "wearsOff": "Your strength fades.",
+    "icon": "blueArm"
   },
   "Vision": {
     "name": "Vision",
@@ -1117,16 +1170,17 @@
       "durationString": "4.8 minutes @L19 to 14 minutes @L65",
       "minDuration": {
         "duration": 288,
-        "level": "19"
+        "level": 19
       },
       "maxDuration": {
-        "duration": 1128,
-        "level": "65"
+        "duration": 840,
+        "level": 65
       }
     },
     "castOnYou": "Your spirit drifts from your body.",
-    "castOnOther": "Someone 's eyes shimmer.",
-    "wearsOff": "You return to your body."
+    "castOnOther": "'s eyes shimmer.",
+    "wearsOff": "You return to your body.",
+    "icon": "eye"
   },
   "Cannibalize": {
     "name": "Cannibalize",
@@ -1141,8 +1195,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "Your body aches as your mind clears.",
-    "castOnOther": "Someone  winces.",
-    "wearsOff": ""
+    "castOnOther": "winces.",
+    "wearsOff": "",
+    "icon": "blueBrain"
   },
   "Counteract Disease": {
     "name": "Counteract Disease",
@@ -1158,7 +1213,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Creeping Vision": {
     "name": "Creeping Vision",
@@ -1178,8 +1234,9 @@
       }
     },
     "castOnYou": "Your eyes begin to focus.",
-    "castOnOther": "Someone 's eyes shimmer and gleam.",
-    "wearsOff": "Your focus fades."
+    "castOnOther": "'s eyes shimmer and gleam.",
+    "wearsOff": "Your focus fades.",
+    "icon": "eye"
   },
   "Envenomed Breath": {
     "name": "Envenomed Breath",
@@ -1199,8 +1256,9 @@
       }
     },
     "castOnYou": "You have been poisoned.",
-    "castOnOther": "Someone  has been poisoned.",
-    "wearsOff": "The poison has run its course."
+    "castOnOther": "has been poisoned.",
+    "wearsOff": "The poison has run its course.",
+    "icon": "dagger"
   },
   "Frost Strike": {
     "name": "Frost Strike",
@@ -1215,8 +1273,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You stagger as spirits of frost slam against you.",
-    "castOnOther": "Someone  staggers as spirits of frost slam against them.",
-    "wearsOff": ""
+    "castOnOther": "staggers as spirits of frost slam against them.",
+    "wearsOff": "",
+    "icon": "snowflake"
   },
   "Invigor": {
     "name": "Invigor",
@@ -1236,8 +1295,9 @@
       }
     },
     "castOnYou": "Your body zings with energy.",
-    "castOnOther": "Someone  looks energized.",
-    "wearsOff": ""
+    "castOnOther": "looks energized.",
+    "wearsOff": "",
+    "icon": "boot"
   },
   "Poison Storm": {
     "name": "Poison Storm",
@@ -1252,8 +1312,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "Your skin blisters as poison rains down on you.",
-    "castOnOther": "Someone 's skin blisters.",
-    "wearsOff": ""
+    "castOnOther": "'s skin blisters.",
+    "wearsOff": "",
+    "icon": "dagger"
   },
   "Protect": {
     "name": "Protect",
@@ -1273,8 +1334,9 @@
       }
     },
     "castOnYou": "A protective aura settles over you.",
-    "castOnOther": "Someone  is covered in a protective aura.",
-    "wearsOff": "Your protection fades."
+    "castOnOther": "is covered in a protective aura.",
+    "wearsOff": "Your protection fades.",
+    "icon": "shield"
   },
   "Regeneration": {
     "name": "Regeneration",
@@ -1291,16 +1353,17 @@
       "durationString": "8.2 minutes @L24 to 20.5 minutes @L65",
       "minDuration": {
         "duration": 491.99999999999994,
-        "level": "24"
+        "level": 24
       },
       "maxDuration": {
-        "duration": 1722,
-        "level": "65"
+        "duration": 1230,
+        "level": 65
       }
     },
     "castOnYou": "You begin to regenerate.",
-    "castOnOther": "Someone  begins to regenerate.",
-    "wearsOff": "You have stopped regenerating."
+    "castOnOther": "begins to regenerate.",
+    "wearsOff": "You have stopped regenerating.",
+    "icon": "blueHand"
   },
   "Resist Cold": {
     "name": "Resist Cold",
@@ -1320,8 +1383,9 @@
       }
     },
     "castOnYou": "You feel resistant from cold.",
-    "castOnOther": "Someone  is resistant to cold.",
-    "wearsOff": "Your cold resistance fades."
+    "castOnOther": "is resistant to cold.",
+    "wearsOff": "Your cold resistance fades.",
+    "icon": "shield"
   },
   "Spirit of Cheetah": {
     "name": "Spirit of Cheetah",
@@ -1341,8 +1405,9 @@
       }
     },
     "castOnYou": "You feel the spirit of cheetah enter you.",
-    "castOnOther": "Someone  is surrounded by a brief feline aura.",
-    "wearsOff": "The spirit of cheetah fades."
+    "castOnOther": "is surrounded by a brief feline aura.",
+    "wearsOff": "The spirit of cheetah fades.",
+    "icon": "boot"
   },
   "Spirit of Monkey": {
     "name": "Spirit of Monkey",
@@ -1362,8 +1427,9 @@
       }
     },
     "castOnYou": "You feel the spirit of monkey enter you.",
-    "castOnOther": "Someone  is surrounded by a brief simian aura.",
-    "wearsOff": "The spirit of monkey leaves."
+    "castOnOther": "is surrounded by a brief simian aura.",
+    "wearsOff": "The spirit of monkey leaves.",
+    "icon": "blueArm"
   },
   "Spirit of Ox": {
     "name": "Spirit of Ox",
@@ -1383,8 +1449,9 @@
       }
     },
     "castOnYou": "You feel the spirit of ox enter you.",
-    "castOnOther": "Someone  is surrounded by a brief bovine aura.",
-    "wearsOff": "The spirit of ox leaves you."
+    "castOnOther": "is surrounded by a brief bovine aura.",
+    "wearsOff": "The spirit of ox leaves you.",
+    "icon": "blueArm"
   },
   "Scale of Wolf": {
     "name": "Scale of Wolf",
@@ -1404,8 +1471,9 @@
       }
     },
     "castOnYou": "You feel the spirit-scale of wolf enter you.",
-    "castOnOther": "Someone  is surrounded by a dark lupine aura.",
-    "wearsOff": "The scale of wolf leaves you."
+    "castOnOther": "is surrounded by a dark lupine aura.",
+    "wearsOff": "The scale of wolf leaves you.",
+    "icon": "summon"
   },
   "Alluring Aura": {
     "name": "Alluring Aura",
@@ -1425,8 +1493,9 @@
       }
     },
     "castOnYou": "You feel alluring.",
-    "castOnOther": "Someone  is surrounded by an alluring aura.",
-    "wearsOff": "Your aura fades."
+    "castOnOther": "is surrounded by an alluring aura.",
+    "wearsOff": "Your aura fades.",
+    "icon": "blueArm"
   },
   "Befriend Animal": {
     "name": "Befriend Animal",
@@ -1442,15 +1511,16 @@
     "duration": {
       "durationString": "Between 0:03 - 5:00 @L14 to 0:03 - 20:00 @L65 (",
       "minDuration": {
-        "level": "14"
+        "level": 14
       },
       "maxDuration": {
-        "level": "65"
+        "level": 65
       }
     },
     "castOnYou": "",
-    "castOnOther": "Someone  blinks.",
-    "wearsOff": ""
+    "castOnOther": "blinks.",
+    "wearsOff": "",
+    "icon": "redBrain"
   },
   "Counteract Poison": {
     "name": "Counteract Poison",
@@ -1466,7 +1536,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Greater Healing": {
     "name": "Greater Healing",
@@ -1481,8 +1552,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel much better.",
-    "castOnOther": "Someone  feels much better.",
-    "wearsOff": ""
+    "castOnOther": "feels much better.",
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Imbue Amber": {
     "name": "Imbue Amber",
@@ -1498,7 +1570,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "magic"
   },
   "Imbue Ivory": {
     "name": "Imbue Ivory",
@@ -1514,7 +1587,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "magic"
   },
   "Imbue Jade": {
     "name": "Imbue Jade",
@@ -1530,7 +1604,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "magic"
   },
   "Imbue Sapphire": {
     "name": "Imbue Sapphire",
@@ -1546,7 +1621,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "magic"
   },
   "Invisibility": {
     "name": "Invisibility",
@@ -1563,16 +1639,17 @@
       "durationString": "12 minutes @L4 to 20 minutes @L7",
       "minDuration": {
         "duration": 720,
-        "level": "4"
+        "level": 4
       },
       "maxDuration": {
-        "duration": 1920,
-        "level": "7"
+        "duration": 1200,
+        "level": 7
       }
     },
     "castOnYou": "You vanish.",
-    "castOnOther": "Someone  fades away.",
-    "wearsOff": "You appear."
+    "castOnOther": "fades away.",
+    "wearsOff": "You appear.",
+    "icon": "eye"
   },
   "Listless Power": {
     "name": "Listless Power",
@@ -1589,16 +1666,17 @@
       "durationString": "2.9 minutes @L29 to 6.5 minutes @L65",
       "minDuration": {
         "duration": 174,
-        "level": "29"
+        "level": 29
       },
       "maxDuration": {
-        "duration": 564,
-        "level": "65"
+        "duration": 390,
+        "level": 65
       }
     },
     "castOnYou": "You feel frail.",
-    "castOnOther": "Someone  looks frail.",
-    "wearsOff": "You feel your strength return."
+    "castOnOther": "looks frail.",
+    "wearsOff": "You feel your strength return.",
+    "icon": "redArm"
   },
   "Quickness": {
     "name": "Quickness",
@@ -1615,16 +1693,17 @@
       "durationString": "4.2 minutes @L16 to 11 minutes @L50",
       "minDuration": {
         "duration": 252,
-        "level": "16"
+        "level": 16
       },
       "maxDuration": {
-        "duration": 912,
-        "level": "50"
+        "duration": 660,
+        "level": 50
       }
     },
     "castOnYou": "You feel much faster.",
-    "castOnOther": "Someone  feels much faster.",
-    "wearsOff": "Your speed returns to normal."
+    "castOnOther": "feels much faster.",
+    "wearsOff": "Your speed returns to normal.",
+    "icon": "blueArm"
   },
   "Raging Strength": {
     "name": "Raging Strength",
@@ -1644,8 +1723,9 @@
       }
     },
     "castOnYou": "You feel stronger.",
-    "castOnOther": "Someone  looks stronger.",
-    "wearsOff": "Your strength fades."
+    "castOnOther": "looks stronger.",
+    "wearsOff": "Your strength fades.",
+    "icon": "blueArm"
   },
   "Resist Fire": {
     "name": "Resist Fire",
@@ -1665,8 +1745,9 @@
       }
     },
     "castOnYou": "You feel resistant from fire.",
-    "castOnOther": "Someone is resistant to fire.",
-    "wearsOff": "Your resist fire fades."
+    "castOnOther": "is resistant to fire.",
+    "wearsOff": "Your resist fire fades.",
+    "icon": "shield"
   },
   "Rising Dexterity": {
     "name": "Rising Dexterity",
@@ -1686,8 +1767,9 @@
       }
     },
     "castOnYou": "You feel dexterous.",
-    "castOnOther": "Someone  looks dexterous.",
-    "wearsOff": "Your dexterity fades."
+    "castOnOther": "looks dexterous.",
+    "wearsOff": "Your dexterity fades.",
+    "icon": "blueArm"
   },
   "Tagar's Insects": {
     "name": "Tagar's Insects",
@@ -1704,16 +1786,17 @@
       "durationString": "1.4 minutes @L29 to 3.0 minutes @L60",
       "minDuration": {
         "duration": 84,
-        "level": "29"
+        "level": 29
       },
       "maxDuration": {
-        "duration": 264,
-        "level": "60"
+        "duration": 180,
+        "level": 60
       }
     },
     "castOnYou": "You feel drowsy.",
-    "castOnOther": "Someone  yawns.",
-    "wearsOff": "You feel less drowsy."
+    "castOnOther": "yawns.",
+    "wearsOff": "You feel less drowsy.",
+    "icon": "boot"
   },
   "Ultravision": {
     "name": "Ultravision",
@@ -1733,8 +1816,9 @@
       }
     },
     "castOnYou": "Your eyes tingle.",
-    "castOnOther": "Someone 's eyes glow violet.",
-    "wearsOff": "Your ultravision fades."
+    "castOnOther": "'s eyes glow violet.",
+    "wearsOff": "Your ultravision fades.",
+    "icon": "eye"
   },
   "Charm Animals": {
     "name": "Charm Animals",
@@ -1751,16 +1835,17 @@
       "durationString": "8.2 minutes @L24 to 20.5 minutes @L65",
       "minDuration": {
         "duration": 491.99999999999994,
-        "level": "24"
+        "level": 24
       },
       "maxDuration": {
-        "duration": 1722,
-        "level": "65"
+        "duration": 1230,
+        "level": 65
       }
     },
     "castOnYou": "",
-    "castOnOther": "Someone  blinks.",
-    "wearsOff": ""
+    "castOnOther": "blinks.",
+    "wearsOff": "",
+    "icon": "redBrain"
   },
   "Companion Spirit": {
     "name": "Companion Spirit",
@@ -1775,8 +1860,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You summon a companion spirit.",
-    "castOnOther": "Someone  summons a companion spirit.",
-    "wearsOff": ""
+    "castOnOther": "summons a companion spirit.",
+    "wearsOff": "",
+    "icon": "summon"
   },
   "Enstill": {
     "name": "Enstill",
@@ -1793,16 +1879,17 @@
       "durationString": "1.2 minutes @L20 to 1.6 minutes @L27",
       "minDuration": {
         "duration": 72,
-        "level": "20"
+        "level": 20
       },
       "maxDuration": {
-        "duration": 168,
-        "level": "27"
+        "duration": 96,
+        "level": 27
       }
     },
     "castOnYou": "Your feet adhere to the ground.",
-    "castOnOther": "Someone 's feet adhere to the ground.",
-    "wearsOff": "Your feet come free."
+    "castOnOther": "'s feet adhere to the ground.",
+    "wearsOff": "Your feet come free.",
+    "icon": "earth"
   },
   "Fury": {
     "name": "Fury",
@@ -1819,16 +1906,17 @@
       "durationString": "11.2 minutes @L34 to 20.5 minutes @L65",
       "minDuration": {
         "duration": 672,
-        "level": "34"
+        "level": 34
       },
       "maxDuration": {
-        "duration": 1902,
-        "level": "65"
+        "duration": 1230,
+        "level": 65
       }
     },
     "castOnYou": "You go berserk.",
-    "castOnOther": "Someone  goes berserk.",
-    "wearsOff": "Your frenzy fades."
+    "castOnOther": "goes berserk.",
+    "wearsOff": "Your frenzy fades.",
+    "icon": "blueArm"
   },
   "Health": {
     "name": "Health",
@@ -1848,8 +1936,9 @@
       }
     },
     "castOnYou": "You feel healthy.",
-    "castOnOther": "Someone  looks healthy.",
-    "wearsOff": "Your health fades."
+    "castOnOther": "looks healthy.",
+    "wearsOff": "Your health fades.",
+    "icon": "blueArm"
   },
   "Malaisement": {
     "name": "Malaisement",
@@ -1866,16 +1955,17 @@
       "durationString": "7.8 minutes @L34 to 14 minutes @L65",
       "minDuration": {
         "duration": 468,
-        "level": "34"
+        "level": 34
       },
       "maxDuration": {
-        "duration": 1308,
-        "level": "65"
+        "duration": 840,
+        "level": 65
       }
     },
     "castOnYou": "You feel vulnerable.",
-    "castOnOther": "Someone  looks uncomfortable.",
-    "wearsOff": "Your vulnerability fades."
+    "castOnOther": "looks uncomfortable.",
+    "wearsOff": "Your vulnerability fades.",
+    "icon": "redArm"
   },
   "Nimble": {
     "name": "Nimble",
@@ -1895,8 +1985,9 @@
       }
     },
     "castOnYou": "You feel nimble.",
-    "castOnOther": "Someone  looks nimble.",
-    "wearsOff": "Your agility fades."
+    "castOnOther": "looks nimble.",
+    "wearsOff": "Your agility fades.",
+    "icon": "boot"
   },
   "Resist Disease": {
     "name": "Resist Disease",
@@ -1916,8 +2007,9 @@
       }
     },
     "castOnYou": "You feel resistant from disease.",
-    "castOnOther": "Someone  is resistant to disease.",
-    "wearsOff": "Your disease resistance fades."
+    "castOnOther": "is resistant to disease.",
+    "wearsOff": "Your disease resistance fades.",
+    "icon": "shield"
   },
   "Scourge": {
     "name": "Scourge",
@@ -1937,8 +2029,9 @@
       }
     },
     "castOnYou": "You feel feverish.",
-    "castOnOther": "Someone  sweats and shivers, looking feverish.",
-    "wearsOff": "Your fever has broken."
+    "castOnOther": "sweats and shivers, looking feverish.",
+    "wearsOff": "Your fever has broken.",
+    "icon": "pox"
   },
   "Shifting Shield": {
     "name": "Shifting Shield",
@@ -1958,8 +2051,9 @@
       }
     },
     "castOnYou": "A shifting spirit shield surrounds you.",
-    "castOnOther": "Someone  is surrounded by a shifting spirit shield.",
-    "wearsOff": "You are no longer shielded."
+    "castOnOther": "is surrounded by a shifting spirit shield.",
+    "wearsOff": "You are no longer shielded.",
+    "icon": "shield"
   },
   "Shock of the Tainted": {
     "name": "Shock of the Tainted",
@@ -1974,8 +2068,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "Your body is wracked by shocks of poison.",
-    "castOnOther": "Someone  screams in pain.",
-    "wearsOff": ""
+    "castOnOther": "screams in pain.",
+    "wearsOff": "",
+    "icon": "dagger"
   },
   "Talisman of Tnarg": {
     "name": "Talisman of Tnarg",
@@ -1995,8 +2090,9 @@
       }
     },
     "castOnYou": "You feel tough.",
-    "castOnOther": "Someone  looks tougher.",
-    "wearsOff": "Your hit points fade."
+    "castOnOther": "looks tougher.",
+    "wearsOff": "Your hit points fade.",
+    "icon": "shield"
   },
   "Winter's Roar": {
     "name": "Winter's Roar",
@@ -2011,8 +2107,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You stagger as spirits of frost slam against you.",
-    "castOnOther": "Someone  staggers as spirits of frost slam against them.",
-    "wearsOff": ""
+    "castOnOther": "staggers as spirits of frost slam against them.",
+    "wearsOff": "",
+    "icon": "snowflake"
   },
   "Assiduous Vision": {
     "name": "Assiduous Vision",
@@ -2029,16 +2126,17 @@
       "durationString": "1 hour 57 minutes @L39 to 3 hours @L60",
       "minDuration": {
         "duration": 7020,
-        "level": "39"
+        "level": 39
       },
       "maxDuration": {
-        "duration": 17820,
-        "level": "60"
+        "duration": 10800,
+        "level": 60
       }
     },
     "castOnYou": "Your spirit drifts from your body.",
-    "castOnOther": "Someone 's eyes shimmer.",
-    "wearsOff": "You return to your body."
+    "castOnOther": "'s eyes shimmer.",
+    "wearsOff": "You return to your body.",
+    "icon": "eye"
   },
   "Blinding Luminance": {
     "name": "Blinding Luminance",
@@ -2058,8 +2156,9 @@
       }
     },
     "castOnYou": "You are blinded by a flash of light.",
-    "castOnOther": "Someone  is blinded by a flash of light.",
-    "wearsOff": "Your sight returns."
+    "castOnOther": "is blinded by a flash of light.",
+    "wearsOff": "Your sight returns.",
+    "icon": "eye"
   },
   "Cannibalize II": {
     "name": "Cannibalize II",
@@ -2074,8 +2173,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "Your body aches as your mind clears.",
-    "castOnOther": "Someone  winces.",
-    "wearsOff": ""
+    "castOnOther": "winces.",
+    "wearsOff": "",
+    "icon": "blueBrain"
   },
   "Chloroplast": {
     "name": "Chloroplast",
@@ -2092,16 +2192,17 @@
       "durationString": "12 minutes 42 seconds @L39 to 19 minutes 6 seconds @L60",
       "minDuration": {
         "duration": 762,
-        "level": "39"
+        "level": 39
       },
       "maxDuration": {
-        "duration": 1908,
-        "level": "60"
+        "duration": 1146,
+        "level": 60
       }
     },
     "castOnYou": "You begin to regenerate.",
-    "castOnOther": "Someone  begins to regenerate.",
-    "wearsOff": "You have stopped regenerating."
+    "castOnOther": "begins to regenerate.",
+    "wearsOff": "You have stopped regenerating.",
+    "icon": "blueHand"
   },
   "Deftness": {
     "name": "Deftness",
@@ -2121,8 +2222,9 @@
       }
     },
     "castOnYou": "You feel dexterous.",
-    "castOnOther": "Someone  looks dexterous.",
-    "wearsOff": "Your dexterity fades."
+    "castOnOther": "looks dexterous.",
+    "wearsOff": "Your dexterity fades.",
+    "icon": "blueArm"
   },
   "Extinguish Fatigue": {
     "name": "Extinguish Fatigue",
@@ -2137,8 +2239,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "Your body zings with energy.",
-    "castOnOther": "Someone  looks energized.",
-    "wearsOff": ""
+    "castOnOther": "looks energized.",
+    "wearsOff": "",
+    "icon": "boot"
   },
   "Furious Strength": {
     "name": "Furious Strength",
@@ -2158,8 +2261,9 @@
       }
     },
     "castOnYou": "You feel stronger.",
-    "castOnOther": "Someone  looks stronger.",
-    "wearsOff": "Your strength fades."
+    "castOnOther": "looks stronger.",
+    "wearsOff": "Your strength fades.",
+    "icon": "blueArm"
   },
   "Gale of Poison": {
     "name": "Gale of Poison",
@@ -2174,8 +2278,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "Your skin blisters as poison rains down on you.",
-    "castOnOther": "Someone 's skin blisters.",
-    "wearsOff": ""
+    "castOnOther": "'s skin blisters.",
+    "wearsOff": "",
+    "icon": "dagger"
   },
   "Glamour": {
     "name": "Glamour",
@@ -2195,8 +2300,9 @@
       }
     },
     "castOnYou": "You feel charismatic.",
-    "castOnOther": "Someone looks charismatic.",
-    "wearsOff": "Your charisma fades."
+    "castOnOther": "looks charismatic.",
+    "wearsOff": "Your charisma fades.",
+    "icon": "blueArm"
   },
   "Insidious Malady": {
     "name": "Insidious Malady",
@@ -2213,16 +2319,17 @@
       "durationString": "8.8 minutes @L39 to 14 minutes @L65",
       "minDuration": {
         "duration": 528,
-        "level": "39"
+        "level": 39
       },
       "maxDuration": {
-        "duration": 1368,
-        "level": "65"
+        "duration": 840,
+        "level": 65
       }
     },
     "castOnYou": "You feel a fever settle upon you.",
-    "castOnOther": "Someone  sweats and shivers, looking feverish.",
-    "wearsOff": "Your fever has broken."
+    "castOnOther": "sweats and shivers, looking feverish.",
+    "wearsOff": "Your fever has broken.",
+    "icon": "pox"
   },
   "Resist Poison": {
     "name": "Resist Poison",
@@ -2242,8 +2349,9 @@
       }
     },
     "castOnYou": "You feel resistant from poison.",
-    "castOnOther": "Someone  is resistant to poison.",
-    "wearsOff": "Your poison resistance fades."
+    "castOnOther": "is resistant to poison.",
+    "wearsOff": "Your poison resistance fades.",
+    "icon": "shield"
   },
   "Togor's Insects": {
     "name": "Togor's Insects",
@@ -2260,16 +2368,17 @@
       "durationString": "1.9 minutes @L39 to 3.0 minutes @L60",
       "minDuration": {
         "duration": 114,
-        "level": "39"
+        "level": 39
       },
       "maxDuration": {
-        "duration": 294,
-        "level": "60"
+        "duration": 180,
+        "level": 60
       }
     },
     "castOnYou": "You feel drowsy.",
-    "castOnOther": "Someone  yawns.",
-    "wearsOff": "You feel less drowsy."
+    "castOnOther": "yawns.",
+    "wearsOff": "You feel less drowsy.",
+    "icon": "boot"
   },
   "Tumultuous Strength": {
     "name": "Tumultuous Strength",
@@ -2289,8 +2398,9 @@
       }
     },
     "castOnYou": "You feel stronger.",
-    "castOnOther": "Someone  looks stronger.",
-    "wearsOff": "Your strength fades."
+    "castOnOther": "looks stronger.",
+    "wearsOff": "Your strength fades.",
+    "icon": "blueArm"
   },
   "Venom of the Snake": {
     "name": "Venom of the Snake",
@@ -2307,16 +2417,17 @@
       "durationString": "7 ticks @L34 to 8 ticks @L36",
       "minDuration": {
         "duration": 42,
-        "level": "34"
+        "level": 34
       },
       "maxDuration": {
-        "duration": 90,
-        "level": "36"
+        "duration": 48,
+        "level": 36
       }
     },
     "castOnYou": "You have been poisoned.",
-    "castOnOther": "Someone  has been poisoned.",
-    "wearsOff": "The poison has run its course."
+    "castOnOther": "has been poisoned.",
+    "wearsOff": "The poison has run its course.",
+    "icon": "dagger"
   },
   "Vigilant Spirit": {
     "name": "Vigilant Spirit",
@@ -2331,8 +2442,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You summon a vigilant spirit.",
-    "castOnOther": "Someone  summons a companion spirit.",
-    "wearsOff": ""
+    "castOnOther": "summons a companion spirit.",
+    "wearsOff": "",
+    "icon": "summon"
   },
   "Agility": {
     "name": "Agility",
@@ -2352,8 +2464,9 @@
       }
     },
     "castOnYou": "You feel agile.",
-    "castOnOther": "Someone  looks agile.",
-    "wearsOff": "Your agility fades."
+    "castOnOther": "looks agile.",
+    "wearsOff": "Your agility fades.",
+    "icon": "boot"
   },
   "Alacrity": {
     "name": "Alacrity",
@@ -2370,16 +2483,17 @@
       "durationString": "5.8 minutes @L24 to 11 minutes @L50",
       "minDuration": {
         "duration": 348,
-        "level": "24"
+        "level": 24
       },
       "maxDuration": {
-        "duration": 1008,
-        "level": "50"
+        "duration": 660,
+        "level": 50
       }
     },
     "castOnYou": "You feel much faster.",
-    "castOnOther": "Someone  feels much faster.",
-    "wearsOff": "Your speed returns to normal."
+    "castOnOther": "feels much faster.",
+    "wearsOff": "Your speed returns to normal.",
+    "icon": "blueArm"
   },
   "Blast of Poison": {
     "name": "Blast of Poison",
@@ -2394,8 +2508,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "Your body is wracked by shocks of poison.",
-    "castOnOther": "Someone  screams in pain.",
-    "wearsOff": ""
+    "castOnOther": "screams in pain.",
+    "wearsOff": "",
+    "icon": "dagger"
   },
   "Blizzard Blast": {
     "name": "Blizzard Blast",
@@ -2410,8 +2525,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You stagger as spirits of frost slam against you.",
-    "castOnOther": "Someone  staggers as spirits of frost slam against them.",
-    "wearsOff": ""
+    "castOnOther": "staggers as spirits of frost slam against them.",
+    "wearsOff": "",
+    "icon": "snowflake"
   },
   "Guardian": {
     "name": "Guardian",
@@ -2431,8 +2547,9 @@
       }
     },
     "castOnYou": "The protective presence of a guardian spirit surrounds you.",
-    "castOnOther": "Someone  is surrounded by a spirit aura.",
-    "wearsOff": "You are no longer guarded."
+    "castOnOther": "is surrounded by a spirit aura.",
+    "wearsOff": "You are no longer guarded.",
+    "icon": "shield"
   },
   "Guardian Spirit": {
     "name": "Guardian Spirit",
@@ -2447,8 +2564,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You summon a guardian spirit.",
-    "castOnOther": "Someone  summons a guardian spirit.",
-    "wearsOff": ""
+    "castOnOther": "summons a guardian spirit.",
+    "wearsOff": "",
+    "icon": "summon"
   },
   "Incapacitate": {
     "name": "Incapacitate",
@@ -2465,16 +2583,17 @@
       "durationString": "4.4 minutes @L44 to 6.5 minutes @L65",
       "minDuration": {
         "duration": 264,
-        "level": "44"
+        "level": 44
       },
       "maxDuration": {
-        "duration": 654,
-        "level": "65"
+        "duration": 390,
+        "level": 65
       }
     },
     "castOnYou": "You feel frail.",
-    "castOnOther": "Someone  looks frail.",
-    "wearsOff": "You feel your strength return."
+    "castOnOther": "looks frail.",
+    "wearsOff": "You feel your strength return.",
+    "icon": "redArm"
   },
   "Nullify Magic": {
     "name": "Nullify Magic",
@@ -2489,8 +2608,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel dispelled.",
-    "castOnOther": "Someone  feels dispelled.",
-    "wearsOff": ""
+    "castOnOther": "feels dispelled.",
+    "wearsOff": "",
+    "icon": "magic"
   },
   "Resist Magic": {
     "name": "Resist Magic",
@@ -2510,8 +2630,9 @@
       }
     },
     "castOnYou": "You feel resistant from magic.",
-    "castOnOther": "Someone  is resistant to magic.",
-    "wearsOff": "Your resist magic fades."
+    "castOnOther": "is resistant to magic.",
+    "wearsOff": "Your resist magic fades.",
+    "icon": "shield"
   },
   "Stamina": {
     "name": "Stamina",
@@ -2531,8 +2652,9 @@
       }
     },
     "castOnYou": "You feel robust.",
-    "castOnOther": "Someone  looks robust.",
-    "wearsOff": "Your stamina fades."
+    "castOnOther": "looks robust.",
+    "wearsOff": "Your stamina fades.",
+    "icon": "blueArm"
   },
   "Summon Companion": {
     "name": "Summon Companion",
@@ -2547,8 +2669,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You summon your companion to your side.",
-    "castOnOther": "Someone  summons a companion to their side.",
-    "wearsOff": ""
+    "castOnOther": "summons a companion to their side.",
+    "wearsOff": "",
+    "icon": "summon"
   },
   "Talisman of Altuna": {
     "name": "Talisman of Altuna",
@@ -2568,8 +2691,9 @@
       }
     },
     "castOnYou": "You feel tough.",
-    "castOnOther": "Someone  looks tougher.",
-    "wearsOff": "Your hit points fade."
+    "castOnOther": "looks tougher.",
+    "wearsOff": "Your hit points fade.",
+    "icon": "shield"
   },
   "Abolish Disease": {
     "name": "Abolish Disease",
@@ -2585,7 +2709,8 @@
     "duration": 0,
     "castOnYou": "",
     "castOnOther": "",
-    "wearsOff": ""
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Charisma": {
     "name": "Charisma",
@@ -2605,8 +2730,9 @@
       }
     },
     "castOnYou": "You feel charismatic.",
-    "castOnOther": "Someone  looks charismatic.",
-    "wearsOff": "Your charisma fades."
+    "castOnOther": "looks charismatic.",
+    "wearsOff": "Your charisma fades.",
+    "icon": "shield"
   },
   "Dexterity": {
     "name": "Dexterity",
@@ -2626,8 +2752,9 @@
       }
     },
     "castOnYou": "You feel dexterous.",
-    "castOnOther": "Someone  looks dexterous.",
-    "wearsOff": "Your dexterity fades."
+    "castOnOther": "looks dexterous.",
+    "wearsOff": "Your dexterity fades.",
+    "icon": "blueArm"
   },
   "Envenomed Bolt": {
     "name": "Envenomed Bolt",
@@ -2647,8 +2774,9 @@
       }
     },
     "castOnYou": "You have been poisoned.",
-    "castOnOther": "Someone  has been poisoned.",
-    "wearsOff": "The poison has run its course."
+    "castOnOther": "has been poisoned.",
+    "wearsOff": "The poison has run its course.",
+    "icon": "dagger"
   },
   "Frenzied Spirit": {
     "name": "Frenzied Spirit",
@@ -2663,8 +2791,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You summon a frenzied spirit.",
-    "castOnOther": "Someone  summons a frenzied spirit.",
-    "wearsOff": ""
+    "castOnOther": "summons a frenzied spirit.",
+    "wearsOff": "",
+    "icon": "summon"
   },
   "Malosi": {
     "name": "Malosi",
@@ -2681,16 +2810,17 @@
       "durationString": "10.8 minutes @L49 to 14 minutes @L65",
       "minDuration": {
         "duration": 648,
-        "level": "49"
+        "level": 49
       },
       "maxDuration": {
-        "duration": 1488,
-        "level": "65"
+        "duration": 840,
+        "level": 65
       }
     },
     "castOnYou": "You feel very vulnerable.",
-    "castOnOther": "Someone  looks very uncomfortable.",
-    "wearsOff": "Your vulnerability fades."
+    "castOnOther": "looks very uncomfortable.",
+    "wearsOff": "Your vulnerability fades.",
+    "icon": "redArm"
   },
   "Plague": {
     "name": "Plague",
@@ -2710,8 +2840,9 @@
       }
     },
     "castOnYou": "You feel feverish.",
-    "castOnOther": "Someone  sweats and shivers, looking feverish.",
-    "wearsOff": "Your fever has broken."
+    "castOnOther": "sweats and shivers, looking feverish.",
+    "wearsOff": "Your fever has broken.",
+    "icon": "pox"
   },
   "Rage": {
     "name": "Rage",
@@ -2728,16 +2859,17 @@
       "durationString": "15.7 minutes @L49 to 20.5 minutes @L65",
       "minDuration": {
         "duration": 942,
-        "level": "49"
+        "level": 49
       },
       "maxDuration": {
-        "duration": 2172,
-        "level": "65"
+        "duration": 1230,
+        "level": 65
       }
     },
     "castOnYou": "You lose yourself in your rage and go berserk.",
-    "castOnOther": "Someone  goes berserk.",
-    "wearsOff": "Your frenzy fades."
+    "castOnOther": "goes berserk.",
+    "wearsOff": "Your frenzy fades.",
+    "icon": "blueArm"
   },
   "Strength": {
     "name": "Strength",
@@ -2757,8 +2889,9 @@
       }
     },
     "castOnYou": "You feel strong.",
-    "castOnOther": "Someone  looks strong.",
-    "wearsOff": "Your strength fades."
+    "castOnOther": "looks strong.",
+    "wearsOff": "Your strength fades.",
+    "icon": "blueArm"
   },
   "Spirit Quickening": {
     "name": "Spirit Quickening",
@@ -2775,16 +2908,17 @@
       "durationString": "6.0 minutes @L50 to 7.0 minutes @L60",
       "minDuration": {
         "duration": 360,
-        "level": "50"
+        "level": 50
       },
       "maxDuration": {
-        "duration": 780,
-        "level": "60"
+        "duration": 420,
+        "level": 60
       }
     },
     "castOnYou": "",
-    "castOnOther": "Someone  foams at the mouth.",
-    "wearsOff": ""
+    "castOnOther": "foams at the mouth.",
+    "wearsOff": "",
+    "icon": "blueArm"
   },
   "Superior Healing": {
     "name": "Superior Healing",
@@ -2799,8 +2933,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel much better.",
-    "castOnOther": "Someone  feels much better.",
-    "wearsOff": ""
+    "castOnOther": "feels much better.",
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Immobilize": {
     "name": "Immobilize",
@@ -2820,8 +2955,9 @@
       }
     },
     "castOnYou": "Your feet adhere to the ground.",
-    "castOnOther": "Someone's feet adhere to the ground.",
-    "wearsOff": "Your feet come free."
+    "castOnOther": "feet adhere to the ground.",
+    "wearsOff": "Your feet come free.",
+    "icon": "earth"
   },
   "Talisman of Jasinth": {
     "name": "Talisman of Jasinth",
@@ -2841,8 +2977,9 @@
       }
     },
     "castOnYou": "You have been protected by the Talisman of Jasinth.",
-    "castOnOther": "Someone  has been protected by the Talisman of Jasinth.",
-    "wearsOff": "The Talisman fades."
+    "castOnOther": "has been protected by the Talisman of Jasinth.",
+    "wearsOff": "The Talisman fades.",
+    "icon": "shield"
   },
   "Turgur's Insects": {
     "name": "Turgur's Insects",
@@ -2859,16 +2996,17 @@
       "durationString": "5.1 minutes @L51 to 6.0 minutes @L65",
       "minDuration": {
         "duration": 306,
-        "level": "51"
+        "level": 51
       },
       "maxDuration": {
-        "duration": 666,
-        "level": "65"
+        "duration": 360,
+        "level": 65
       }
     },
     "castOnYou": "You feel drowsy.",
-    "castOnOther": "Someone  yawns.",
-    "wearsOff": "You feel less drowsy."
+    "castOnOther": "yawns.",
+    "wearsOff": "You feel less drowsy.",
+    "icon": "boot"
   },
   "Insidious Decay": {
     "name": "Insidious Decay",
@@ -2885,16 +3023,17 @@
       "durationString": "11.4 minutes @L52 to 14 minutes @L65",
       "minDuration": {
         "duration": 684,
-        "level": "52"
+        "level": 52
       },
       "maxDuration": {
-        "duration": 1524,
-        "level": "65"
+        "duration": 840,
+        "level": 65
       }
     },
     "castOnYou": "You feel a fever settle upon you.",
-    "castOnOther": "Someone  sweats and shivers, looking feverish.",
-    "wearsOff": "Your fever has broken."
+    "castOnOther": "sweats and shivers, looking feverish.",
+    "wearsOff": "Your fever has broken.",
+    "icon": "pox"
   },
   "Regrowth": {
     "name": "Regrowth",
@@ -2911,16 +3050,17 @@
       "durationString": "16.6 minutes @L52 to 20.5 minutes @L65 (19 mins @L60)",
       "minDuration": {
         "duration": 996.0000000000001,
-        "level": "52"
+        "level": 52
       },
       "maxDuration": {
-        "duration": 2226,
-        "level": "60)"
+        "duration": 1230,
+        "level": 60
       }
     },
     "castOnYou": "You begin to regenerate.",
-    "castOnOther": "Someone  begins to regenerate.",
-    "wearsOff": "You have stopped regenerating."
+    "castOnOther": "begins to regenerate.",
+    "wearsOff": "You have stopped regenerating.",
+    "icon": "blueHand"
   },
   "Spirit of Scale": {
     "name": "Spirit of Scale",
@@ -2940,8 +3080,9 @@
       }
     },
     "castOnYou": "You feel the spirit of the scaled wolf enter you.",
-    "castOnOther": "Someone  is surrounded by a brief lupine aura.",
-    "wearsOff": "The spirit of scale leaves you."
+    "castOnOther": "is surrounded by a brief lupine aura.",
+    "wearsOff": "The spirit of scale leaves you.",
+    "icon": "boot"
   },
   "Cripple": {
     "name": "Cripple",
@@ -2958,16 +3099,17 @@
       "durationString": "6.3 minutes @L53 to 7.0 minutes @L60",
       "minDuration": {
         "duration": 378,
-        "level": "53"
+        "level": 53
       },
       "maxDuration": {
-        "duration": 798,
-        "level": "60"
+        "duration": 420,
+        "level": 60
       }
     },
     "castOnYou": "You have been crippled.",
-    "castOnOther": "Someone  has been crippled.",
-    "wearsOff": "You feel your strength return."
+    "castOnOther": "has been crippled.",
+    "wearsOff": "You feel your strength return.",
+    "icon": "redArm"
   },
   "Deliriously Nimble": {
     "name": "Deliriously Nimble",
@@ -2987,8 +3129,9 @@
       }
     },
     "castOnYou": "You feel deliriously nimble.",
-    "castOnOther": "Someone  twitches, deliriously nimble.",
-    "wearsOff": "Your agility fades."
+    "castOnOther": "twitches, deliriously nimble.",
+    "wearsOff": "Your agility fades.",
+    "icon": "boot"
   },
   "Talisman of Shadoo": {
     "name": "Talisman of Shadoo",
@@ -3008,8 +3151,9 @@
       }
     },
     "castOnYou": "You have been protected by the Talisman of Shadoo.",
-    "castOnOther": "Someone  has been protected by the Talisman of Shadoo.",
-    "wearsOff": "The Talisman fades."
+    "castOnOther": "has been protected by the Talisman of Shadoo.",
+    "wearsOff": "The Talisman fades.",
+    "icon": "dagger"
   },
   "Cannibalize III": {
     "name": "Cannibalize III",
@@ -3024,8 +3168,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "Your body aches as your mind clears.",
-    "castOnOther": "Someone  winces.",
-    "wearsOff": ""
+    "castOnOther": "winces.",
+    "wearsOff": "",
+    "icon": "blueBrain"
   },
   "Ice Strike": {
     "name": "Ice Strike",
@@ -3040,8 +3185,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "You stagger as spirits of ice slam against you.",
-    "castOnOther": "Someone  staggers as ice shards slam against them.",
-    "wearsOff": ""
+    "castOnOther": "staggers as ice shards slam against them.",
+    "wearsOff": "",
+    "icon": "snowflake"
   },
   "Riotous Health": {
     "name": "Riotous Health",
@@ -3061,8 +3207,9 @@
       }
     },
     "castOnYou": "Your body shines with riotous health.",
-    "castOnOther": "Someone 's body shines with riotous health.",
-    "wearsOff": "Your health fades."
+    "castOnOther": "'s body shines with riotous health.",
+    "wearsOff": "Your health fades.",
+    "icon": "blueArm"
   },
   "Shroud of the Spirits": {
     "name": "Shroud of the Spirits",
@@ -3082,8 +3229,9 @@
       }
     },
     "castOnYou": "A protective spirit shroud cloaks you.",
-    "castOnOther": "Someone  is surrounded by a spirit shroud.",
-    "wearsOff": "You are no longer shrouded."
+    "castOnOther": "is surrounded by a spirit shroud.",
+    "wearsOff": "You are no longer shrouded.",
+    "icon": "shield"
   },
   "Annul Magic": {
     "name": "Annul Magic",
@@ -3098,8 +3246,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You feel annulled.",
-    "castOnOther": "Someone  feels annulled.",
-    "wearsOff": ""
+    "castOnOther": "feels annulled.",
+    "wearsOff": "",
+    "icon": "magic"
   },
   "Chloroblast": {
     "name": "Chloroblast",
@@ -3114,8 +3263,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You are blasted with chlorophyll.",
-    "castOnOther": "Someone  is blasted with chlorophyll.",
-    "wearsOff": ""
+    "castOnOther": "is blasted with chlorophyll.",
+    "wearsOff": "",
+    "icon": "blueHand"
   },
   "Form of the Great Bear": {
     "name": "Form of the Great Bear",
@@ -3135,8 +3285,9 @@
       }
     },
     "castOnYou": "The spirit of the great bear blesses you.",
-    "castOnOther": "Someone  turns into a bear.",
-    "wearsOff": "You are no longer a bear."
+    "castOnOther": "turns into a bear.",
+    "wearsOff": "You are no longer a bear.",
+    "icon": "magic"
   },
   "Spirit of the Howler": {
     "name": "Spirit of the Howler",
@@ -3151,8 +3302,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "You summon a howling spirit.",
-    "castOnOther": "Someone  summons a howling spirit.",
-    "wearsOff": ""
+    "castOnOther": "summons a howling spirit.",
+    "wearsOff": "",
+    "icon": "summon"
   },
   "Talisman of Kragg": {
     "name": "Talisman of Kragg",
@@ -3172,8 +3324,9 @@
       }
     },
     "castOnYou": "You feel tough.",
-    "castOnOther": "Someone  looks tougher.",
-    "wearsOff": "Your hit points fade."
+    "castOnOther": "looks tougher.",
+    "wearsOff": "Your hit points fade.",
+    "icon": "shield"
   },
   "Torrent of Poison": {
     "name": "Torrent of Poison",
@@ -3188,8 +3341,9 @@
     "spellType": "Detrimental",
     "duration": 0,
     "castOnYou": "Your skin steams and melts as poison rains down on you.",
-    "castOnOther": "Someone 's skin steams and melts.",
-    "wearsOff": ""
+    "castOnOther": "'s skin steams and melts.",
+    "wearsOff": "",
+    "icon": "dagger"
   },
   "Acumen": {
     "name": "Acumen",
@@ -3209,8 +3363,9 @@
       }
     },
     "castOnYou": "Your eyes tingle.",
-    "castOnOther": "Someone 's eyes tingle.",
-    "wearsOff": "Your eyes stop tingling."
+    "castOnOther": "'s eyes tingle.",
+    "wearsOff": "Your eyes stop tingling.",
+    "icon": "eye"
   },
   "Bane of Nife": {
     "name": "Bane of Nife",
@@ -3230,8 +3385,9 @@
       }
     },
     "castOnYou": "Your veins fill with deadly poison.",
-    "castOnOther": "Someone 's veins have been filled with deadly poison.",
-    "wearsOff": "The poison has run its course."
+    "castOnOther": "'s veins have been filled with deadly poison.",
+    "wearsOff": "The poison has run its course.",
+    "icon": "dagger"
   },
   "Celerity": {
     "name": "Celerity",
@@ -3248,16 +3404,17 @@
       "durationString": "12.7 minutes @L39 to 16 minutes @L50",
       "minDuration": {
         "duration": 762,
-        "level": "39"
+        "level": 39
       },
       "maxDuration": {
-        "duration": 1722,
-        "level": "50"
+        "duration": 960,
+        "level": 50
       }
     },
     "castOnYou": "You feel much faster.",
-    "castOnOther": "Someone  feels much faster.",
-    "wearsOff": "Your speed returns to normal."
+    "castOnOther": "feels much faster.",
+    "wearsOff": "Your speed returns to normal.",
+    "icon": "blueArm"
   },
   "Paralyzing Earth": {
     "name": "Paralyzing Earth",
@@ -3277,8 +3434,9 @@
       }
     },
     "castOnYou": "Your feet adhere to the ground.",
-    "castOnOther": "Someone 's feet adhere to the ground.",
-    "wearsOff": "Your feet come free."
+    "castOnOther": "'s feet adhere to the ground.",
+    "wearsOff": "Your feet come free.",
+    "icon": "earth"
   },
   "Malosini": {
     "name": "Malosini",
@@ -3295,16 +3453,17 @@
       "durationString": "18.1 minutes @L57 to 20.5 minutes @L65",
       "minDuration": {
         "duration": 1086,
-        "level": "57"
+        "level": 57
       },
       "maxDuration": {
-        "duration": 2316,
-        "level": "65"
+        "duration": 1230,
+        "level": 65
       }
     },
     "castOnYou": "You feel very vulnerable.",
-    "castOnOther": "Someone  looks very uncomfortable.",
-    "wearsOff": "Your vulnerability fades."
+    "castOnOther": "looks very uncomfortable.",
+    "wearsOff": "Your vulnerability fades.",
+    "icon": "redArm"
   },
   "Maniacal Strength": {
     "name": "Maniacal Strength",
@@ -3321,12 +3480,13 @@
       "durationString": "2 hours 24 minutes @L57",
       "minDuration": {
         "duration": 8640,
-        "level": "57"
+        "level": 57
       }
     },
     "castOnYou": "You are filled with maniacal strength.",
-    "castOnOther": "Someone 's muscles fill with maniacal strength.",
-    "wearsOff": "Your strength fades."
+    "castOnOther": "'s muscles fill with maniacal strength.",
+    "wearsOff": "Your strength fades.",
+    "icon": "blueArm"
   },
   "Talisman of the Brute": {
     "name": "Talisman of the Brute",
@@ -3346,8 +3506,9 @@
       }
     },
     "castOnYou": "You feel the spirit of the brute channel through you.",
-    "castOnOther": "Someone  looks robust.",
-    "wearsOff": "Your brute spirit fades."
+    "castOnOther": "looks robust.",
+    "wearsOff": "Your brute spirit fades.",
+    "icon": "blueArm"
   },
   "Talisman of the Cat": {
     "name": "Talisman of the Cat",
@@ -3367,8 +3528,9 @@
       }
     },
     "castOnYou": "You feel the spirit of the cat channel through you.",
-    "castOnOther": "Someone  looks agile.",
-    "wearsOff": "Your feline spirit fades."
+    "castOnOther": "looks agile.",
+    "wearsOff": "Your feline spirit fades.",
+    "icon": "boot"
   },
   "Cannibalize IV": {
     "name": "Cannibalize IV",
@@ -3383,8 +3545,9 @@
     "spellType": "Beneficial",
     "duration": 0,
     "castOnYou": "Your body aches as your mind clears.",
-    "castOnOther": "Someone  winces.",
-    "wearsOff": ""
+    "castOnOther": "winces.",
+    "wearsOff": "",
+    "icon": "blueBrain"
   },
   "Mortal Deftness": {
     "name": "Mortal Deftness",
@@ -3404,8 +3567,9 @@
       }
     },
     "castOnYou": "Your muscles move with mortal deftness.",
-    "castOnOther": "Someone  begins to move with mortal deftness.",
-    "wearsOff": "Your deftness fades."
+    "castOnOther": "begins to move with mortal deftness.",
+    "wearsOff": "Your deftness fades.",
+    "icon": "blueArm"
   },
   "Talisman of the Rhino": {
     "name": "Talisman of the Rhino",
@@ -3425,8 +3589,9 @@
       }
     },
     "castOnYou": "You feel the spirit of the rhino channel through you.",
-    "castOnOther": "Someone  looks strong.",
-    "wearsOff": "Your rhino spirit fades."
+    "castOnOther": "looks strong.",
+    "wearsOff": "Your rhino spirit fades.",
+    "icon": "blueArm"
   },
   "Talisman of the Serpent": {
     "name": "Talisman of the Serpent",
@@ -3446,8 +3611,9 @@
       }
     },
     "castOnYou": "You feel the spirit of the serpent channel through you.",
-    "castOnOther": "Someone  look charismatic.",
-    "wearsOff": "Your serpent spirit fades."
+    "castOnOther": "look charismatic.",
+    "wearsOff": "Your serpent spirit fades.",
+    "icon": "shield"
   },
   "Tigir's Insects": {
     "name": "Tigir's Insects",
@@ -3464,16 +3630,17 @@
       "durationString": "2.9 minutes @L58 to 3.2 minutes @L65",
       "minDuration": {
         "duration": 174,
-        "level": "58"
+        "level": 58
       },
       "maxDuration": {
-        "duration": 366,
-        "level": "65"
+        "duration": 192,
+        "level": 65
       }
     },
     "castOnYou": "You feel drowsy.",
-    "castOnOther": "Someone  yawns.",
-    "wearsOff": "You feel less drowsy."
+    "castOnOther": "yawns.",
+    "wearsOff": "You feel less drowsy.",
+    "icon": "boot"
   },
   "Pox of Bertoxxulous": {
     "name": "Pox of Bertoxxulous",
@@ -3493,8 +3660,9 @@
       }
     },
     "castOnYou": "Your skin erupts in purulent pustules.",
-    "castOnOther": "Someone 's skin erupts in purulent pock marks.",
-    "wearsOff": "The pox has run its course."
+    "castOnOther": "'s skin erupts in purulent pock marks.",
+    "wearsOff": "The pox has run its course.",
+    "icon": "pox"
   },
   "Talisman of the Raptor": {
     "name": "Talisman of the Raptor",
@@ -3514,8 +3682,9 @@
       }
     },
     "castOnYou": "You feel the spirit of the raptor channel through you.",
-    "castOnOther": "Someone  looks dexterous.",
-    "wearsOff": "Your raptor spirit fades."
+    "castOnOther": "looks dexterous.",
+    "wearsOff": "Your raptor spirit fades.",
+    "icon": "blueArm"
   },
   "Unfailing Reverence": {
     "name": "Unfailing Reverence",
@@ -3535,8 +3704,9 @@
       }
     },
     "castOnYou": "People look at you with unfailing reverence.",
-    "castOnOther": "Someone  exudes an aura of massive charisma.",
-    "wearsOff": "Your charisma fades."
+    "castOnOther": "exudes an aura of massive charisma.",
+    "wearsOff": "Your charisma fades.",
+    "icon": "shield"
   },
   "Voice of the Berserker": {
     "name": "Voice of the Berserker",
@@ -3553,16 +3723,17 @@
       "durationString": "18.7 minutes @L59 to 20.5 minutes @L65",
       "minDuration": {
         "duration": 1122,
-        "level": "59"
+        "level": 59
       },
       "maxDuration": {
-        "duration": 2352,
-        "level": "65"
+        "duration": 1230,
+        "level": 65
       }
     },
     "castOnYou": "You lose yourself in your rage and go berserk.",
-    "castOnOther": "Someone  goes berserk.",
-    "wearsOff": "Your frenzy fades."
+    "castOnOther": "goes berserk.",
+    "wearsOff": "Your frenzy fades.",
+    "icon": "blueArm"
   },
   "Avatar": {
     "name": "Avatar",
@@ -3582,8 +3753,9 @@
       }
     },
     "castOnYou": "Your body screams with the power of an Avatar.",
-    "castOnOther": "Someone  has been infused with the power of an Avatar.",
-    "wearsOff": "The Avatar departs."
+    "castOnOther": "has been infused with the power of an Avatar.",
+    "wearsOff": "The Avatar departs.",
+    "icon": "magic"
   },
   "Focus of Spirit": {
     "name": "Focus of Spirit",
@@ -3603,8 +3775,9 @@
       }
     },
     "castOnYou": "You feel focused.",
-    "castOnOther": "Someone  looks focused.",
-    "wearsOff": "Your focus fades."
+    "castOnOther": "looks focused.",
+    "wearsOff": "Your focus fades.",
+    "icon": "shield"
   },
   "Malo": {
     "name": "Malo",
@@ -3621,12 +3794,13 @@
       "durationString": "13 minutes @L60",
       "minDuration": {
         "duration": 780,
-        "level": "60"
+        "level": 60
       }
     },
     "castOnYou": "You feel very vulnerable.",
-    "castOnOther": "Someone  looks very uncomfortable.",
-    "wearsOff": "Your vulnerability fades."
+    "castOnOther": "looks very uncomfortable.",
+    "wearsOff": "Your vulnerability fades.",
+    "icon": "reaper"
   },
   "Primal Avatar": {
     "name": "Primal Avatar",
@@ -3643,12 +3817,13 @@
       "durationString": "6 minutes @L60",
       "minDuration": {
         "duration": 360,
-        "level": "60"
+        "level": 60
       }
     },
     "castOnYou": "Your body screams with the power of an Avatar.",
-    "castOnOther": "Someone  has been infused with the power of an Avatar.",
-    "wearsOff": "The Avatar departs."
+    "castOnOther": "has been infused with the power of an Avatar.",
+    "wearsOff": "The Avatar departs.",
+    "icon": "magic"
   },
   "Torpor": {
     "name": "Torpor",
@@ -3668,7 +3843,8 @@
       }
     },
     "castOnYou": "You fall into a state of torpor.",
-    "castOnOther": "Someone  falls into a state of torpor.",
-    "wearsOff": "Your state of torpor ends."
+    "castOnOther": "falls into a state of torpor.",
+    "wearsOff": "Your state of torpor ends.",
+    "icon": "blueHand"
   }
 }

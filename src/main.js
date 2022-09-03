@@ -32,6 +32,8 @@ function loadZoneList() {
   mapWindow.webContents.send('loadZoneList', maps);
 }
 
+app.disableHardwareAcceleration();
+
 app.whenReady().then(() => {
   const display = screen.getPrimaryDisplay();
   const width = display.bounds.width;

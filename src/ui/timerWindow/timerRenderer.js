@@ -5,11 +5,16 @@
 // selectively enable features needed in the rendering
 // process.
 const selectLogBtn = document.getElementById('select-log-button');
+const selectClass = document.getElementById('class-select');
 const timerListEle = document.getElementById('timer-list');
 
 selectLogBtn.addEventListener('click', () => {
   window.fileStream.openFile();
 });
+
+selectClass.addEventListener('change', (e) => {
+  console.log(e.target.value);
+})
 
 window.fileStream.startTimer((_, data) => {
   const { type, target, time, icon } = data;
@@ -81,6 +86,7 @@ function getTimeString(time) {
     time -= 3600;
   }
   if(time >= 60) {
+    timeString += (timeString !== '' && Math.floor(time/60) < 10) ? '0' : '';
     timeString += `${Math.floor(time/60)}:`
   }
   const seconds = time % 60;

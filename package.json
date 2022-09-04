@@ -13,7 +13,7 @@
     "directories": {
       "buildResources": "buildResources"
     },
-    "files":[
+    "files": [
       "package.json",
       "src/**/**/*",
       "node_modules"
@@ -27,7 +27,12 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^16.0.8",
-    "electron-builder": "^22.14.13"
+    "electron-builder": "^22.14.13",
+    "eslint": "^8.23.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1"
   },
   "dependencies": {
     "tail-file": "^1.4.15"

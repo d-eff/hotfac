@@ -13,6 +13,7 @@ const charLevel = 46;
 const spellList = require(`./data/spells/${charClass}`);
 let currentSpell = '';
 
+// UI Setup ===================================================================
 function createWindow (windowConfig, filename) {
   const webPreferences = {
     nodeIntegration: false,   
@@ -27,6 +28,26 @@ function createWindow (windowConfig, filename) {
   return window;
 }
 
+function makeTimerWindow() {
+  return createWindow({
+    width: 275,
+    height: 600,
+    x: 0,
+    y: 100,
+  }, `${__dirname}/ui/timerWindow/timer.html`);
+}
+
+function makeMapWindow() {
+  const display = screen.getPrimaryDisplay();
+  const width = display.bounds.width;
+  return mapWindow = createWindow({
+    width: 600,
+    height: 600,
+    x: width - 600,
+    y: 100,
+  }, `${__dirname}/ui/mapWindow/map.html`);
+}
+
 //send map file to map renderer 
 function loadZoneList() {
   mapWindow.webContents.send('loadZoneList', maps);
@@ -34,32 +55,18 @@ function loadZoneList() {
 
 app.disableHardwareAcceleration();
 
-app.whenReady().then(() => {
-  const display = screen.getPrimaryDisplay();
-  const width = display.bounds.width;
-
-  timerWindow = createWindow({
-    width: 275,
-    height: 600,
-    x: 0,
-    y: 100,
-  }, `${__dirname}/ui/timerWindow/timer.html`);
-
-  // mapWindow = createWindow({
-  //   width: 600,
-  //   height: 600,
-  //   x: width - 600,
-  //   y: 100,
-  // }, `${__dirname}/ui/mapWindow/map.html`);
-
+// Main =======================================================================
+app.whenReady().then(() => { 
+  timerWindow = makeTimerWindow();
+  // mapWindow = makeMapWindow();
   // mapWindow.webContents.once('dom-ready', loadZoneList);
-
   // timerWindow.webContents.openDevTools();
 
   app.on('activate', function () {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   });
 })
+
 
 app.on('window-all-closed', function () { if (process.platform !== 'darwin') app.quit() });
 

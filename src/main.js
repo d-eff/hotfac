@@ -2,11 +2,10 @@
 const { app, BrowserWindow, ipcMain, screen } = require('electron')
 const { join } = require('path')
 const Tail = require('tail-file')
-const { spellEffects, mapEffects } = require('./data/effects.js')
 const { maps } = require('./data/maps.js')
 
 let timerWindow
-let mapWindow
+// let mapWindow
 
 const charClass = 'Enchanter'
 const charLevel = 46

@@ -5,15 +5,25 @@
 // selectively enable features needed in the rendering
 // process.
 const selectLogBtn = document.getElementById('select-log-button')
+const saveCharInfoBtn = document.getElementById('save-char-button')
 const selectClass = document.getElementById('class-select')
+const levelInput = document.getElementById('char-level')
 const timerListEle = document.getElementById('timer-list')
 
 selectLogBtn.addEventListener('click', () => {
-  window.fileStream.openFile()
+  window.fileStream.chooseCharacter()
 })
 
-selectClass.addEventListener('change', (e) => {
-  console.log(e.target.value)
+saveCharInfoBtn.addEventListener('click', () => {
+  const charClass = selectClass.value
+  const charLevel = levelInput.value
+  window.fileStream.saveCharInfo(charClass, charLevel)
+})
+
+window.fileStream.setCharInfo((_, data) => {
+  const { charName, charClass, charLevel } = data
+  selectClass.value = charClass
+  levelInput.value = charLevel
 })
 
 window.fileStream.startTimer((_, data) => {

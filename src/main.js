@@ -3,13 +3,16 @@ const { app, BrowserWindow, ipcMain, screen } = require('electron')
 const { join } = require('path')
 const Tail = require('tail-file')
 const { maps } = require('./data/maps.js')
+const settings = require('electron-settings')
 
+// Windows
 let timerWindow
 // let mapWindow
 
-const charClass = 'Enchanter'
-const charLevel = 46
-const spellList = require(`./data/spells/${charClass}`)
+let charName
+let charClass
+let charLevel
+let spellList
 let currentSpell = ''
 
 // UI Setup
@@ -60,7 +63,7 @@ app.whenReady().then(() => {
   timerWindow = makeTimerWindow()
   // mapWindow = makeMapWindow();
   // mapWindow.webContents.once('dom-ready', loadZoneList);
-  // timerWindow.webContents.openDevTools();
+  timerWindow.webContents.openDevTools();
 
   app.on('activate', function () {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
@@ -69,16 +72,30 @@ app.whenReady().then(() => {
 
 app.on('window-all-closed', function () { if (process.platform !== 'darwin') app.quit() })
 
-ipcMain.on('openFile', () => {
+ipcMain.on('chooseCharacter', () => {
   const { dialog } = require('electron')
   dialog.showOpenDialog({ properties: ['openFile'] })
     .then(result => {
       if (result.filePaths.length > 0) {
         const filepath = result.filePaths[0]
+        loadCharacterInfo(filepath)
         watchFile(filepath)
       }
     })
 })
+
+ipcMain.on('saveCharInfo', async (event, charClass, charLevel) => {
+  await settings.set(charName, { class: charClass, level: charLevel })
+})
+
+async function loadCharacterInfo (filepath) {
+  charName = filepath.match(/eqlog_(.*)_project1999/g)[0].split('_')[1]
+  const charData = await settings.get(charName)
+  charClass = charData?.class || 'Enchanter'
+  charLevel = charData?.level || 1
+  spellList = require(`./data/spells/${charClass}`) || {}
+  timerWindow.webContents.send('setCharInfo', { charName, charClass, charLevel })
+}
 
 function watchFile (filename) {
   const _ = new Tail(filename, line => {

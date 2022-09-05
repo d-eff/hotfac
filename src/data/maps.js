@@ -24,5 +24,5 @@ exports.maps = [
   'rivervale',
   'runnyeye',
   'warrens',
-  'xorbb',
-];
+  'xorbb'
+]

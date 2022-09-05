@@ -10,17 +10,21 @@
   </head>
   <body class="classic-ui">
     <button id="select-log-button" type="button">Select log</button>
-    <select id="class-select">
-      <option>Select Class</option>
-      <option value="Cleric">Cleric</option>
-      <option value="Druid">Druid</option>
-      <option value="Enchanter">Enchanter</option>
-      <option value="Magician">Magician</option>
-      <option value="Necromancer">Necromancer</option>
-      <option value="Paladin">Paladin</option>
-      <option value="Ranger">Ranger</option>
-      <option value="Shaman">Shaman</option>
-    </select>
+    <div id="char-data">
+      <select id="class-select">
+        <option value="">Select Class</option>
+        <option value="Cleric">Cleric</option>
+        <option value="Druid">Druid</option>
+        <option value="Enchanter">Enchanter</option>
+        <option value="Magician">Magician</option>
+        <option value="Necromancer">Necromancer</option>
+        <option value="Paladin">Paladin</option>
+        <option value="Ranger">Ranger</option>
+        <option value="Shaman">Shaman</option>
+      </select>
+      <input id="char-level" name="char-level">
+      <button id="save-char-button" type="button">Save</button>
+    </div>
     <div id="timer-list"></div>
     <script src="./timerRenderer.js"></script>
   </body>

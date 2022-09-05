@@ -35,6 +35,7 @@
     "eslint-plugin-promise": "^6.0.1"
   },
   "dependencies": {
+    "electron-settings": "^4.0.2",
     "tail-file": "^1.4.15"
   }
 }

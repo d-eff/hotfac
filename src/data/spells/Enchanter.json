@@ -3733,8 +3733,8 @@
     "wearsOff": "You come into focus.",
     "icon": "shield"
   },
-  "Swift Like The Wind": {
-    "name": "Swift Like The Wind",
+  "Swift like the Wind": {
+    "name": "Swift like the Wind",
     "mana": "250",
     "skill": "Alteration",
     "castTime": "8.00",

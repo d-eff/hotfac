@@ -61,9 +61,9 @@ app.disableHardwareAcceleration()
 // Main
 app.whenReady().then(() => {
   timerWindow = makeTimerWindow()
-  // mapWindow = makeMapWindow();
-  // mapWindow.webContents.once('dom-ready', loadZoneList);
-  timerWindow.webContents.openDevTools();
+  // mapWindow = makeMapWindow()
+  // mapWindow.webContents.once('dom-ready', loadZoneList)
+  // timerWindow.webContents.openDevTools()
 
   app.on('activate', function () {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
